@@ -8,6 +8,7 @@
 /*--------------------------------*/
 /* Imports: Resets */
 /*--------------------------------*/
+@import url(resets/resets_ul_li.css);
 @import url(resets/reset_buttons.css);
 /*--------------------------------*/
 /* Media Queries */
@@ -25,11 +26,12 @@
     --debug-border: 1px solid red;
     --debug-bkrnd: rgba(255, 0, 0, 0.4);
     --debug-test-var: 100%;
-    
+
     /*UI*/
     --ui-font-family: Arial, Helvetica, sans-serif;
     --ui-padding: 10px;
     --ui-border-radius: 10px;
+    --ui-border: 2px solid var(--color-stroke);
     --ui-grid-gap: 0px;
 
     /*SHADOW*/

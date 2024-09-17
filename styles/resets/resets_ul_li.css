@@ -1,31 +1,16 @@
 /*---------------------------------------------------------------*/
-/* CIS 170: Semantic | Nav: */
+/* Template: UL / LI: */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Nav:  */
+/* ul:  */
 /*--------------------------------*/
-nav {
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
-    /*POSITION*/
-    padding: 0px 24px;
-    width: 100%;
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: row;
-    justify-content: right;
-    align-items: flex-end;
-    /*BACKGROUND*/
-    /*BORDER*/
-    border-bottom: 1px solid var(--color-stroke);
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
+ul {
+    /*RESET*/
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
 }
+li {float: left;}
 /*--------------------------------*/
 /* Template */
 /*--------------------------------*/
