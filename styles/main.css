@@ -1,0 +1,130 @@
+/*---------------------------------------------------------------*/
+/* CIS 170: Main */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Imports: */
+/*--------------------------------*/
+@import url(semantic/semantic.css);
+/*--------------------------------*/
+/* Media Queries */
+/*--------------------------------*/
+/*
+@import url(media_queries/media_queries__main_lg.css) screen and (min-width:1200px);
+@import url(media_queries/media_queries__main_md.css) screen and (min-width:700px) and (max-width:1200px);
+@import url(media_queries/media_queries__main_sm.css) screen and (min-width:0px) and (max-width:700px);
+*/
+/*--------------------------------*/
+/* Root */
+/*--------------------------------*/ 
+:root {
+    /*DEBUGGING*/
+    --debug-border: 1px solid red;
+    --debug-bkrnd: rgba(255, 0, 0, 0.4);
+    --debug-test-var: 100%;
+    /*UI*/
+    --ui-font-family: Arial, Helvetica, sans-serif;
+    --ui-padding: 10px;
+    --ui-border-radius: 10px;
+    --ui-grid-gap: 0px;
+
+    /*BACKGROUND*/
+    --bkrnd-body: white;
+    --bkrnd-grid: white;
+
+    /*SHADOW*/
+    --ui-shadow-off: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
+    --ui-shadow-on: 2px 2px 12px 6px rgba(0, 0, 0, 0.4);
+
+    /*TRANSITIONS*/
+    --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /*SEMANTIC*/
+}
+/*--------------------------------*/
+/* Overall */
+/*--------------------------------*/        
+* {
+    /*POSITION*/
+    margin: 0;
+    padding: 0;
+    /*DISPLAY*/
+    box-sizing: border-box;
+}
+/*--------------------------------*/
+/* Body */
+/*--------------------------------*/
+body {
+    /*POSITION*/
+    margin: 0;
+    padding: 0;
+    /*BACKGROUND*/
+    background: var(--bkrnd-body);
+    /*TEXT*/
+    font-family: var(--ui-font-family);
+}
+/*--------------------------------*/
+/* Grid Container */
+/*--------------------------------*/        
+.grid {
+    /*POSITION*/
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: var(--ui-grid-gap);
+    /*BACKGROUND*/
+    background: var(--bkrnd-grid);
+    /*DEBUGGING*/
+    /*border: var(--debug-border);*/
+}
+.grid > * {border: var(--debug-border);}
+/*--------------------------------*/
+/* Flex Container */
+/*--------------------------------*/
+.flex {
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /*DEBUGGING*/
+    /*border: var(--debug-border);*/
+}
+/*---------------------------------------------------------------*/
+/* Main: Animation-Class */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Animation-Class: Prefix */
+/*--------------------------------*/
+[data-animation],
+div[class*="animation"],
+img[class*="animation"] {
+    /*vars-animations main*/
+    animation-name: var(--animation-name, none);
+    animation-duration: var(--animation-duration, 1.0s);
+    animation-timing-function: var(--animation-timing-function, cubic-bezier(0.175, 0.885, 0.32, 1.275));
+    animation-delay: var(--animation-delay, 0.0s);
+    animation-iteration-count: var(--animation-iteration-count, 1);
+    animation-fill-mode: var(--animation-fill-mode, forwards);
+    animation-play-state: var(--animation-play-state, paused);
+}
+.paused { --animation-play-state: paused;}
+.running { --animation-play-state: running;}
+/*---------------------------------------------------------------*/
+/* Template: */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
