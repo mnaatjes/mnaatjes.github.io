@@ -2,9 +2,13 @@
 /* CIS 170: Main */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Imports: */
+/* Imports: Semantic */
 /*--------------------------------*/
 @import url(semantic/semantic.css);
+/*--------------------------------*/
+/* Imports: Resets */
+/*--------------------------------*/
+@import url(resets/reset_buttons.css);
 /*--------------------------------*/
 /* Media Queries */
 /*--------------------------------*/
@@ -21,15 +25,12 @@
     --debug-border: 1px solid red;
     --debug-bkrnd: rgba(255, 0, 0, 0.4);
     --debug-test-var: 100%;
+    
     /*UI*/
     --ui-font-family: Arial, Helvetica, sans-serif;
     --ui-padding: 10px;
     --ui-border-radius: 10px;
     --ui-grid-gap: 0px;
-
-    /*BACKGROUND*/
-    --bkrnd-body: white;
-    --bkrnd-grid: white;
 
     /*SHADOW*/
     --ui-shadow-off: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
@@ -38,7 +39,25 @@
     /*TRANSITIONS*/
     --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 
-    /*SEMANTIC*/
+    /*COLORS*/
+    --color-stroke: #333333;
+    --color-background: #F6F6F6;
+    --color-strokeMid: #6D6D6D;
+    --color-strokeDim: #B0B0B0;
+    --color-tertiary: #66CCFF;
+    --color-primary: #FF3366;
+    --color-secondary: #FFCC00;
+    --color-tertiaryDim: #F0F9FF;
+    --color-secondaryStroke: #442304;
+    --color-secondaryDim: #FFFEC1;
+    --color-primaryStroke: #50011D;
+    --color-primaryContainer: #FF9FB3;
+    --color-primaryDim: #FFE2E7;
+    --color-secondaryContainer: #FFF886;
+    --color-tertiaryStroke: #062E4B;
+    --color-tertiaryContainer: #B8E5FF;
+    --color-tertiaryDim: #F0F9FF;
+    
 }
 /*--------------------------------*/
 /* Overall */
