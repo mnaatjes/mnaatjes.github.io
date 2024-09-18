@@ -2,8 +2,42 @@
 /* Template: Semantic | Header: */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Header:  */
+/* Header */
 /*--------------------------------*/
+header {
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    background: var(--color-tertiaryContainer);
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header - Desktop */
+/*--------------------------------*/
+header[class$="--desktop"] {
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    height: calc(100vh - 49.5px);
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
 /*--------------------------------*/
 /* Template */
 /*--------------------------------*/

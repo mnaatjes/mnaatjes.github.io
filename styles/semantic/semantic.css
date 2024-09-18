@@ -4,49 +4,10 @@
 /*--------------------------------*/
 /* Imports: */
 /*--------------------------------*/
-@import url(semantic_nav.css);
-@import url(semantic_header.css);
-@import url(semantic_main.css);
-@import url(semantic_footer.css);
+
 /*---------------------------------------------------------------*/
 /* CIS 170: Semantic | Main: */
 /*---------------------------------------------------------------*/
-/*--------------------------------*/
-/* Header: Nav */
-/*--------------------------------*/
-nav {
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
-    /*POSITION*/
-    /*DISPLAY*/
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
-}
-/*--------------------------------*/
-/* Header */
-/*--------------------------------*/
-header {
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
-    /*POSITION*/
-    /*DISPLAY*/
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
-}
 /*--------------------------------*/
 /* Aside */
 /*--------------------------------*/

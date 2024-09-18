@@ -6,9 +6,9 @@
 /*--------------------------------*/
 nav {
     /*GRID*/
-    /*FLEX*/
-    /*VARS*/
     /*POSITION*/
+    position: relative;
+    z-index: 10;
     padding: 0px 24px;
     width: 100%;
     /*DISPLAY*/
@@ -17,80 +17,63 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     /*BACKGROUND*/
+    background: var(--color-tertiaryContainer);
     /*BORDER*/
     border-bottom: 1px solid var(--color-stroke);
-    /*TEXT*/
     /*SHADOW*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
+    box-shadow: var(--ui-shadow-off);
+    /*TRANSITION*/
+    transition: var(--ui-transition);
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav Section */
+/* Nav(hover) */
+/*--------------------------------*/
+nav:hover {
+    /*BACKGROUND*/
+    background: var(--color-background);
+    /*SHADOW*/
+    box-shadow: var(--ui-shadow-on);
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Nav - Section */
 /*--------------------------------*/
 nav section[class^="nav"] {
-    /*VARS*/
-    /*POSITION*/
-    /*DISPLAY*/
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
     /*SHADOW*/
     /*ANIMATION*/
-    /*TRANSFORM*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav Section */
+/* Nav - Section: Logo */
 /*--------------------------------*/
 nav section[class$="__logo"] {
     /*FLEX*/
     align-self: center;
-    /*POSITION*/
     /*DISPLAY*/
     display: block;
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav Section */
+/* Nav - Section: Desktop */
 /*--------------------------------*/
 nav section[class$="--desktop"] {
-    /*POSITION*/
     /*DISPLAY*/
     display: block;
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav Section */
+/* Nav - Section: Mobile */
 /*--------------------------------*/
 nav section[class$="--mobile"] {
     /*FLEX*/
     align-self: center;
     /*POSITION*/
+    margin: 12px 0;
     /*DISPLAY*/
-    display: block;
-    /*BACKGROUND*/
-    /*BORDER*/
+    display: none;
     /*TEXT*/
     font-size: 24px;
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/

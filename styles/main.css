@@ -4,7 +4,10 @@
 /*--------------------------------*/
 /* Imports: Semantic */
 /*--------------------------------*/
-@import url(semantic/semantic.css);
+@import url(semantic/semantic_nav.css);
+@import url(semantic/semantic_header.css);
+@import url(semantic/semantic_main.css);
+@import url(semantic/semantic_footer.css);
 /*--------------------------------*/
 /* Imports: Resets */
 /*--------------------------------*/
@@ -35,8 +38,8 @@
     --ui-grid-gap: 0px;
 
     /*SHADOW*/
-    --ui-shadow-off: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
-    --ui-shadow-on: 2px 2px 12px 6px rgba(0, 0, 0, 0.4);
+    --ui-shadow-off: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+    --ui-shadow-on: 0px 4px 2px -0px rgba(0, 0, 0, 0.3);
 
     /*TRANSITIONS*/
     --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -79,7 +82,7 @@ body {
     margin: 0;
     padding: 0;
     /*BACKGROUND*/
-    background: var(--bkrnd-body);
+    background: var(--color-background);
     /*TEXT*/
     font-family: var(--ui-font-family);
 }
