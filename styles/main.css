@@ -35,7 +35,9 @@
     --ui-padding: 10px;
     --ui-border-radius: 10px;
     --ui-border: 2px solid var(--color-stroke);
-    --ui-grid-gap: 0px;
+    --ui-grid-gap: 12px;
+    --ui-grid-margin: 0 24px;
+    --ui-grid-padding: 0 24px;
 
     /*SHADOW*/
     --ui-shadow-off: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
@@ -59,8 +61,8 @@
     --color-primaryContainer: #FF9FB3;
     --color-primaryDim: #FFE2E7;
     --color-secondaryContainer: #FFF886;
-    --color-tertiaryStroke: #062E4B;
-    --color-tertiaryContainer: #B8E5FF;
+    --color-tertiaryStroke: #062e4b;
+    --color-tertiaryContainer: #b8e5ff;
     --color-tertiaryDim: #F0F9FF;
     
 }
@@ -89,19 +91,16 @@ body {
 /*--------------------------------*/
 /* Grid Container */
 /*--------------------------------*/        
-.grid {
+[class*="grid"] {
     /*POSITION*/
+    padding: var(--ui-grid-padding);
     /*DISPLAY*/
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto;
     grid-gap: var(--ui-grid-gap);
-    /*BACKGROUND*/
-    background: var(--bkrnd-grid);
     /*DEBUGGING*/
     /*border: var(--debug-border);*/
 }
-.grid > * {border: var(--debug-border);}
+/*[class*="grid"] > * {border: var(--debug-border);}*/
 /*--------------------------------*/
 /* Flex Container */
 /*--------------------------------*/

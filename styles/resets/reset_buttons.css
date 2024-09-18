@@ -7,6 +7,7 @@
 a,
 button {
     /*RESETS*/
+    /*POSITION*/
     text-decoration: none;
     /*TRANSITION*/
     transition: var(--ui-transition);
@@ -18,9 +19,6 @@ button {
     /*RESET*/
     outline: none;
     cursor: pointer;
-    /*POSITION*/
-    margin: 0;
-    padding: 0;
     /*DISPLAY*/
     display: block;
     /*BACKGROUND*/
@@ -42,14 +40,21 @@ a[class^="link"] {
 /*--------------------------------*/
 a[class^="btn"],
 button[class^="btn"] {
-    /*VARS*/
-    /*POSITION*/
-    margin: 12px;
-    padding: 6px 12px;
     /*DISPLAY*/
     display: inline-block;
     /*TEXT*/
-    font-weight: 600;
+    font-weight: 500;
+    color: var(--color-stroke);
+}
+/*--------------------------------*/
+/* Buttons(Hover) */
+/*--------------------------------*/
+a[class^="btn"]:hover,
+button[class^="btn"]:hover {
+    /*BACKGROUND*/
+    background: var(--color-primary);
+    /*TEXT*/
+    color: var(--color-background);
 }
 /*--------------------------------*/
 /* Nav - Link */
@@ -72,17 +77,109 @@ button[class^="btn"] {
 /*--------------------------------*/
 /* Nav */
 /*--------------------------------*/
-.btn--primary {
-    /*VARS*/
+.btn--hero {
     /*POSITION*/
-    /*DISPLAY*/
+    margin: 0 6px;
+    padding: 12px 24px;
     /*BACKGROUND*/
+    background: var(--color-secondary);
     /*BORDER*/
+    border: 2px solid var(--color-stroke);
+    border-radius: 4px;
     /*TEXT*/
+    font-size: 18px;
     /*SHADOW*/
+    /*DEBUGGING*/
+}
+.btn--hero:last-child {margin-right: 0;}
+/*---------------------------------------------------------------*/
+/* Button - Social */
+/*---------------------------------------------------------------*/
+.btn--social {
+    /*POSITION*/
+    position: relative;
+    width: 48px;
+    height: 48px;
+    /*BACKGROUND*/
+    background-color: var(--color-tertiaryStroke);
+    /*BORDER*/
+    border: 2px solid var(--color-tertiaryStroke);
+    border-radius: 100%;
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 24px rgba(6, 46, 75, 1.0);
+}
+.btn--social:hover {
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(6, 46, 75, 1.0);
+}
+/*--------------------------------*/
+/* Button - Social: i */
+/*--------------------------------*/
+.btn--social i {
+    /*POSITION*/
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    color: var(--color-tertiaryContainer);
+    font-size: 32px;
+    /*TRANSITION*/
+    transition: var(--ui-transition);
+    /*DEBUGGING*/
+}
+.btn--social:hover i {color: var(--color-background);}
+/*---------------------------------------------------------------*/
+/* Button - Social */
+/*---------------------------------------------------------------*/
+.btn--arrow {
+    /*POSITION*/
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /*BACKGROUND*/
+    background-color: var(--color-tertiaryContainer);
+    /*BORDER*/
+    border: 2px solid var(--color-tertiaryContainer);
+    border-radius: 100%;
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 30px rgba(184, 229, 255, 1.0);
     /*TRANSITION*/
     /*ANIMATION*/
     /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Button - Arrow */
+/*--------------------------------*/
+.btn--arrow:hover {
+    border: 2px solid var(--color-primary);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(184, 229, 255, 1.0);
+}
+/*--------------------------------*/
+/* Button - Arrow */
+/*--------------------------------*/
+.btn--arrow i {
+    /*POSITION*/
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    color: var(--color-tertiaryStroke);
+    font-size: 48px;
     /*DEBUGGING*/
 }
 /*--------------------------------*/

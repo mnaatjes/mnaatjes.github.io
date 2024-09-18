@@ -21,14 +21,19 @@ header {
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Header - Desktop */
+/* Header - home */
 /*--------------------------------*/
-header[class$="--desktop"] {
+header[class*="--home"] {
+    /*GRID*/
     /*FLEX*/
     /*VARS*/
     /*POSITION*/
+    padding-bottom: 48px;
+    width: 100%;
     height: calc(100vh - 49.5px);
     /*DISPLAY*/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     /*BACKGROUND*/
     /*BORDER*/
     /*TEXT*/
@@ -36,6 +41,103 @@ header[class$="--desktop"] {
     /*TRANSITION*/
     /*ANIMATION*/
     /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header - Section: title */
+/*--------------------------------*/
+section.header--home__title {
+    /*GRID*/
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    align-self: end;
+    /*POSITION*/
+    /*DISPLAY*/
+    /*TEXT*/
+    /*DEBUGGING*/
+}
+section.header--home__title h1 {
+    /*TEXT*/
+    line-height: normal;
+    font-size: 72px;
+    font-weight: 600;
+}
+section.header--home__title h4 {font-size: 48px;}
+/*--------------------------------*/
+/* Header - Section: action */
+/*--------------------------------*/
+section.header--home__action {
+    /*GRID*/
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+    align-self: start;
+    /*POSITION*/
+    /*DISPLAY*/
+    /*TEXT*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header - Section: action */
+/*--------------------------------*/
+section.header--home__about {
+    /*GRID*/
+    grid-column-start: 8;
+    grid-column-end: 12;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    justify-self: end;
+    align-self: end;
+    /*POSITION*/
+    /*DISPLAY*/
+    /*TEXT*/
+    text-align: right;
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header - Section: social */
+/*--------------------------------*/
+section.header--home__social {
+    /*GRID*/
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    justify-self: start;
+    align-self: start;
+    /*POSITION*/
+    height: 100%;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /*TEXT*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header - Section: arrow */
+/*--------------------------------*/
+section.header--home__arrow {
+    /*GRID*/
+    grid-column-start: 10;
+    grid-column-end: 12;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    justify-self: end;
+    align-self: end;
+    /*POSITION*/
+    width: 100%;
+    height: 100%;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    /*TEXT*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
