@@ -5,7 +5,31 @@
 /* a, button */
 /*--------------------------------*/
 a,
-button { text-decoration: none;}
+button {
+    /*RESETS*/
+    text-decoration: none;
+    /*TRANSITION*/
+    transition: var(--ui-transition);
+}
+/*--------------------------------*/
+/* button */
+/*--------------------------------*/
+button {
+    /*RESET*/
+    outline: none;
+    cursor: pointer;
+    /*POSITION*/
+    margin: 0;
+    padding: 0;
+    /*DISPLAY*/
+    display: block;
+    /*BACKGROUND*/
+    background: transparent;
+    /*BORDER*/
+    border: none;
+    border-radius: none;
+    /*DEBUGGING*/
+}
 /*--------------------------------*/
 /* Link */
 /*--------------------------------*/
@@ -28,7 +52,7 @@ button[class^="btn"] {
     font-weight: 600;
 }
 /*--------------------------------*/
-/* Nav */
+/* Nav - Link */
 /*--------------------------------*/
 .link--nav {
     /*POSITION*/
@@ -36,15 +60,10 @@ button[class^="btn"] {
     padding: 6px 12px;
     /*BORDER*/
     border-bottom: 2px solid transparent;
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav */
+/* Nav - Link(hover) */
 /*--------------------------------*/
 .link--nav:hover {
     /*BORDER*/
