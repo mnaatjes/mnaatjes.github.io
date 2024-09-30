@@ -5,95 +5,77 @@
 /* Header */
 /*--------------------------------*/
 header {
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
     /*POSITION*/
-    /*DISPLAY*/
-    /*BACKGROUND*/
-    background: var(--color-tertiaryContainer);
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
+    padding: var(--ui-padding);
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
+/*---------------------------------------------------------------*/
+/* Header: --home */
+/*---------------------------------------------------------------*/
 /*--------------------------------*/
 /* Header - home */
 /*--------------------------------*/
 header[class*="--home"] {
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
     /*POSITION*/
-    padding-bottom: 48px;
     width: 100%;
     height: calc(100vh - 49.5px);
     /*DISPLAY*/
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+/*--------------------------------*/
+/* Section: row */
+/*--------------------------------*/
+section.header--home__row--top {
+    /*POSITION*/
+    padding-bottom: 6px;
+    height: 50%;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 /*--------------------------------*/
 /* Header - Section: title */
 /*--------------------------------*/
-section.header--home__title {
-    /*GRID*/
-    grid-column-start: 2;
-    grid-column-end: 8;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    align-self: end;
-    /*POSITION*/
-    /*DISPLAY*/
-    /*TEXT*/
-    /*DEBUGGING*/
+article.header--home__title {
+    /*FLEX*/
+    align-self: flex-start;
 }
-section.header--home__title h1 {
-    /*TEXT*/
-    line-height: normal;
-    font-size: 72px;
-    font-weight: 600;
-}
-section.header--home__title h4 {font-size: 48px;}
+article.header--home__title h4 {font-size: 48px;}
 /*--------------------------------*/
 /* Header - Section: action */
 /*--------------------------------*/
-section.header--home__action {
-    /*GRID*/
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-self: end;
-    align-self: start;
-    /*POSITION*/
-    /*DISPLAY*/
-    /*TEXT*/
-    /*DEBUGGING*/
+article.header--home__action {
+    /*FLEX*/
+    align-self: flex-end;
 }
 /*--------------------------------*/
-/* Header - Section: action */
+/* Section: row */
 /*--------------------------------*/
-section.header--home__about {
-    /*GRID*/
-    grid-column-start: 8;
-    grid-column-end: 12;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    justify-self: end;
-    align-self: end;
+section.header--home__row--bottom {
     /*POSITION*/
+    padding-top: 6px;
+    height: 50%;
     /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*--------------------------------*/
+/* Header - Section: right */
+/*--------------------------------*/
+article.header--home__col--right {
+    /*POSITION*/
+    max-width: 350px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
     /*TEXT*/
     text-align: right;
     /*DEBUGGING*/
@@ -101,44 +83,107 @@ section.header--home__about {
 /*--------------------------------*/
 /* Header - Section: social */
 /*--------------------------------*/
-section.header--home__social {
-    /*GRID*/
-    grid-column-start: 2;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    justify-self: start;
-    align-self: start;
+article.header--home__col--left {
+    /*FLEX*/
+    justify-self: stretch;
     /*POSITION*/
     height: 100%;
     /*DISPLAY*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /*TEXT*/
     /*DEBUGGING*/
 }
 /*--------------------------------*/
 /* Header - Section: arrow */
 /*--------------------------------*/
-section.header--home__arrow {
-    /*GRID*/
-    grid-column-start: 10;
-    grid-column-end: 12;
-    grid-row-start: 4;
-    grid-row-end: 5;
-    justify-self: end;
-    align-self: end;
+article.header--home__arrow {
+    /*FLEX*/
+    align-self: flex-end;
+}
+/*---------------------------------------------------------------*/
+/* Header: --contact */
+/*---------------------------------------------------------------*/
+header.--contact {
     /*POSITION*/
+    padding: var(--ui-padding);
+    padding-top: 48px;
+    padding-bottom: 48px;
     width: 100%;
-    height: 100%;
+    height: calc(100vh - 49.5px);
     /*DISPLAY*/
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    /*TEXT*/
-    /*DEBUGGING*/
+    justify-content: center;
+}
+/*--------------------------------*/
+/* Section - contact */
+/*--------------------------------*/
+section.--header--contact {
+    /*POSITION*/
+    padding: none;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: 2fr auto 3fr;
+    grid-template-rows: 100%;
+    align-items: stretch;
+}
+/*--------------------------------*/
+/* Article | Form */
+/*--------------------------------*/
+section.--header--contact article.--contact__col,
+section.--header--contact form.--contact__col {
+    /*POSITION*/
+    margin: 12px 0px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------*/
+/* Article */
+/*--------------------------------*/
+section.--header--contact article.--contact__line {
+    /*GRID*/
+    grid-column: 2;
+    justify-self: left;
+    /*POSITION*/
+    margin-left: 24px;
+    height: 100%;
+    /*BORDER*/
+    border-right: 2px solid var(--color-tertiaryStroke);
+}
+/*--------------------------------*/
+/* Form */
+/*--------------------------------*/
+section.--header--contact form.--contact__col {
+    /*GRID*/
+    grid-column: 3;
+    justify-self: right;
+    /*POSITION*/
+    padding-left: 12px;
+    /*DISPLAY*/
+    /*BORDER*/
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+div.--contact__row {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+div.--contact__checkbox-grid {
+    /*POSITION*/
+    width: 100%;
+    margin: 12px 0px;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
 }
 /*--------------------------------*/
 /* Template */

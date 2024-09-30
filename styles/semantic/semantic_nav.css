@@ -9,8 +9,7 @@ nav {
     /*POSITION*/
     position: relative;
     z-index: 10;
-    padding: 0px 24px;
-    width: 100%;
+    padding: var(--ui-padding);
     /*DISPLAY*/
     display: flex;
     flex-direction: row;
@@ -37,17 +36,11 @@ nav:hover {
     /*DEBUGGING*/
 }
 /*--------------------------------*/
-/* Nav - Section */
-/*--------------------------------*/
-nav section[class^="nav"] {
-    /*SHADOW*/
-    /*ANIMATION*/
-    /*DEBUGGING*/
-}
-/*--------------------------------*/
 /* Nav - Section: Logo */
 /*--------------------------------*/
-nav section[class$="__logo"] {
+nav .--nav__logo {
+    /*RESETS*/
+    user-select: none;
     /*FLEX*/
     align-self: center;
     /*DISPLAY*/
@@ -57,7 +50,7 @@ nav section[class$="__logo"] {
 /*--------------------------------*/
 /* Nav - Section: Desktop */
 /*--------------------------------*/
-nav section[class$="--desktop"] {
+nav .--nav--desktop {
     /*DISPLAY*/
     display: block;
     /*DEBUGGING*/
@@ -65,7 +58,7 @@ nav section[class$="--desktop"] {
 /*--------------------------------*/
 /* Nav - Section: Mobile */
 /*--------------------------------*/
-nav section[class$="--mobile"] {
+nav .--nav--mobile {
     /*FLEX*/
     align-self: center;
     /*POSITION*/

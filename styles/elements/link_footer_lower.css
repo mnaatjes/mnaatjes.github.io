@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------*/
+/* Link - Footer--Lower: */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Link */
+/*--------------------------------*/
+article[class*="footer--lower__nav"] a {
+    /*TEXT*/
+    color: var(--color-tertiary);
+}
+/*--------------------------------*/
+/* Link */
+/*--------------------------------*/
+article[class*="footer--lower__nav"] a:hover {
+    /*TEXT*/
+    color: var(--color-secondary);
+    text-decoration: underline;
+}
+/*--------------------------------*/
+/* Link */
+/*--------------------------------*/
+article[class*="footer--lower__nav"] a:active {
+    /*TEXT*/
+    color: var(--color-primary);
+    text-decoration: underline;
+}

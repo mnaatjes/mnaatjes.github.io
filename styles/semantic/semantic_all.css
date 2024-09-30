@@ -1,0 +1,86 @@
+/*---------------------------------------------------------------*/
+/* Semantic - All: */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Section: */
+/*--------------------------------*/
+header {
+    /*BACKGROUND*/
+    background: var(--color-tertiaryContainer);
+    /*TEXT*/
+    color: var(--color-tertiaryStroke);
+}
+/*--------------------------------*/
+/* Section: */
+/*--------------------------------*/
+header article h1 {
+    /*TEXT*/
+    line-height: normal;
+    font-size: 72px;
+    font-weight: 600;
+}
+/*--------------------------------*/
+/* Section: */
+/*--------------------------------*/
+header article h5 {
+    /*TEXT*/
+    line-height: normal;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+/*--------------------------------*/
+/* Section: */
+/*--------------------------------*/
+section {
+    /*POSITION*/
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/*--------------------------------*/
+/* article: col */
+/*--------------------------------*/
+article[class*="__col"] {
+    /*POSITION*/
+    margin: 12px 0px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+[class*="--between"] {justify-content: space-between;}
+[class*="start"] {justify-content: flex-start;}
+/*--------------------------------*/
+/* article: row */
+/*--------------------------------*/
+article[class*="__row"] {
+    /*POSITION*/
+    margin: 12px 0px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+article[class*="__row"] a {
+    /*POSITION*/
+    padding: 6px 12px;
+    /*DISPLAY*/
+    display: inline-block;
+    /*TEXT*/
+    text-decoration: underline;
+    color: var(--color-primary);
+}
+/*--------------------------------*/
+/* div: col */
+/*--------------------------------*/
+div[class*="__col"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------*/
+/* div: row */
+/*--------------------------------*/
+div[class*="__row"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+}

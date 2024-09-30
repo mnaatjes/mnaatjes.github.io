@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------*/
-/* Button: Nav */
+/* Reset: Button | A */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
 /* a, button */
@@ -7,6 +7,7 @@
 a,
 button {
     /*RESETS*/
+    user-select: none;
     /*POSITION*/
     text-decoration: none;
     /*TRANSITION*/
@@ -57,130 +58,80 @@ button[class^="btn"]:hover {
     color: var(--color-background);
 }
 /*--------------------------------*/
-/* Nav - Link */
+/* Buttons(Active) */
 /*--------------------------------*/
-.link--nav {
+a[class^="btn"]:active,
+a[class^="btn"][data-state="active"],
+button[class^="btn"]:active,
+button[class^="btn"][data-state="active"] {
+    /*BACKGROUND*/
+    background: var(--color-primary);
+    /*TEXT*/
+    color: var(--color-background);
+    /*SHADOW*/
+    box-shadow: var(--ui-shadow-inset);
+}
+/*---------------------------------------------------------------*/
+/* Button: Submit */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Submit */
+/*--------------------------------*/
+button[type="submit"] {
     /*POSITION*/
-    margin: 12px 0px 0px 0px;
-    padding: 6px 12px;
+    padding: 12px 18px;
     /*BORDER*/
-    border-bottom: 2px solid transparent;
-    /*DEBUGGING*/
+    border-width: var(--ui-border-width);
+    border-style: var(--ui-border-style);
+    border-radius: var(--ui-border-radius);
 }
 /*--------------------------------*/
-/* Nav - Link(hover) */
+/* Submit(Enabled) */
 /*--------------------------------*/
-.link--nav:hover {
-    /*BORDER*/
-    border-bottom-color: var(--color-stroke);
-}
-/*--------------------------------*/
-/* Nav */
-/*--------------------------------*/
-.btn--hero {
-    /*POSITION*/
-    margin: 0 6px;
-    padding: 12px 24px;
+button[type="submit"][data-state="enabled"] {
+    pointer-events: all;
     /*BACKGROUND*/
     background: var(--color-secondary);
     /*BORDER*/
-    border: 2px solid var(--color-stroke);
-    border-radius: 4px;
+    border-color: var(--color-stroke);
     /*TEXT*/
-    font-size: 18px;
-    /*SHADOW*/
-    /*DEBUGGING*/
+    color: var(--color-stroke);
 }
-.btn--hero:last-child {margin-right: 0;}
-/*---------------------------------------------------------------*/
-/* Button - Social */
-/*---------------------------------------------------------------*/
-.btn--social {
-    /*POSITION*/
-    position: relative;
-    width: 48px;
-    height: 48px;
+/*--------------------------------*/
+/* Submit(Enabled - Hover): */
+/*--------------------------------*/
+button[type="submit"][data-state="enabled"]:hover {
     /*BACKGROUND*/
-    background-color: var(--color-tertiaryStroke);
+    background: var(--color-primary);
     /*BORDER*/
-    border: 2px solid var(--color-tertiaryStroke);
-    border-radius: 100%;
-    /*SHADOW*/
-    box-shadow: inset 0px 0px 0px 24px rgba(6, 46, 75, 1.0);
-}
-.btn--social:hover {
-    /*SHADOW*/
-    box-shadow: inset 0px 0px 0px 0px rgba(6, 46, 75, 1.0);
-}
-/*--------------------------------*/
-/* Button - Social: i */
-/*--------------------------------*/
-.btn--social i {
-    /*POSITION*/
-    z-index: 1;
-    position: absolute;
-    top: calc(50% - 16px);
-    left: calc(50% - 16px);
-    width: 32px;
-    height: 32px;
-    /*DISPLAY*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-color: var(--color-stroke);
     /*TEXT*/
-    color: var(--color-tertiaryContainer);
-    font-size: 32px;
-    /*TRANSITION*/
-    transition: var(--ui-transition);
-    /*DEBUGGING*/
+    color: var(--color-background);
 }
-.btn--social:hover i {color: var(--color-background);}
-/*---------------------------------------------------------------*/
-/* Button - Social */
-/*---------------------------------------------------------------*/
-.btn--arrow {
-    /*POSITION*/
-    position: relative;
-    width: 60px;
-    height: 60px;
+/*--------------------------------*/
+/* Submit(Enabled - Active | Focus) */
+/*--------------------------------*/
+button[type="submit"][data-state="enabled"]:active {
     /*BACKGROUND*/
-    background-color: var(--color-tertiaryContainer);
+    background: var(--color-primary);
     /*BORDER*/
-    border: 2px solid var(--color-tertiaryContainer);
-    border-radius: 100%;
-    /*SHADOW*/
-    box-shadow: inset 0px 0px 0px 30px rgba(184, 229, 255, 1.0);
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
-}
-/*--------------------------------*/
-/* Button - Arrow */
-/*--------------------------------*/
-.btn--arrow:hover {
-    border: 2px solid var(--color-primary);
-    /*SHADOW*/
-    box-shadow: inset 0px 0px 0px 0px rgba(184, 229, 255, 1.0);
-}
-/*--------------------------------*/
-/* Button - Arrow */
-/*--------------------------------*/
-.btn--arrow i {
-    /*POSITION*/
-    position: absolute;
-    top: calc(50% - 24px);
-    left: calc(50% - 24px);
-    width: 48px;
-    height: 48px;
-    /*DISPLAY*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-color: var(--color-stroke);
     /*TEXT*/
-    color: var(--color-tertiaryStroke);
-    font-size: 48px;
-    /*DEBUGGING*/
+    color: var(--color-stroke);
+    /*SHADOW*/
+    box-shadow: var(--ui-shadow-inset);
+}
+/*--------------------------------*/
+/* Submit(Disabled) */
+/*--------------------------------*/
+button[type="submit"][data-state="disabled"] {
+    pointer-events: none;
+    /*BACKGROUND*/
+    background: var(--color-secondaryDim);
+    /*BORDER*/
+    border-color: var(--color-strokeDim);
+    /*TEXT*/
+    color: var(--color-strokeDim);
 }
 /*--------------------------------*/
 /* Nav */

@@ -4,6 +4,7 @@
 /*--------------------------------*/
 /* Imports: Semantic */
 /*--------------------------------*/
+@import url(semantic/semantic_all.css);
 @import url(semantic/semantic_nav.css);
 @import url(semantic/semantic_header.css);
 @import url(semantic/semantic_main.css);
@@ -13,6 +14,18 @@
 /*--------------------------------*/
 @import url(resets/resets_ul_li.css);
 @import url(resets/reset_buttons.css);
+@import url(resets/reset_input.css);
+@import url(resets/reset_label.css);
+@import url(resets/reset_textarea.css);
+/*--------------------------------*/
+/* Imports: Elements */
+/*--------------------------------*/
+@import url(elements/btn_arrow.css);
+@import url(elements/btn_hero.css);
+@import url(elements/btn_social.css);
+@import url(elements/link_nav.css);
+@import url(elements/link_footer_lower.css);
+@import url(elements/btn_submit_inline.css);
 /*--------------------------------*/
 /* Media Queries */
 /*--------------------------------*/
@@ -31,17 +44,20 @@
     --debug-test-var: 100%;
 
     /*UI*/
-    --ui-font-family: Arial, Helvetica, sans-serif;
-    --ui-padding: 10px;
-    --ui-border-radius: 10px;
-    --ui-border: 2px solid var(--color-stroke);
+    /*--ui-font-family: Arial, Helvetica, sans-serif;*/
+    --ui-font-family: "Inter", sans-serif;
+    --ui-border-width: 2px;
+    --ui-border-style: solid;
+    --ui-border-color: var(var(--color-stroke));
+    --ui-border: var(--ui-border-width) var(--ui-border-style) var(--ui-border-color);
+    --ui-border-radius: 4px;
     --ui-grid-gap: 12px;
-    --ui-grid-margin: 0 24px;
-    --ui-grid-padding: 0 24px;
+    --ui-padding: 0 48px;
 
     /*SHADOW*/
     --ui-shadow-off: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
     --ui-shadow-on: 0px 4px 2px -0px rgba(0, 0, 0, 0.3);
+    --ui-shadow-inset: inset 0px 4px 2px -0px rgba(0, 0, 0, 0.3);
 
     /*TRANSITIONS*/
     --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -49,11 +65,12 @@
     /*COLORS*/
     --color-stroke: #333333;
     --color-background: #F6F6F6;
-    --color-strokeMid: #6D6D6D;
+    --color-strokeLite: #ebebeb;
+    --color-strokeMid: #d6d6d6;
     --color-strokeDim: #B0B0B0;
-    --color-tertiary: #66CCFF;
+    --color-tertiary: #66ccff;
     --color-primary: #FF3366;
-    --color-secondary: #FFCC00;
+    --color-secondary: #ffcc00;
     --color-tertiaryDim: #F0F9FF;
     --color-secondaryStroke: #442304;
     --color-secondaryDim: #FFFEC1;
@@ -70,9 +87,6 @@
 /* Overall */
 /*--------------------------------*/        
 * {
-    /*POSITION*/
-    margin: 0;
-    padding: 0;
     /*DISPLAY*/
     box-sizing: border-box;
 }
@@ -81,6 +95,7 @@
 /*--------------------------------*/
 body {
     /*POSITION*/
+    width: 100vw;
     margin: 0;
     padding: 0;
     /*BACKGROUND*/
@@ -88,32 +103,7 @@ body {
     /*TEXT*/
     font-family: var(--ui-font-family);
 }
-/*--------------------------------*/
-/* Grid Container */
-/*--------------------------------*/        
-[class*="grid"] {
-    /*POSITION*/
-    padding: var(--ui-grid-padding);
-    /*DISPLAY*/
-    display: grid;
-    grid-gap: var(--ui-grid-gap);
-    /*DEBUGGING*/
-    /*border: var(--debug-border);*/
-}
-/*[class*="grid"] > * {border: var(--debug-border);}*/
-/*--------------------------------*/
-/* Flex Container */
-/*--------------------------------*/
-.flex {
-    /*display*/
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    /*DEBUGGING*/
-    /*border: var(--debug-border);*/
-}
+/*body > * {border: 1px solid red;}*/
 /*---------------------------------------------------------------*/
 /* Main: Animation-Class */
 /*---------------------------------------------------------------*/
