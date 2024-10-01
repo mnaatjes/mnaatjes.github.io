@@ -12,6 +12,7 @@
 /*--------------------------------*/
 /* Imports: Resets */
 /*--------------------------------*/
+@import url(resets/reset_headings.css);
 @import url(resets/resets_ul_li.css);
 @import url(resets/reset_buttons.css);
 @import url(resets/reset_input.css);
@@ -29,10 +30,10 @@
 /*--------------------------------*/
 /* Media Queries */
 /*--------------------------------*/
+@import url(media_queries/media_queries_phone.css) screen and (min-width:0px) and (max-width:650px);
 /*
 @import url(media_queries/media_queries__main_lg.css) screen and (min-width:1200px);
 @import url(media_queries/media_queries__main_md.css) screen and (min-width:700px) and (max-width:1200px);
-@import url(media_queries/media_queries__main_sm.css) screen and (min-width:0px) and (max-width:700px);
 */
 /*--------------------------------*/
 /* Root */

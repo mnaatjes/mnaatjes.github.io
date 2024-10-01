@@ -29,7 +29,7 @@ header[class*="--home"] {
 /*--------------------------------*/
 /* Section: row */
 /*--------------------------------*/
-section.header--home__row--top {
+section.--header--home__row--top {
     /*POSITION*/
     padding-bottom: 6px;
     height: 50%;
@@ -45,7 +45,6 @@ article.header--home__title {
     /*FLEX*/
     align-self: flex-start;
 }
-article.header--home__title h4 {font-size: 48px;}
 /*--------------------------------*/
 /* Header - Section: action */
 /*--------------------------------*/
@@ -56,9 +55,10 @@ article.header--home__action {
 /*--------------------------------*/
 /* Section: row */
 /*--------------------------------*/
-section.header--home__row--bottom {
+section.--header--home__row--bottom {
     /*POSITION*/
     padding-top: 6px;
+    margin-bottom: 60px;
     height: 50%;
     /*DISPLAY*/
     display: flex;

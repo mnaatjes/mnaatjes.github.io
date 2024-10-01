@@ -1,0 +1,100 @@
+/*---------------------------------------------------------------*/
+/* Template: Media Queries: sm  */
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 650px) {
+    /*--------------------------------*/
+    /* Root */
+    /*--------------------------------*/
+    :root {
+        --ui-padding: 0 24px !important;
+    }
+    h1 {font-size: 60px;}
+    /*--------------------------------*/
+    /* Nav - Section: Desktop | Mobile */
+    /*--------------------------------*/
+    nav .--nav--desktop {display: none;}
+    nav .--nav--mobile {display: block;}
+    /*--------------------------------*/
+    /* Header --home */
+    /*--------------------------------*/
+    section.--header--home__row--bottom {
+        /*POSITION*/
+        padding-top: 6px;
+        margin-bottom: 0px;
+    }
+    /*--------------------------------*/
+    /* Section: Footer - lower */
+    /*--------------------------------*/
+    section[id="--footer--lower"] {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+    article.footer--lower__social {
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    article.footer--lower__nav {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 2;
+        /*POSITION*/
+        padding-top: 24px;
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+    article.footer--lower__arrow {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 3;
+        /*POSITION*/
+        padding-top: 24px;
+    }
+    article.footer--lower__legal {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 4;
+    }
+    /*--------------------------------*/
+    /* Main:  */
+    /*--------------------------------*/
+    main {
+        /*POSITION*/
+        padding: 0px;
+    }
+    /*--------------------------------*/
+    /* card */
+    /*--------------------------------*/
+    a.--home__card {
+        /*DISPLAY*/
+        grid-template-columns: 100%;
+        grid-template-rows: calc(480px + 48px) auto auto auto;
+    }
+    .--home__card__img {grid-column: 1;}
+    .--home__card__desc {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 4;
+        /*POSITION*/
+        padding: var(--ui-padding);
+    }
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

@@ -23,7 +23,6 @@ section[id="--footer--upper"] {
     /*BORDER*/
     border-top: 1px solid var(--color-stroke);
 }
-section[id="--footer--upper"] h2 {color: var(--color-primary);}
 section[id="--footer--upper"] small {max-width: 300px; text-align: center;}
 /*--------------------------------*/
 /* Section: Footer - lower */
