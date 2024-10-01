@@ -1,0 +1,42 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Width */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Width: Cols */
+/*--------------------------------*/
+div[class^="lcars"][class*="__col-1"],
+button[class^="lcars"][class*="__col-1"] {
+    grid-column-start: 1 !important;
+}
+/*--------------------------------*/
+/* Width: Small */
+/*--------------------------------*/
+div[class^="lcars"][class*="--w-sm"],
+button[class^="lcars"][class*="--w-sm"] {
+    /*GRID*/
+    grid-column: auto / span 1;
+}
+/*--------------------------------*/
+/* Width: Medium */
+/*--------------------------------*/
+div[class^="lcars"][class*="--w-md"],
+button[class^="lcars"][class*="--w-md"] {
+    /*GRID*/
+    grid-column: auto / span 2;
+}
+/*--------------------------------*/
+/* Width: Large */
+/*--------------------------------*/
+div[class^="lcars"][class*="--w-lg"],
+button[class^="lcars"][class*="--w-lg"] {
+    /*GRID*/
+    grid-column: auto / span 3;
+}
+/*--------------------------------*/
+/* Width: XL */
+/*--------------------------------*/
+div[class^="lcars"][class*="--w-xl"],
+button[class^="lcars"][class*="--w-xl"] {
+    /*GRID*/
+    grid-column: auto / span 5;
+}

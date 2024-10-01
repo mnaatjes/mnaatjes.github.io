@@ -1,0 +1,26 @@
+/*--------------------------------*/
+/* UL, LI */
+/*--------------------------------*/
+ul {list-style-type: none;}
+li {
+    /*POSITION*/
+    margin: 0 5px;
+    /*DISPLAY*/
+    display: inline-block;
+}
+/*--------------------------------*/
+/* A */
+/*--------------------------------*/
+a {
+    /*DISPLAY*/
+    display: inline-block;
+    /*TEXT*/
+    text-decoration: none;
+    color: var(--color-brown);
+    /*DEBUGGING*/
+}
+a:hover {
+    /*TEXT*/
+    text-decoration: underline;
+    /*DEBUGGING*/
+}

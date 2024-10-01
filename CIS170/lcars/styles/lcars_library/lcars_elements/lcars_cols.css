@@ -1,0 +1,99 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Cols */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* cols: col-01 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-1"],
+button[class^="lcars"][class*="--col-1"],
+table[class^="lcars"][class*="--col-1"] {
+    grid-column-start: 1 !important;
+}
+/*--------------------------------*/
+/* cols: col-02 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-2"],
+button[class^="lcars"][class*="--col-2"],
+table[class^="lcars"][class*="--col-2"] {
+    grid-column-start: 2 !important;
+}
+/*--------------------------------*/
+/* cols: col-03 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-3"],
+button[class^="lcars"][class*="--col-3"],
+table[class^="lcars"][class*="--col-3"] {
+    grid-column-start: 3 !important;
+}
+/*--------------------------------*/
+/* cols: col-04 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-4"],
+button[class^="lcars"][class*="--col-4"],
+table[class^="lcars"][class*="--col-4"] {
+    grid-column-start: 4 !important;
+}
+/*--------------------------------*/
+/* cols: col-05 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-5"],
+button[class^="lcars"][class*="--col-5"],
+table[class^="lcars"][class*="--col-5"] {
+    grid-column-start: 5 !important;
+}
+/*--------------------------------*/
+/* cols: col-06 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-6"],
+button[class^="lcars"][class*="--col-6"],
+table[class^="lcars"][class*="--col-6"] {
+    grid-column-start: 6 !important;
+}
+/*--------------------------------*/
+/* cols: col-07 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-7"],
+button[class^="lcars"][class*="--col-7"],
+table[class^="lcars"][class*="--col-7"] {
+    grid-column-start: 7 !important;
+}
+/*--------------------------------*/
+/* cols: col-08 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-8"],
+button[class^="lcars"][class*="--col-8"],
+table[class^="lcars"][class*="--col-8"] {
+    grid-column-start: 8 !important;
+}
+/*--------------------------------*/
+/* cols: col-09 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-9"],
+button[class^="lcars"][class*="--col-9"],
+table[class^="lcars"][class*="--col-9"] {
+    grid-column-start: 9 !important;
+}
+/*--------------------------------*/
+/* cols: col-10 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-10"],
+button[class^="lcars"][class*="--col-10"],
+table[class^="lcars"][class*="--col-10"] {
+    grid-column-start: 10 !important;
+}
+/*--------------------------------*/
+/* cols: col-11 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-11"],
+button[class^="lcars"][class*="--col-11"],
+table[class^="lcars"][class*="--col-11"] {
+    grid-column-start: 11 !important;
+}
+/*--------------------------------*/
+/* cols: col-12 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--col-12"],
+button[class^="lcars"][class*="--col-12"],
+table[class^="lcars"][class*="--col-12"] {
+    grid-column-start: 12 !important;
+}

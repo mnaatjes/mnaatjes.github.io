@@ -1,0 +1,74 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Blocks */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Blocks: sm, md, lrg */
+/*--------------------------------*/
+.lcars__block--sm,
+.lcars__block--md,
+.lcars__block--lg {
+}
+/*--------------------------------*/
+/* Blocks: sm, md, lrg */
+/*--------------------------------*/
+.lcars__block--sm {
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Blocks: md */
+/*--------------------------------*/
+.lcars__block--md {
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Blocks: lrg */
+/*--------------------------------*/
+.lcars__block--lg {
+    /*POSITION*/
+    height: var(--lcars__height, 6rem);
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+
+.--color--green {--lcars__bkrnd-color: var(--color--green);}

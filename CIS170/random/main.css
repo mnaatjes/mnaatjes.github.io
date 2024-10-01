@@ -1,0 +1,120 @@
+/* Random Game */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bkrnd_pixelart_01.jpg');
+}
+
+.game-container {
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+}
+
+.heading {
+    padding: 12px;
+    text-align: center;
+}
+
+.heading h1 {
+    display: block;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 4px 4px 0 black;
+    padding: 12px;
+    margin: 12px;
+    color: white;
+    background-color: tomato;
+}
+
+.form-gameplay {
+    padding: 12px;
+    text-align: center;
+}
+
+.form-endgame {
+    display: none;
+    padding: 12px;
+    text-align: center;
+}
+
+.form-gameplay input, .form-gameplay button, .form-endgame button {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 12px;
+    outline: none;
+    box-shadow: 4px 4px 0 black;
+    margin: 12px;
+}
+
+.form-gameplay input {
+    width: 24px;
+    background-color: aqua;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.form-gameplay input:active, .form-gameplay input:focus {
+    background-color: white;
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 white;
+}
+
+.form-gameplay button, .form-endgame button {
+    cursor: pointer;
+    background-color: aqua;
+}
+
+.form-gameplay button:active, .form-endgame button:active {
+    transform: translateY(4px);
+    box-shadow: 0px 0px 0 white;
+}
+
+.output {
+    padding: 12px;
+    text-align: center;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.output h2 {
+    display: none;
+    color: white;
+    box-shadow: 4px 4px 0 black;
+    border: 1px solid black;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px;    
+}
+
+.output .guess-num {
+    background-color: tomato;
+}
+
+.output .guess-size {
+    background-color:plum;
+}
+
+.output .game-over {
+    color: black;
+    box-shadow: none;
+    border: none;
+}

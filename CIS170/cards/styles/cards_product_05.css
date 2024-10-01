@@ -1,0 +1,120 @@
+/*--------------------------------*/
+/* Cards Product 05 */
+/*--------------------------------*/
+.cards-product-05-wrapper {
+    /*vars*/
+    --border-color: #c7c7c7;
+    --font-color: #333;
+    /*position*/
+    width: 100%;
+    height: 100%;
+    /*display*/
+    display: grid;
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 50px calc(100% - 50px);
+    background-color: white;
+    /*text*/
+    /*shadow*/
+    box-shadow: 2px 4px 9px -3px rgba(0, 0, 0, 0.4);
+    /*transition*/
+}
+.cards-product-05-wrapper img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1;
+    grid-row: 2;
+    object-fit: cover;
+    border-right: 2px solid var(--border-color);
+    filter: grayscale(90%) opacity(0.7);
+    transition: var(--transition);
+}
+.cards-product-05-wrapper:hover img {
+    filter: grayscale(0%) opacity(1.0);
+}
+/*--------------------------------*/
+/* Cards Product 05 Header */
+/*--------------------------------*/
+.cards-product-05-header {
+    /*position*/
+    grid-column: 1 / span 2;
+    /*display*/
+    border-bottom: 2px solid var(--border-color);
+}
+.cards-product-05-header .row-container {
+    /*position*/
+    width: 100%;
+    height: 100%;
+    /*display*/
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    /*text*/
+    color: #999;
+    /*transition*/
+    transition: var(--transition);
+}
+.cards-product-05-header a {
+    /*text*/
+    text-decoration: none;
+    font-size: 16px;
+}
+.cards-product-05-header a:hover:first-child {color: forestgreen;}
+.cards-product-05-header a:hover:last-child {color: red;}
+/*--------------------------------*/
+/* Cards Product 05 Content */
+/*--------------------------------*/
+.cards-product-05-content {
+    /*position*/
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 12px;
+    /*text*/
+    color: #333;
+    /*shadow*/
+    /*transition*/    
+}
+/*--------------------------------*/
+/* Cards Product 05 Text */
+/*--------------------------------*/
+.cards-product-05-content h2 {margin-bottom: 0;}
+.cards-product-05-content small {
+    font-style: italic;
+    color: #999;
+}
+.cards-product-05-content h3 {
+    font-weight: 600;
+    color: forestgreen;
+}
+.cards-product-05-content h3 span {
+    vertical-align: super;
+    font-weight: normal;
+    font-size: 14px;
+}
+/*--------------------------------*/
+/* Cards Prod 05 Btn */
+/*--------------------------------*/
+.btn-prod-05 {
+    cursor: pointer;
+    /*position*/
+    width: 50%;
+    /*display*/
+    padding: 12px;
+    margin: 6px;
+    border: 2px solid var(--border-color);
+    /*text*/
+    text-align: center;
+    /*shadow*/
+    /*transition*/
+    transition: var(--transition); 
+}
+.btn-prod-05:hover {
+    color: forestgreen;
+    border-color: forestgreen;
+}

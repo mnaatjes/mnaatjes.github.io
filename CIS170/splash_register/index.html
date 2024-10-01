@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!--w3 Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Update-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--Main CSS Document-->
+    <link rel="stylesheet" href="styles/main.css">
+    <head>
+        <title>Splash: Register</title>
+    </head>
+    <body>
+        <!--Flex Start-->
+        <div class="wrapper__flex">
+            <div class="wrapper--grid">
+                <!--Header Start-->
+                <header>
+                    <div class="header--logo">
+                        <img src="assets/icons/logo_adoption.png" alt="">
+                    </div>
+                    <nav>
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Account</a></li>
+                            <li><a href="">Contact</a></li>
+                            <li><a href="">Settings</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <!--Header End-->
+                <!--Main Start-->
+                <main>
+                    <div class="main--logo"></div>
+                    <!--Main Form Start: Login-->
+                    <div id="form_login" class="main--form__grid--login --active">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        <label for="pw">Password</label>
+                        <input type="password" name="pw">
+                        <button type="submit">Submit</button>
+                        <div class="main--form__item--line-or"></div>
+                        <div class="main--form__item--row-between">
+                            <button type="button">
+                                <i class="fa-brands fa-google"></i>
+                                Google Login
+                            </button>
+                            <button type="button">
+                                <i class="fa-brands fa-facebook"></i>
+                                Facebook Login
+                            </button>
+                        </div>
+                        <div class="main--form__item--line-default"></div>
+                        <div class="main--form__item--row-center">
+                            <small>Don&apos;t have a <strong>Login</strong>? Click below to <strong>Register</strong></small>
+                        </div>
+                    </div>
+                    <!--Main Form End: Login-->
+                    <!--Main Form Start: Register-->
+                    <div id="form_register" class="main--form__grid--register">
+                        <label for="fname">Name</label>
+                        <input type="text" name="fname">
+                        <label for="email">Email</label>
+                        <input type="email" name="email">
+                        <div class="main--form__item--row-center">
+                            <small>Enter a <strong>password</strong> of at least 8 characters</small>
+                        </div>
+                        <label for="pw_create">Create</label>
+                        <input type="password" name="pw_create">
+                        <label for="pw_confirm">Confirm</label>
+                        <input type="password" name="pw_confirm">
+                        <div class="main--form__item--line-default"></div>
+                        <div class="main--form__item--row-center">
+                            <div class="radio__container">
+                                <input type="radio">
+                                <div class="radio__check"></div>
+                            </div>
+                            <small>I agree to all <strong>terms &amp; conditions</strong>.</small>
+                        </div>
+                        <button type="submit">Submit</button>
+                        <div class="main--form__item--line-default"></div>
+                        <div class="main--form__item--row-center">
+                            <small>Already <strong>Registered</strong>? Click below to <strong>Login</strong></small>
+                        </div>
+                    </div>
+                    <!--Main Form End: Register-->
+                    <div class="main--toggle">
+                        <button id="btn_login" class="btn__form--login --active" onclick="formSwitch(this)">Login</button>
+                        <button id="btn_register" class="btn__form--register" onclick="formSwitch(this)">Register</button>
+                    </div>
+                </main>
+                <!--Main End-->
+                <aside></aside>
+                <!--Footer Start-->
+                <footer>
+                    <a href="">Terms &amp; Conditions</a>
+                    <a href="">Michael Naatjes &copy;</a>
+                </footer>
+                <!--Footer End-->
+            </div>
+        </div>
+        <!--Flex End-->
+    </body>
+    <script src="scripts/js/functions_form_switch.js" type="text/Javascript"></script>
+    <script src="../scripts/js/functions/functions_main.js" type="text/Javascript"></script>
+</html>

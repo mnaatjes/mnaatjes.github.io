@@ -1,0 +1,137 @@
+/*---------------------------------------------------------------*/
+/* Lcars */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Imports: Font */
+/*--------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+/*--------------------------------*/
+/* Imports: Resets */
+/*--------------------------------*/
+@import url(lcars_resets/resets_a.css);
+@import url(lcars_resets/resets_ul_li.css);
+/*--------------------------------*/
+/* Imports: Semantic Elements */
+/*--------------------------------*/
+@import url(lcars_semantic_elements/semantic_main.css);
+/*--------------------------------*/
+/* Imports: LCARS Elements: Main */
+/*--------------------------------*/
+@import url(lcars_elements/lcars_elements_main.css);
+@import url(lcars_elements/lcars_animations.css);
+@import url(lcars_elements/lcars_colors.css);
+@import url(lcars_elements/lcars_text.css);
+@import url(lcars_elements/lcars_outline.css);
+@import url(lcars_elements/lcars_corners.css);
+/*--------------------------------*/
+/* Imports: LCARS Elements: Grid */
+/*--------------------------------*/
+@import url(lcars_elements/lcars_table.css);
+@import url(lcars_elements/lcars_cols.css);
+@import url(lcars_elements/lcars_rows.css);
+@import url(lcars_elements/lcars_width.css);
+@import url(lcars_elements/lcars_height.css);
+/*--------------------------------*/
+/* Imports: Debug */
+/*--------------------------------*/
+@import url(lcars_debug/debug_container.css);
+/*--------------------------------*/
+/* Root */
+/*--------------------------------*/ 
+:root {
+    /*COLORS*/
+    --color--blk: #040404;
+    --color--white: #ffffff;
+    --color--grey-dark: #303444;
+    --color--grey-def: #777285;
+    --color--grey-lite: #969FB2;
+    --color--blue: #2A7092;
+    --color--red: #E4452B;
+    --color--pink: #FF977A;
+    --color--green: #30809E;
+
+    /*BACKROUNDS*/
+    --bkrnd--default: var(--color--blk);
+    --bkrnd--red: rgba(228, 69, 43, 0.4);
+    --bkrnd--blue: rgba(42, 112, 146, 0.4);
+    --bkrnd--green: rgba(48, 128, 158, 0.4);    
+
+    /*LCARS: POSITION*/
+    --padding: 10px;
+    --margin: 10px;
+    --border-radius: 60px;
+    /*LCARS: FONT*/
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 16px;
+    --font-weight: 600;
+
+    /*LCARS: SHADOW*/
+    --shadow--off: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
+    --shadow--on: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
+
+    /*LCARS: TRANSITIONS*/
+    --transition: all 0.95s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+/*--------------------------------*/
+/* Overall */
+/*--------------------------------*/        
+* {
+    /*POSITION*/
+    margin: 0;
+    padding: 0;
+    /*DISPLAY*/
+    box-sizing: border-box;
+}
+/*--------------------------------*/
+/* Body */
+/*--------------------------------*/
+body {
+    /*TEXT*/
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    font-weight: var(--font-weight);
+    color: var(--color--white);
+}
+/*--------------------------------*/
+/* Wrapper */
+/*--------------------------------*/
+.wrapper__flex {
+    /*POSITION*/
+    width: 100vw;
+    height: 100vh;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*--------------------------------*/
+/* Wrapper */
+/*--------------------------------*/
+.wrapper__grid {
+    /*POSITION*/
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px calc(100% - 120px) 60px;
+    /*BACKGROUND*/
+    background-color: var(--bkrnd--default);
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

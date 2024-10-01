@@ -1,0 +1,131 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Rows */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Rows: row-01 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-1"],
+button[class^="lcars"][class*="--row-1"],
+table[class^="lcars"][class*="--row-1"] {
+    grid-row-start: 1 !important;
+}
+/*--------------------------------*/
+/* Rows: row-02 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-2"],
+button[class^="lcars"][class*="--row-2"],
+table[class^="lcars"][class*="--row-2"] {
+    grid-row-start: 2 !important;
+}
+/*--------------------------------*/
+/* Rows: row-03 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-3"],
+button[class^="lcars"][class*="--row-3"],
+table[class^="lcars"][class*="--row-3"] {
+    grid-row-start: 3 !important;
+}
+/*--------------------------------*/
+/* Rows: row-04 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-4"],
+button[class^="lcars"][class*="--row-4"],
+table[class^="lcars"][class*="--row-4"] {
+    grid-row-start: 4 !important;
+}
+/*--------------------------------*/
+/* Rows: row-05 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-5"],
+button[class^="lcars"][class*="--row-5"],
+table[class^="lcars"][class*="--row-5"] {
+    grid-row-start: 5 !important;
+}
+/*--------------------------------*/
+/* Rows: row-06 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-6"],
+button[class^="lcars"][class*="--row-6"],
+table[class^="lcars"][class*="--row-6"] {
+    grid-row-start: 6 !important;
+}
+/*--------------------------------*/
+/* Rows: row-07 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-7"],
+button[class^="lcars"][class*="--row-7"],
+table[class^="lcars"][class*="--row-7"] {
+    grid-row-start: 7 !important;
+}
+/*--------------------------------*/
+/* Rows: row-08 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-8"],
+button[class^="lcars"][class*="--row-8"],
+table[class^="lcars"][class*="--row-8"] {
+    grid-row-start: 8 !important;
+}
+/*--------------------------------*/
+/* Rows: row-09 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-9"],
+button[class^="lcars"][class*="--row-9"],
+table[class^="lcars"][class*="--row-9"] {
+    grid-row-start: 9 !important;
+}
+/*--------------------------------*/
+/* Rows: row-10 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-10"],
+button[class^="lcars"][class*="--row-10"],
+table[class^="lcars"][class*="--row-10"] {
+    grid-row-start: 10 !important;
+}
+/*--------------------------------*/
+/* Rows: row-11 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-11"],
+button[class^="lcars"][class*="--row-11"],
+table[class^="lcars"][class*="--row-11"] {
+    grid-row-start: 11 !important;
+}
+/*--------------------------------*/
+/* Rows: row-12 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-12"],
+button[class^="lcars"][class*="--row-12"],
+table[class^="lcars"][class*="--row-12"] {
+    grid-row-start: 12 !important;
+}
+/*--------------------------------*/
+/* Rows: row-13 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-13"],
+button[class^="lcars"][class*="--row-13"],
+table[class^="lcars"][class*="--row-13"] {
+    grid-row-start: 13 !important;
+}
+/*--------------------------------*/
+/* Rows: row-14 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-14"],
+button[class^="lcars"][class*="--row-14"],
+table[class^="lcars"][class*="--row-14"] {
+    grid-row-start: 14 !important;
+}
+/*--------------------------------*/
+/* Rows: row-15 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-15"],
+button[class^="lcars"][class*="--row-15"],
+table[class^="lcars"][class*="--row-15"] {
+    grid-row-start: 15 !important;
+}
+/*--------------------------------*/
+/* Rows: row-16 */
+/*--------------------------------*/
+div[class^="lcars"][class*="--row-16"],
+button[class^="lcars"][class*="--row-16"],
+table[class^="lcars"][class*="--row-16"] {
+    grid-row-start: 16 !important;
+}

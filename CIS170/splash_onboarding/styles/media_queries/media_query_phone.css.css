@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------*/
+/* Template: Media Queries: Phone  */
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 600px) {
+    /*--------------------------------*/
+    /* Wrapper */
+    /*--------------------------------*/
+    .wrapper__grid {
+        /*DISPLAY*/
+        grid-template-columns: auto 400px auto !important;
+    }
+    /*--------------------------------*/
+    /* Semantics: Header, Footer */
+    /*--------------------------------*/
+    header, footer {
+    /*GRID*/
+    grid-column: 1 / span 3;
+    }
+    /*--------------------------------*/
+    /* Semantics: Main */
+    /*--------------------------------*/
+    main {
+        /*POSITION*/
+        padding: 10px;
+        /*SHADOW*/
+        box-shadow: var(--ui-shadow-off);
+    }
+    /*--------------------------------*/
+    /* Main: output */
+    /*--------------------------------*/
+    .main--output {
+        /*GRID*/
+        grid-column: 1 / span 3;
+    }
+    /*--------------------------------*/
+    /* Semantics: Aside */
+    /*--------------------------------*/
+    aside {display: none;}
+
+}

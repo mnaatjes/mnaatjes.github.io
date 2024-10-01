@@ -1,0 +1,45 @@
+/*---------------------------------------------------------------*/
+/* Splash: Registration */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Header, Footer */
+/*--------------------------------*/
+header, footer {
+    /*GRID*/
+    grid-column: 1 / span 4;
+    /*POSITION*/
+    padding: 20px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*TEXT*/
+    color: var(--color-brown);
+    font-size: 0.8rem;
+    /*TRANSITION*/
+    transition: var(--ui-transition);
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Header */
+/*--------------------------------*/
+header {
+    /*GRID*/
+    grid-row: 1;
+}
+/*--------------------------------*/
+/* Header */
+/*--------------------------------*/
+.header--logo img {
+    object-fit: contain;
+    width: 40px;
+}
+/*--------------------------------*/
+/* Footer */
+/*--------------------------------*/
+footer {
+    /*GRID*/
+    grid-row: 3;
+}

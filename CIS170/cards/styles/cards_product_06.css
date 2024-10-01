@@ -1,0 +1,127 @@
+/*--------------------------------*/
+/* Cards Product 06 Wrapper */
+/*--------------------------------*/
+.cards-product-06-wrapper {
+    /*vars*/
+    --price-size: 75px;
+    --btn-width: 100px;
+    --btn-height: calc(var(--btn-width)/2);
+    --content-width: calc(80% - ((var(--price-size)/2) + (var(--btn-width)/2)));
+    --content-height: calc(100% - ((var(--price-size)/2) + (var(--btn-height)/2)));
+    /*position*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*text*/
+    /*shadow*/
+    /*transition*/
+}
+.cards-product-06-wrapper > div,
+.cards-product-06-content > div {
+    box-shadow: 
+        0px 2px 4px 0px rgba(0, 0, 0, 0.8),
+        2px 8px 14px 5px rgba(0, 0, 0, 0.2);
+}
+/*--------------------------------*/
+/* Cards Product 06 Image */
+/*--------------------------------*/
+.cards-product-06-wrapper img {
+    /*Position*/
+    position: absolute;
+    top: calc(var(--price-size)*0.5);
+    left: 50%;
+    transform: translateX(-50%); /*center image*/
+    width: 100%;
+    height: 50%;
+    z-index: 5;
+    /*display*/
+    display: block;
+    object-fit: contain;
+    background-color: transparent;
+}
+/*--------------------------------*/
+/* Cards Product 06 Content */
+/*--------------------------------*/
+.cards-product-06-content {
+    /*position*/
+    position: relative;
+    width: var(--content-width);
+    height: var(--content-height);
+    margin-top: calc(var(--btn-height)/2);
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+.cards-product-06-content h3 {
+    border-top: 2px solid red;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0;
+}
+.cards-product-06-content p {
+    color: #777;
+    font-size: 12px;
+    padding-right: 25px;
+}
+/*--------------------------------*/
+/* Cards Product 06 Price and Btn*/
+/*--------------------------------*/
+.cards-product-06-price,
+.cards-product-06-btn {
+    /*position*/
+    /*display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*text*/
+    font-size: 14px;
+    color: white;
+}
+/*--------------------------------*/
+/* Cards Product 06 Price */
+/*--------------------------------*/
+.cards-product-06-price {
+    /*position*/
+    position: absolute;
+    top: calc(var(--price-size)* -0.5);
+    left: calc(var(--price-size)* -0.5);
+    width: var(--price-size);
+    height: var(--price-size);
+    /*display*/
+    border: 1px solid #333;
+    border-radius: 50%;
+    background-color: #333;
+}
+/*--------------------------------*/
+/* Cards Product 06 Btn */
+/*--------------------------------*/
+.cards-product-06-btn {
+    cursor: pointer;
+    /*position*/
+    position: absolute;
+    bottom: calc(var(--btn-height)*-0.5);
+    right: calc(var(--btn-width)*-0.5);
+    width: var(--btn-width);
+    height: var(--btn-height);
+    /*display*/
+    border: 1px solid red;
+    border-radius: 6px;
+    background-color: red;
+    /*text*/
+    font-weight: 600;
+    /*shadow*/
+    /*transition*/
+    scale: 1.0;
+    transition: var(--transition);
+}
+.cards-product-06-btn:hover {
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.7);
+    scale: 1.25;
+}

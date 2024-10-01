@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!--Font Awesome -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Charts.css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css@1.1.0/dist/charts.min.css">
+    <!--Main-->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/working.css">
+    <link rel="stylesheet" href="styles/slideshow__simple_01.css">
+    <link rel="stylesheet" href="styles/slideshow__simple_02.css">
+    <link rel="stylesheet" href="styles/slideshow__simple_03.css">
+    <!--slideshows-->
+    <head>
+        <title>slideshow</title>
+        <script src="../javascript_functions.js" type="text/Javascript"></script>
+    </head>
+    <body>
+        <!--Grid Container Start-->
+        <div class="grid-container">
+            <!--Grid Item Start-->
+            <div class="grid-item">
+                <!--slideshow--Simple-01 Start-->
+                <div data-slideshow--type="simple" class="slideshow--simple-01 grid-item--wide">
+                    <div class="slideshow--simple-01__slide-container">
+                        <!--Slide-->
+                        <div data-slide="1"  class="slide--simple-01 slide--simple-01__animation--fade">
+                            <div class="slide--simple-01__num"></div>
+                            <img src="assets/simple/baseball.jpg" alt="">
+                            <div class="slide--simple-01__caption">
+                                <p>Rooters at Pittsburgh Ball Grounds, 1903 World Series Description:</p>
+                                <p>During game four of the World Series between the Boston Americans and Pittsburgh Pirates. Pittsburgh is at bat.</p>
+                                <p>Although the Americans lost the game to fall behind three games to one, 
+                                    it was considered the turning point of the series with the Rooters spurring Boston to win in eight games.</p>
+                            </div>
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="2" class="slide--simple-01 slide--simple-01__animation--fade">
+                            <div class="slide--simple-01__num"></div>
+                            <img src="assets/simple/olympic.jpg" alt="">
+                            <div class="slide--simple-01__caption">
+                                <p>Games of the I Olympiad, Panathenaic Stadium, Athens, Greece Collector: Catsimpoolas, Nicholas Date: [1870–1880]</p>
+                            </div>
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="3" class="slide--simple-01 slide--simple-01__animation--fade">
+                            <div class="slide--simple-01__num"></div>
+                            <img src="assets/simple/fenway.jpg" alt="">
+                            <div class="slide--simple-01__caption">
+                                <p>Huntington Avenue Grounds Description: View of the infield and grand stands at the Huntington Avenue Grounds.</p>
+                            </div>
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="4" class="slide--simple-01 slide--simple-01__animation--fade">
+                            <div class="slide--simple-01__num"></div>
+                            <img src="assets/simple/fans.jpg" alt="">
+                            <div class="slide--simple-01__caption">
+                                <p>John F. Fitzgerald throws out the first ball of the season at the Huntington Avenue Grounds Description:</p>
+                                <p>Taken during one of Fitzgerald's terms as Mayor of Boston (1906-1907; 1910-1911)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide--simple-01__dots-container">
+                        <div class="slide--simple-01__dots__item"></div>
+                    </div>
+                    <div class="slide--simple-01__btn--prev" onclick="advanceSlide(this, -1)">&#10094</div>
+                    <div class="slide--simple-01__btn--next" onclick="advanceSlide(this, 1)">&#10095</div>
+                </div>
+                <!--slideshow--Simple-01 End-->
+            </div>
+            <!--Grid Item End-->
+            <!--Grid Item End-->
+            <div class="grid-item">
+                <!--slideshow--Simple-02 Start-->
+                <div data-slideshow--type="simple" class="slideshow--simple-02 grid-item--wide">
+                    <div class="slideshow--simple-02__slide-container">
+                        <!--Slide-->
+                        <div data-slide="" class="slide--simple-02">
+                            <img src="assets/simple_02/stars.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="" class="slide--simple-02">
+                            <img src="assets/simple_02/phases_moon.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="" class="slide--simple-02">
+                            <img src="assets/simple_02/solar.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="" class="slide--simple-02">
+                            <img src="assets/simple_02/still.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div data-slide="" class="slide--simple-02">
+                            <img src="assets/simple_02/dragon.jpg" alt="">
+                        </div>
+                    </div>
+                    <!--Buttons-->
+                    <div class="slide--simple-02__btn--prev" onclick="advanceSlide(this, -1)">&#10094</div>
+                    <div class="slide--simple-02__btn--next" onclick="advanceSlide(this, 1)">&#10095</div>
+                    <div class="slide--simple-02__dots-container">
+                        <div class="slide--simple-02__dots__item"></div>
+                    </div>
+                </div>
+                <!--slideshow--Simple-02 End-->
+            </div>
+            <!--Grid Item End-->
+            <!--Grid Item Start-->
+            <div class="grid-item">
+                <!--slideshow--Simple-03 Start-->
+                <div data-slideshow--type="thumb" class="slideshow--simple-03 grid-item--wide">
+                    <div class="slideshow--simple-03__slide-container">
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/town.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/carter.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/clement.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/grass.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/sea.jpg" alt="">
+                        </div>
+                        <!--Slide-->
+                        <div class="slide--simple-03">
+                            <div class="slide--simple-03__num"></div>
+                            <img src="assets/simple_03/yves.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="slide--simple-03__thumbs-container">
+                        <div data-thumb--active="true" class="slide--simple-03__thumbs__item">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                    <div class="slide--simple-03__btn--prev" onclick="advanceSlide(this, -1)">&#10094</div>
+                    <div class="slide--simple-03__btn--next" onclick="advanceSlide(this, 1)">&#10095</div>
+                </div>
+                <!--slideshow--Simple-03 End-->
+            </div>
+            <!--Grid Item End-->
+        </div>
+        <div class="flex-container">
+            <div class="flex-item">
+                <!--Grid Item Start-->
+                <div class="grid-item">
+                    <!--slideshow Start-->
+                    
+                    <!--slideshow End-->
+                </div>
+                <!--Grid Item End-->
+            </div>
+        </div>
+        <script src="scripts/simple.js" type="text/Javascript"></script>
+    </body>
+</html>

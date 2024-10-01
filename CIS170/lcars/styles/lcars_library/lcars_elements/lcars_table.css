@@ -1,0 +1,137 @@
+/*---------------------------------------------------------------*/
+/* LCARS: TABLES */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Table */
+/*--------------------------------*/
+table[class^="lcars"] {
+    /*GRID*/
+    grid-column: auto / span 7;
+    grid-row: auto / span 8;
+    /*POSITION*/
+    position: relative;
+    margin: 0 auto auto 0;
+    /*DISPLAY*/
+    box-sizing: border-box;
+    table-layout: fixed;
+    border-spacing: 0.0rem;
+    /*BACKGROUND*/
+    background: transparent;
+    /*BORDER*/
+    border: none;
+    border-radius: var(--lcars__border-radius, 0px);
+    /*TEXT*/
+    font-family: 'Antonio', sans-serif;
+    font-size: var(--lcars__font-size, 1rem);
+    color: var(--lcars__font-color, var(--color--blk));
+    /*SHADOW*/
+    /*TRANSITION*/
+    transition: var(--transition);
+}
+/*---------------------------------------------------------------*/
+/* LCARS: thead, th */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Table: thead */
+/*--------------------------------*/
+table[class^="lcars"] thead {
+    /*BACKGROUND*/
+    background: var(--lcars__bkrnd-color, var(--color--grey-def));
+}
+/*--------------------------------*/
+/* Table: th: col widths */
+/*--------------------------------*/
+table[class^="lcars"] thead tr th:nth-child(2) {width: 12rem;}
+table[class^="lcars"] thead tr th:nth-child(3) {width: 12rem;}
+table[class^="lcars"] thead tr th:nth-child(4) {width: 12rem;}
+/*--------------------------------*/
+/* Table: th, td */
+/*--------------------------------*/
+table[class^="lcars"] thead tr th,
+table[class^="lcars"] tbody tr td {
+    /*POSITION*/
+    padding: var(--lcars__padding, 0.5rem);
+    width: 6rem;
+    height: 3.2rem;
+    /*BORDER*/
+    border-right: 0.25rem solid black;
+    border-bottom: 0.25rem solid black;
+    /*TEXT*/
+    text-align: left;
+}
+/*---------------------------------------------------------------*/
+/* LCARS: tbody, td */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Table: td */
+/*--------------------------------*/
+table[class^="lcars"] tbody td {
+    /*BORDER*/
+    border-right: 0.25rem solid var(--color--blk);
+    /*TEXT*/
+    color: var(--color--white);
+    /*BACKGROUND*/
+    background: var(--lcars__bkrnd-color, var(--color--grey-dark));
+    /*SHADOW*/
+    box-shadow: 0 0 0 0 var(--color--blue);
+    /*TRANSITION*/
+    transition: var(--transition);
+}
+table[class^="lcars"] tbody td:hover {
+    /*POSITION*/
+    /*BACKGROUND*/
+    background: var(--lcars__bkrnd-color, var(--color--blue));
+    /*BORDER*/
+    border-right: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+    /*TEXT*/
+    color: var(--color--white);
+    /*SHADOW*/
+    box-shadow: 
+        -6px 6px 2px 0px var(--bkrnd--blue);
+    /*TRANSFORM*/
+    --transform-td: 6px, -6px, 0;
+    transform: translate3d(var(--transform-td));
+    -webkit-transform: translate3d(var(--transform-td));
+    -moz-transform: translate3d(var(--transform-td));
+}
+/*--------------------------------*/
+/* Table: td: col widths */
+/*--------------------------------*/
+table[class^="lcars"] tbody tr td:nth-child(2) {width: 12rem;}
+table[class^="lcars"] tbody tr td:nth-child(3) {width: 12rem;}
+table[class^="lcars"] tbody tr td:nth-child(4) {width: 12rem;}
+/*---------------------------------------------------------------*/
+/* LCARS: Caption */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Table: Caption */
+/*--------------------------------*/
+table[class^="lcars"] caption {
+    /*POSITION*/
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    /*TEXT*/
+    font-family: 'Antonio', sans-serif;
+    font-size: var(--lcars__font-size, 1.5rem);
+    color: var(--color--blue);
+    text-align: left;
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

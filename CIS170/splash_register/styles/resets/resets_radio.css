@@ -1,0 +1,62 @@
+/*---------------------------------------------------------------*/
+/* Splash: Registration */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Radio: Container */
+/*--------------------------------*/
+.radio__container {
+    /*VARS*/
+    --radio-size: 20px;
+    /*POSITION*/
+    margin-right: 10px;
+    position: relative;
+    width: var(--radio-size);
+    height: var(--radio-size);
+    /*DISPLAY*/
+    display: inline-block;
+    /*BORDER*/
+    border: 1px solid var(--color-brown);
+    border-radius: calc(var(--radio-size)/4);
+    /*DEBUGGING*/
+}
+.radio__container:hover {background: var(--color-gold);}
+/*--------------------------------*/
+/* Radio: Check */
+/*--------------------------------*/
+.radio__check {
+    /*VARS*/
+    --check-size: calc(var(--radio-size)/2);
+    /*POSITION*/
+    position: absolute;
+    top: calc(50% - (var(--check-size)/2));
+    left: calc(50% - (var(--check-size)/2));
+    width: var(--check-size);
+    height: var(--check-size);
+    /*DISPLAY*/
+    display: none;
+    /*BACKGROUND*/
+    background: transparent;
+    /*BORDER*/
+    border-radius: 100%;
+    border: 1px solid var(--color-brown);
+    /*TRANSFORM*/
+    transform: var(--ui-transition);
+}
+/*--------------------------------*/
+/* Input: Radio */
+/*--------------------------------*/
+input[type="radio"] {
+    /*POSITION*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*TRANSFORM*/
+    opacity: 0.0;
+    /*DEBUGGING*/
+}
+.radio__container input[type="radio"]:checked ~ .radio__check {
+    /*DISPLAY*/
+    display: block;
+    /*BACKGROUND*/
+    background: var(--color-brown);
+}

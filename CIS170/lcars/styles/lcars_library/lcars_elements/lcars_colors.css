@@ -1,0 +1,35 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Colors */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Lite */
+/*--------------------------------*/
+div[class^="lcars"][class*="--lite"],
+button[class^="lcars"][class*="--lite"] {
+    /*BACKGROUND*/
+    --lcars__bkrnd-color: var(--color--grey-lite);
+}
+/*--------------------------------*/
+/* Red */
+/*--------------------------------*/
+div[class^="lcars"][class*="--red"],
+button[class^="lcars"][class*="--red"] {
+    /*BACKGROUND*/
+    --lcars__bkrnd-color: var(--color--red);
+}
+/*--------------------------------*/
+/* Green */
+/*--------------------------------*/
+div[class^="lcars"][class*="--green"],
+button[class^="lcars"][class*="--green"] {
+    /*BACKGROUND*/
+    --lcars__bkrnd-color: var(--color--green);
+}
+/*--------------------------------*/
+/* Green */
+/*--------------------------------*/
+div[class^="lcars"][class*="--grey-dark"],
+button[class^="lcars"][class*="--grey-dark"] {
+    /*BACKGROUND*/
+    --lcars__bkrnd-color: var(--color--grey-dark);
+}

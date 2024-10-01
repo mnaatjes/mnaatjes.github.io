@@ -1,0 +1,66 @@
+/*--------------------------------*/
+/* ul: */
+/*--------------------------------*/
+ul {
+    /*POSITION*/
+    /*DISPLAY*/
+    list-style-type: none;
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* li: */
+/*--------------------------------*/
+li {
+    /*POSITION*/
+    margin-right: 5px;
+    /*DISPLAY*/
+    display: inline-block;
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* a: */
+/*--------------------------------*/
+a {
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    text-decoration: none;
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+a:hover {text-decoration: underline;}
+/*--------------------------------*/
+/* a: */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

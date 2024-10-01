@@ -1,0 +1,109 @@
+/*--------------------------------*/
+/* Cards: Turnstile */
+/*--------------------------------*/
+.cards-turnstile-wrapper {
+    /*display*/
+    width: 100%;
+    height: 100%;
+    /*perspective*/
+    perspective: 1000px;
+}
+/*--------------------------------*/
+/* Cards: Turnstile Item */
+/*--------------------------------*/
+.cards-turnstile-item {
+    /*position*/
+    position: relative;
+    /*display*/
+    width: 100%;
+    height: 100%;
+    /*text*/
+    color: whitesmoke;
+    /*shadow*/
+    box-shadow:
+        7px 7px 6px 0px rgba(0, 0, 0, 0.3),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.2),
+        0px 0px 0px 0px rgba(0, 0, 0, 0.7);
+    /*perspective*/
+    transform-style: preserve-3d;
+    transform: rotateY(0);
+    /*transition*/
+    transition: var(--transition);
+}
+.cards-turnstile-wrapper:hover .cards-turnstile-item {
+    /*shadow*/
+    box-shadow:
+        7px 7px 6px 0px rgba(0, 0, 0, 0.3),
+        4px 0px 9px 7px rgba(0, 0, 0, 0.2),
+        0px 6px 3px 2px rgba(0, 0, 0, 0.7);
+    /*perspective*/
+    transform: rotateY(180deg);
+}
+/*--------------------------------*/
+/* Cards: Turnstile Both */
+/*--------------------------------*/
+.cards-turnstile-front, .cards-turnstile-back {
+    /*position*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /*text*/
+    color: whitesmoke;
+    font-size: 24px;
+    /*shadow*/
+    /*perspective*/
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    /*transition*/
+}
+/*--------------------------------*/
+/* Cards: Turnstile Front */
+/*--------------------------------*/
+.cards-turnstile-front {
+    /*background*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: var(--bkrnd-image-url);
+}
+/*--------------------------------*/
+/* Cards: Turnstile Back */
+/*--------------------------------*/
+.cards-turnstile-back {
+    /*display*/
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 12px;
+    background-color: #333;
+    border-color: whitesmoke;
+    /*perspective: start poisiton*/
+    transform: rotateY(180deg);
+}
+.cards-turnstile-back h3 {
+    font-style: italic;
+    margin-bottom: 0px;
+}
+.cards-turnstile-back small {
+    display: block;
+    font-size: 12px;
+    border-bottom: 1px solid whitesmoke;
+}
+.cards-turnstile-back p {
+    margin-top: 12px;
+    font-size: 14px;
+    border-bottom: 1px solid whitesmoke;
+}
+/*--------------------------------*/
+/* Cards: Turnstile Images */
+/*--------------------------------*/
+.antonius { --bkrnd-image-url:url('../assets/cards_turnstile/antonius.jpg');}
+.hadrian { --bkrnd-image-url:url('../assets/cards_turnstile/hadrian.jpg');}
+.augustus { --bkrnd-image-url:url('../assets/cards_turnstile/augustus.jpg');}
+.aurelius { --bkrnd-image-url:url('../assets/cards_turnstile/aurelius.jpg');}

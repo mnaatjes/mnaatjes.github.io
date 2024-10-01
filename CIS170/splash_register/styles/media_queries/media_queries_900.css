@@ -1,0 +1,78 @@
+/*---------------------------------------------------------------*/
+/* Template: Media Queries: 900px  */
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 700px) and (max-width: 900px) {
+    /*--------------------------------*/
+    /* Wrapper */
+    /*--------------------------------*/
+    .wrapper--grid {
+        /*DISPLAY*/
+        grid-template-columns: 1fr 350px 350px 1fr !important;
+    }
+    /*--------------------------------*/
+    /* Main, Aside */
+    /*--------------------------------*/
+    main, aside {margin: 10px}
+    /*--------------------------------*/
+    /* Main */
+    /*--------------------------------*/
+    main {
+        grid-template-columns: 20px calc(100% - 40px) 20px;
+        grid-template-rows: 75px calc(100% - 125px) 50px;
+    }
+    /*--------------------------------*/
+    /* Input */
+    /*--------------------------------*/
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        /*GRID*/
+        grid-column: 1 / span 2;
+        /*POSITION*/
+        margin: 0 0 10px 0;
+        /*BACKGROUND*/
+        background: white;
+        /*BORDER*/
+        border: 1px solid var(--color-brown);
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-right-radius: var(--ui-border-radius);
+        border-bottom-left-radius: var(--ui-border-radius);
+        /*DEBUGGING*/
+    }
+    /*--------------------------------*/
+    /* Label */
+    /*--------------------------------*/
+    label {
+        /*GRID*/
+        grid-column: 1 / span 2;
+        /*POSITION*/
+        margin: 10px 0 0 0;
+        /*DISPLAY*/
+        display: flex;
+        justify-content: center;
+        /*BORDER*/
+        border: 1px solid var(--color-brown);
+        border-top-left-radius: var(--ui-border-radius);
+        border-top-right-radius: var(--ui-border-radius);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        border-bottom: none;
+        /*DEBUGGING*/
+    }
+    /*--------------------------------*/
+    /* Form Row */
+    /*--------------------------------*/
+    .main--form__item--row-between {
+        /*DISPLAY*/
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+    /*--------------------------------*/
+    /* Button: not - submit */
+    /*--------------------------------*/
+    button:not([type="submit"]):first-child {margin-right: 0;}
+    button:not([type="submit"]):last-child {margin-left: 0;}
+}

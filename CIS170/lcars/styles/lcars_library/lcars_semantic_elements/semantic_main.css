@@ -1,0 +1,128 @@
+/*---------------------------------------------------------------*/
+/* Lcars: Semantics: Main */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* header, footer */
+/*--------------------------------*/
+header, footer {
+    /*GRID*/
+    grid-column: 1;
+    /*POSITION*/
+    padding: 0 20px;
+    /*DISPLAY*/
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    /*TEXT*/
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--color--blue);
+}
+/*--------------------------------*/
+/* header */
+/*--------------------------------*/
+header {
+    /*GRID*/
+    grid-row: 1;
+}
+/*--------------------------------*/
+/* aside */
+/*--------------------------------*/
+aside {
+    /*DISPLAY*/
+    display: none;
+}
+/*--------------------------------*/
+/* main */
+/*--------------------------------*/
+main {
+    /*GRID*/
+    grid-column: 1;
+    grid-row: 2;
+    /*POSITION*/
+    margin: auto;
+    /*DISPLAY*/
+    overflow: hidden;
+    /*DISPLAY - GRID*/
+    display: grid;
+    justify-content: stretch;
+    justify-items: stretch;
+    grid-template-columns: repeat(12, 6rem);
+    grid-template-rows: repeat(16, 3rem);
+    grid-gap: 0.2rem;
+    grid-auto-flow: dense;
+    border-radius: 60px;
+    /*BORDER*/
+    border-radius: 60px;
+    /*DEBUGGING*/
+    
+}
+/*--------------------------------*/
+/* section */
+/*--------------------------------*/
+section {
+    cursor: default;
+    /*POSITION*/
+    position: absolute;
+    top: -0.15rem;
+    right: calc(-6*6rem - 0.25rem);
+    width: calc(6*6rem);
+    height: calc(6*3rem);
+    /*DISPLAY*/
+    display: block;
+    /*BACKGROUND*/
+    /*BORDER*/
+    border: 2px solid var(--color--blue);
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    animation: __section--grow 0.75s linear forwards;
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+@keyframes __section--grow {
+    0% {
+        /*POSITION*/
+        right: -0.25rem;
+        width: 0.0rem;
+        height: 0rem;
+    }
+    100% {
+        /*POSITION*/
+        right: calc(-6*6rem - 0.25rem);
+        width: calc(6*6rem);
+        height: calc(6*3rem);
+    }
+}
+/*--------------------------------*/
+/* article */
+/*--------------------------------*/
+/*--------------------------------*/
+/* footer */
+/*--------------------------------*/
+footer {
+    /*GRID*/
+    grid-row: 3;
+}
+footer span {
+    /*DISPLAY*/
+    display: block;
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

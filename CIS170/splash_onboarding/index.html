@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <!--w3 Fonts -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!--Font Awesome Update-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!--Main CSS Document-->
+    <link rel="stylesheet" href="styles/main.css">
+    <head>
+        <title>Splash: Onboarding</title>
+    </head>
+    <body>
+        <!--Grid Start-->
+        <div class="wrapper__grid">
+            <!--Header Start-->
+            <header>
+                <img src="assets/onboarding_logo.png" alt="">
+                <nav>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Account</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Settings</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <!--Header End-->
+            <!--Main Start-->
+                <main>
+                    <img src="assets/onboarding_vespa.png" alt="">
+                    <div id="data" class="data" data-user="[]" data-index="0"></div>
+                    <section>
+                        <article>
+                            <!--Card Intro-->
+                            <div class="__card--intro">
+                                <h3>Welcome to Hello French</h3>
+                                <p>The World&apos;s Primier Culinary Food Subscription Service</p>
+                                <img src="assets/onboarding_logo.png" alt="">
+                            </div>
+                            <!--Card Name-->
+                            <div class="__card--user">
+                                <i class="fa fa-user"></i>
+                                <p>Please enter your <strong>Full Name</strong>.</p>
+                                <div class="__form">
+                                    <input type="text" name="fname" size="20" min="1" maxlength="50" placeholder="First Name">
+                                    <input type="text" name="lname" size="20" min="1" maxlength="50" placeholder="Last Name">
+                                    <span for="fname">&ast;Please enter your <strong>First Name</strong>.</span>
+                                    <span for="lname">&ast;Please enter your <strong>Last Name</strong>.</span>
+                                </div>
+                            </div>
+                            <!--Card Email-->
+                            <div class="__card--email">
+                                <i class="fa fa-envelope"></i>
+                                <p>Please enter your <strong>Email</strong>.</p>
+                                <div class="__form">
+                                    <div class="__row--center">
+                                        <input type="email" name="email" size="30" min="3" maxlength="50" placeholder="Email Address">
+                                    </div>
+                                    <span for="email">&ast;Please enter your <strong>Email Address</strong>.</span>
+                                </div>
+                            </div>
+                            <!--Card DOB-->
+                            <div class="__card--DOB">
+                                <i class="fa fa-birthday-cake"></i>
+                                <p>Please enter your <strong>Date of Birth</strong>.</p>
+                                <div class="__form">
+                                    <div class="__row--center">
+                                        <input type="text" class="__inline" name="mo" size="2" min="2" maxlength="2" placeholder="MM">
+                                        <input type="text" class="__inline" name="day" size="2" min="2" maxlength="2" placeholder="DD">
+                                        <input type="text" class="__inline" name="yr" size="4" min="4" maxlength="4" placeholder="YYYY">
+                                    </div>
+                                    <span for="mo">&ast;Please enter the <strong>2 digit Month</strong>.</span>
+                                    <span for="day">&ast;Please enter the <strong>2 digit Day</strong>.</span>
+                                    <span for="yr">&ast;Please enter the <strong>4 digit Year</strong>.</span>
+                                </div>
+                            </div>
+                            <!--Card Address-->
+                            <div class="__card--address">
+                                <i class="fa fa-address-card"></i>
+                                <p>Please enter your <strong>Address</strong>.</p>
+                                <div class="__form">
+                                    <input type="text" name="street" size="20" min="4" maxlength="20" placeholder="Street Name &amp; Address">
+                                    <input type="text" name="city" size="20" min="2" maxlength="20" placeholder="City Name">
+                                    <div class="__row--between">
+                                        <input type="text" name="state" size="5" min="2" maxlength="2" placeholder="State">
+                                        <input type="text" name="zip" size="5" min="5" maxlength="5" placeholder="ZIP">
+                                    </div>
+                                    <span for="street">&ast;Please enter your <strong>Street Name and Number</strong>.</span>
+                                    <span for="city">&ast;Please enter your <strong>City Name</strong>.</span>
+                                    <span for="state">&ast;Please enter your <strong>2 character State</strong>.</span>
+                                    <span for="zip">&ast;Please enter your <strong>5 digit Zip Code</strong>.</span>
+                                </div>
+                            </div>
+                            <!--Card Phone-->
+                            <div class="__card--phone">
+                                <i class="fa fa-phone"></i>
+                                <p>Please enter your <strong>Phone Number</strong>.</p>
+                                <div class="__form">
+                                    <div class="__row--between">
+                                        <input type="text" class="__inline" name="area" size="5" min="3" maxlength="3" placeholder="(xxx)">
+                                        <input type="text" name="phone" size="8" min="7" maxlength="7" placeholder="xxx-xxxx">
+                                    </div>
+                                    <span for="area">&ast;Please enter your <strong>5 digit Area Code</strong>.</span>
+                                    <span for="phone">&ast;Please enter your <strong>Phone Number</strong>.</span>
+                                </div>
+                            </div>
+                            <!--Card Output-->
+                            <div id="output" class="__card--output">
+                                <h3>How does everything look?</h3>
+                                <table>
+                                    <tr>
+                                        <td><strong>First Name:</strong></td>
+                                        <td id="fname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Last Name:</strong></td>
+                                        <td id="lname"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Email:</strong></td>
+                                        <td id="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>DOB:</strong></td>
+                                        <td>
+                                            <span id="mo"></span>
+                                            <span id="day"></span>
+                                            <span id="yr"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Address:</strong></td>
+                                        <td>
+                                            <span id="street"></span><br>
+                                            <span id="city"></span><br>
+                                            <span id="state"></span><br>
+                                            <span id="zip"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>Phone:</strong></td>
+                                        <td>
+                                            <span id="area"></span>
+                                            <span id="phone"></span>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </article>
+                    </section>
+                    <ul id="dots" class="dots">
+                        <li class="--active"></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                    <form id="onboarding" action="scripts/php/onboarding_form.php" method="POST">
+                        <div class="__row ani--intro">
+                                <input type="hidden" id="input_data" name="hidden" value="" form="onboarding">
+                                <button type="button" id="prev" onclick="advanceSlide(this)"></button>
+                                <button type="button" id="next" onclick="advanceSlide(this)"></button>
+                                <button type="submit" id="submit">Submit</button>
+                        </div>
+                    </form>
+                </main>
+            <!--Main End-->
+            <!--Aside Start-->
+            <aside></aside>
+            <!--Aside End-->
+            <!--Footer Start-->
+            <footer>
+                <a href="">Terms of Service</a>
+                <span>&copy;Michael Naatjes</span>
+            </footer>
+            <!--Footer End-->
+        </div>
+        <!--Grid End-->
+    </body>
+    <script src="scripts/js/functions_main.js" type="text/Javascript"></script>
+    <script src="scripts/js/advance_slide.js" type="text/Javascript"></script>
+</html>

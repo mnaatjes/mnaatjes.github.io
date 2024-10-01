@@ -1,0 +1,168 @@
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slideshow--simple-03 {
+    /*vars*/
+    --thumb-size: 100px;
+    --btn-width: 20px;
+    --gap: 6px;
+    /*position*/
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: var(--gap);
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    background-color: whitesmoke;
+    /*text*/
+    /*shadow*/
+    box-shadow: 1px 4px 6px 6px rgba(0, 0, 0, 0.4);
+    /*transition*/
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slideshow--simple-03__slide-container {
+    /*position*/
+    width: 100%;
+    height: calc(100% - (var(--thumb-size) + var(--gap)));
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slide--simple-03 {
+    /*position*/
+    width: 100%;
+    height: 100%;
+    /*display*/
+    display: none;
+}
+.slide--simple-03[data-slide--active="true"] { display: block;}
+.slide--simple-03 img {
+    /*display*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slide--simple-03__num {
+    user-select: none;
+    /*position*/
+    position: absolute;
+    top: var(--gap);
+    left: var(--gap);
+    /*display*/
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 6px 0;
+    padding: 10px;
+    /*text*/
+    color: whitesmoke;
+    font-size: 12px;
+    font-weight: 600;
+    /*transition*/
+    transition: var(--transition);
+}
+.slide--simple-03__num:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: whitesmoke;
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slide--simple-03__thumbs-container {
+    /*position*/
+    margin-top: var(--gap);
+    padding: 0px calc(var(--btn-width) + var(--gap)) 0px calc(var(--btn-width) + var(--gap));
+    /*display*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*text*/
+    /*shadow*/
+    /*transition*/    
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+.slide--simple-03__thumbs__item {
+    cursor: default;
+    /*position*/
+    z-index: 2;
+    width: var(--thumb-size);
+    height: var(--thumb-size);
+    /*display*/
+    background-color: #999;
+}
+.slide--simple-03__thumbs__item img {
+    /*posiiton*/
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.slide--simple-03__thumbs__item[data-thumb--active="false"] {
+    cursor: pointer;
+    /*display*/
+    filter: grayscale(60%) brightness(90%);
+    scale: 1.0;
+    /*shadow*/
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
+    /*transition*/
+    transition: var(--transition);
+}
+.slide--simple-03__thumbs__item[data-thumb--active="false"]:hover {
+    /*display*/
+    filter: grayscale(0%) brightness(110%);
+    scale: 1.25;
+    /*shadow*/
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.5);
+}
+.slide--simple-03__thumbs__item[data-thumb--active="true"] {
+    filter: grayscale(100%) brightness(80%);
+}
+/*--------------------------------*/
+/* Btn: Both */
+/*--------------------------------*/
+.slide--simple-03__btn--prev, .slide--simple-03__btn--next {
+    cursor: pointer;
+    /*position*/
+    position: absolute;
+    bottom: 0;
+    width: var(--btn-width);
+    height: var(--thumb-size);
+    margin-bottom: var(--gap);
+    /*display*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    /*text*/
+    text-decoration: none;
+    user-select: none;
+    font-weight: bold;
+    font-size: 18px;
+    color: whitesmoke;
+    /*transition*/
+    transition: var(--transition);
+}
+.slide--simple-03__btn--prev:hover,
+.slide--simple-03__btn--next:hover {background-color: rgba(0, 0, 0, 0.6);}
+/*--------------------------------*/
+/* Slide: Button Prev */
+/*--------------------------------*/
+.slide--simple-03__btn--prev {
+    left: var(--gap);
+    border-radius: 0 3px 3px 0;
+}
+/*--------------------------------*/
+/* Slide: Button Next */
+/*--------------------------------*/
+.slide--simple-03__btn--next {
+    right: var(--gap);
+    border-radius: 3px 0 0 3px;
+}

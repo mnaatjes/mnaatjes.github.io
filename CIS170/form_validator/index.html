@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <head>
+        <title>Form Validation</title>
+    </head>
+    <body>
+        <div class="flex-container">
+                <div class="form-container">
+                    <div class="heading">
+                        <h1>Personal Details</h1>
+                        <p>Register to Adopt a Dog</p>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" id="fname" placeholder="First Name">
+                        <span id="errorFName" class="error-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" id="lname" placeholder="Last Name">
+                        <span id="errorLName" class="error-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="text" id="email" placeholder="Email Address">
+                        <span id="errorEmail" class="error-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <input type="password" id="password">
+                        <span id="errorPassword" class="error-msg"></span>
+                    </div>
+                    <div class="form-item">
+                        <select name="subject" id="subject">
+                            <option value="">Select Breed</option>
+                            <option value="golden">Golden Retriever</option>
+                            <option value="lab">Laborador</option>
+                            <option value="pointer">Pointer</option>
+                            <option value="dalmatian">Dalmatian</option>
+                            <option value="german">German Shepherd</option>
+                            <option value="boxer">Boxer</option>
+                        </select>
+                        <span id="errorSubject" class="error-msg"></span>
+                    </div>
+                    <div class="submit-container">
+                        <div class="check-container">
+                            <label for="agree">Agree</label>
+                            <input type="checkbox" id="agree">
+                        </div>
+                        <input type="submit" value="Submit" name="Submit" onclick="validateForm()">
+                        <input type="reset" value="Reset" name="Reset">
+                    </div>
+            </div>
+        </div>
+        <script src="form_validator.js" type="text/Javascript"></script>
+    </body>
+</html>

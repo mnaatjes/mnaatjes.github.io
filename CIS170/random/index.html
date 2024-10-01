@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="main.css">
+    <head>
+        <title>Random</title>
+    </head>
+    <body>
+        <div class="flex-container">
+            <div class="game-container">
+                <div class="heading">
+                    <h1>Guess the Number</h1>
+                    <small>Between 1-100</small>
+                </div>
+                <div class="form-gameplay" id="formGameplay">
+                    <h3>Enter your Guess</h3>
+                    <input type="text" id="guessField" class="guess-field" maxlength="3">
+                    <button onclick="getGuess()" class="guess-btn" id="guessButton">Try It</button>
+                </div>
+                <div class="form-endgame" id="formEndgame">
+                    <h3 id="final"></h3>
+                    <p>The Number Was: <span id="number"></span></p>
+                    <button onclick="reload()">Play Again?</button>
+                </div>
+                <div class="output" id="output">
+                    <h2 id="guessSize" class="guess-size"></h2>
+                    <h2 id="guessNumber" class="guess-num"></h2>
+                </div>
+            </div>
+        </div>
+        <script src="random_game.js" type="text/Javascript"></script>
+    </body>
+</html>

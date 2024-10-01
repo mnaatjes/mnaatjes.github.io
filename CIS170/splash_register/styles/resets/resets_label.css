@@ -1,0 +1,25 @@
+/*---------------------------------------------------------------*/
+/* Splash: Registration */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Label */
+/*--------------------------------*/
+label {
+    /*GRID*/
+    grid-column: 1;
+    align-self: start;
+    /*POSITION*/
+    padding: 10px;
+    margin: 10px 0;
+    /*DISPLAY*/
+    display: flex;
+    align-items: center;
+    /*BACKGROUND*/
+    /*BORDER*/
+    border: 1px solid var(--color-brown);
+    border-top-left-radius: var(--ui-border-radius);
+    border-bottom-left-radius: var(--ui-border-radius);
+    /*TEXT*/
+    color: var(--color-brown);
+    /*DEBUGGING*/
+}
