@@ -1,121 +1,182 @@
-/* Form Validation */
+/*---------------------------------------------------------------*/
+/* CIS 170: Main - Form Validator */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* variables */
+/*--------------------------------*/
+:root {
+    --color-background: #fafaee;
+    --color-primary: #4f6628;
+    --color-primaryContainer: #d1eca0;
+    --color-tertiary: #396661;
+    --color-tertiaryContainer: #bcece5;
+    --color-error: #ba1a1a;
+    --color-errorContainer: #ffdad6;
+    --color-stroke: #131f00;
+    --color-strokeDim: #c5c8b9;
+    --color-strokeMid: #45483d;
+
+    --ui-border: 2px solid var(--color-primary);
+    --ui-border-radius: 4px;
+    --ui-margin-input: 12px 0;
+    --ui-padding-input: 12px 18px 12px 6px;
+    --ui-padding-button: 12px 18px;
+
+    --ui-width: 450px;
+
+    --ui-transition: all 0.4s ease-in-out;
+}
+/*--------------------------------*/
+/* All */
+/*--------------------------------*/
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
-.flex-container {
-    display: flex;
+/*--------------------------------*/
+/* headings */
+/*--------------------------------*/
+h1 {color: var(--color-primary);}
+h4 {color: var(--color-tertiary);}
+/*--------------------------------*/
+/* paragraph */
+/*--------------------------------*/
+p {text-align: center; line-height: 24px;}
+/*--------------------------------*/
+/* emphasis */
+/*--------------------------------*/
+em {text-decoration: underline; font-style: normal;}
+/*---------------------------------------------------------------*/
+/* semantic */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* body */
+/*--------------------------------*/
+body {
+    width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url(bkrnd_shepherd.jpg);
+    background-image: url(grass.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-.form-container {
+/*--------------------------------*/
+/* header */
+/*--------------------------------*/
+header {
+    padding-top: 24px;
+    width: var(--ui-width);
+    background: var(--color-primaryContainer);
+    border: var(--ui-border);
+    border-bottom: none;
+    border-top-left-radius: var(--ui-border-radius);
+    border-top-right-radius: var(--ui-border-radius);
+    text-align: center;
+}
+/*--------------------------------*/
+/* form | main */
+/*--------------------------------*/
+form, main {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 24px;
-    border: 1px solid lightgrey;
-    border-radius: 24px;
-    max-width: 450px;
-    transition-duration: 0.4s;
-    transition-timing-function: ease-in-out;
-    background-color: white;
+    border-left: var(--ui-border);
+    border-right: var(--ui-border);
+    width: var(--ui-width);
+    background: var(--color-primaryContainer);
 }
-
-.form-container:hover, .form-container:focus, .form-container:active {
-    border-color: white;
-    background-color: white;
-    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
-}
-
-.heading {
-    padding: 12px;
-    text-align: center;
-    width: 100%;
-    color: tomato;
-}
-
-.form-item {
-    flex: 1;
-}
-
-input, select, .submit-container, .check-container {
-    flex: 1;
-    border: 1px solid lightgrey;
-    border-radius: 12px;
-    margin: 12px;
-    font-size: 16px;
-    outline: none;
-}
-
-.form-container input {
-    padding: 12px;
-}
-
-input::placeholder {
-    color: black;
-}
-
-input[type=text], input[type=email], input[type=password], select {
-    transition-duration: 0.4s;
-}
-
-input[type=text]:hover, input[type=email]:hover, input[type=password]:hover, select:hover {
-    background-color: lightgray;
-}
-
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, select:focus {
-    border: 1px solid cornflowerblue;
-    background-color: white;
-}
-
-select, .check-container {
-    padding: 6px;
-}
-
-.check-container, input[type=submit], input[type=reset], input[type=checkbox] {
-    text-align: center;
-    background-color: white;
-    cursor: pointer;
-}
-
-.check-container:hover, input[type=submit]:hover, input[type=reset]:hover {
-    background-color: cornflowerblue;
-    border-color: cornflowerblue;
-    box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.6);
-    transform: translateY(-4px);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in;
-}
-
-.check-container:active, input[type=submit]:active, input[type=reset]:active {
-    transform: translateY(4px);
-    box-shadow: none;
-    transition-duration: 0.1s;
-    border-color: lightgrey;
-}
-
-.submit-container {
+form div[class="__row"] {
     display: flex;
-    justify-content: space-around;
-    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
 }
-
-.submit-container:hover {
-    background-color: white;
-    transition-duration: 0.4s;
-    border-color: cornflowerblue;
+/*--------------------------------*/
+/* footer */
+/*--------------------------------*/
+footer {
+    padding: var(--ui-padding);
+    width: var(--ui-width);
+    border-left: var(--ui-border);
+    border-right: var(--ui-border);
+    border-bottom: var(--ui-border);
+    border-bottom-left-radius: var(--ui-border-radius);
+    border-bottom-right-radius: var(--ui-border-radius);
+    background: var(--color-primary);
+    text-align: center;
+    font-size: 12px;
+    color: var(--color-primaryContainer);
 }
-
+/*---------------------------------------------------------------*/
+/* Inputs */
+/*---------------------------------------------------------------*/
+input, select {
+    outline: none;
+    border: none;
+    margin: var(--ui-margin-input);
+    padding: var(--ui-padding-input);
+    background: var(--color-primaryContainer);
+    border-bottom: var(--ui-border);
+    transition: var(--ui-transition);
+    color: var(--color-strokeMid);
+}
+input::placeholder {color: var(--color-strokeMid);}
+input:-webkit-autofill {
+    -webkit-text-fill-color: var(--color-strokeMid);
+    color: var(--color-strokeMid);
+    -webkit-box-shadow:0 0 0 50px var(--color-primaryContainer) inset;
+}
+/*---------------------------------------------------------------*/
+/* Buttons */
+/*---------------------------------------------------------------*/
+button {
+    margin: var(--ui-margin-input);
+    padding: var(--ui-padding-button);
+    color: var(--color-strokeMid);
+    background: var(--color-background);
+    border: var(--ui-border);
+    border-radius: var(--ui-border-radius);
+    font-weight: 600;
+}
+button:hover {background: var(--color-tertiaryContainer);}
+button:active {background: var(--color-tertiary); color: var(--color-background);}
+/*---------------------------------------------------------------*/
+/* Extra */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Error */
+/*--------------------------------*/
 .error-msg {
     display: none;
-    color: red;
-    font-size: small;
-    padding-left: 12px;
+    align-self: flex-start;
+    color: var(--color-error);
+    font-size: 12px;
 }
+/*---------------------------------------------------------------*/
+/* Media Query */
+/*---------------------------------------------------------------*/
+@media (min-width: 0px) and (max-width: 450px){
+    :root {--ui-width: 100% !important;}
+    body {margin: 0;}
+    header, form, main, footer {border: none; border-radius: none !important;}
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
