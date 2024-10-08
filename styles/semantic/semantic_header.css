@@ -16,7 +16,7 @@ header {
 /*--------------------------------*/
 /* Header - home */
 /*--------------------------------*/
-header[class*="--home"] {
+header[class$="--home"] {
     /*POSITION*/
     width: 100%;
     height: calc(100vh - 49.5px);
@@ -29,51 +29,45 @@ header[class*="--home"] {
 /*--------------------------------*/
 /* Section: row */
 /*--------------------------------*/
-section.--header--home__row--top {
+section.__header--home__col--top {
     /*POSITION*/
     padding-bottom: 6px;
     height: 50%;
     /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
 }
 /*--------------------------------*/
 /* Header - Section: title */
 /*--------------------------------*/
-article.header--home__title {
+article.__header--home__title {
     /*FLEX*/
     align-self: flex-start;
 }
 /*--------------------------------*/
 /* Header - Section: action */
 /*--------------------------------*/
-article.header--home__action {
+article.__header--home__action {
     /*FLEX*/
     align-self: flex-end;
 }
 /*--------------------------------*/
 /* Section: row */
 /*--------------------------------*/
-section.--header--home__row--bottom {
+section.__header--home__row--bottom {
     /*POSITION*/
     padding-top: 6px;
     margin-bottom: 60px;
     height: 50%;
     /*DISPLAY*/
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 /*--------------------------------*/
 /* Header - Section: right */
 /*--------------------------------*/
-article.header--home__col--right {
+article.__header--home__col--right {
     /*POSITION*/
     max-width: 350px;
     /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: flex-end;
     /*TEXT*/
@@ -83,21 +77,19 @@ article.header--home__col--right {
 /*--------------------------------*/
 /* Header - Section: social */
 /*--------------------------------*/
-article.header--home__col--left {
+article.__header--home__col--left {
     /*FLEX*/
     justify-self: stretch;
     /*POSITION*/
     height: 100%;
     /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     /*DEBUGGING*/
 }
 /*--------------------------------*/
 /* Header - Section: arrow */
 /*--------------------------------*/
-article.header--home__arrow {
+article.__header--home__arrow {
     /*FLEX*/
     align-self: flex-end;
 }

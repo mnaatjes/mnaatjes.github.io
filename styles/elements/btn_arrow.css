@@ -66,7 +66,7 @@ a[class*="btn--arrow"] i {
 /*--------------------------------*/
 /* Button - Arrow: Footer */
 /*--------------------------------*/
-.btn--arrow--footer {
+.btn--arrow-footer {
     /*BORDER*/
     border-color: var(--color-tertiary);
     /*BACKGROUND*/
@@ -77,7 +77,7 @@ a[class*="btn--arrow"] i {
 /*--------------------------------*/
 /* Button - Arrow(Hover): Footer */
 /*--------------------------------*/
-.btn--arrow--footer:hover {
+.btn--arrow-footer:hover {
     /*BORDER*/
     border-color: var(--color-tertiary);
     /*BACKGROUND*/
@@ -88,11 +88,11 @@ a[class*="btn--arrow"] i {
 /*--------------------------------*/
 /* Button - Arrow: Footer i */
 /*--------------------------------*/
-.btn--arrow--footer i {
+.btn--arrow-footer i {
     /*TEXT*/
     color: var(--color-stroke);
 }
-.btn--arrow--footer:hover i {
+.btn--arrow-footer:hover i {
     /*TEXT*/
     color: var(--color-stroke);
 }

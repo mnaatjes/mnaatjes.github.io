@@ -1,0 +1,17 @@
+/*--------------------------------*/
+/* Section: Case-study - Heading */
+/*--------------------------------*/
+section.--case-study__heading {
+    /*POSITION*/
+    width: 100%;
+    padding: var(--ui-padding);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    text-align: center;
+}

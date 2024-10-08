@@ -12,12 +12,12 @@
     /*--------------------------------*/
     /* Nav - Section: Desktop | Mobile */
     /*--------------------------------*/
-    nav .--nav--desktop {display: none;}
-    nav .--nav--mobile {display: block;}
+    nav .__nav--desktop {display: none;}
+    nav .__nav--mobile {display: block;}
     /*--------------------------------*/
     /* Header --home */
     /*--------------------------------*/
-    section.--header--home__row--bottom {
+    section.__header--home__row--bottom {
         /*POSITION*/
         padding-top: 6px;
         margin-bottom: 0px;
@@ -25,18 +25,18 @@
     /*--------------------------------*/
     /* Section: Footer - lower */
     /*--------------------------------*/
-    section[id="--footer--lower"] {
+    section#__footer--lower {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, auto);
     }
-    article.footer--lower__social {
+    article.__footer--lower__social {
         /*DISPLAY*/
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
     }
-    article.footer--lower__nav {
+    article.__footer--lower__nav {
         /*GRID*/
         grid-column: 1;
         grid-row: 2;
@@ -48,14 +48,15 @@
         justify-content: space-between;
         align-items: stretch;
     }
-    article.footer--lower__arrow {
+    article.__footer--lower__nav ul li:not(:first-of-type) {display: none;}
+    article.__footer--lower__arrow {
         /*GRID*/
         grid-column: 1;
         grid-row: 3;
         /*POSITION*/
         padding-top: 24px;
     }
-    article.footer--lower__legal {
+    article.__footer--lower__legal {
         /*GRID*/
         grid-column: 1;
         grid-row: 4;
@@ -63,7 +64,7 @@
     /*--------------------------------*/
     /* Main:  */
     /*--------------------------------*/
-    main {
+    main.--home {
         /*POSITION*/
         padding: 0px;
     }
@@ -82,6 +83,60 @@
         grid-row: 4;
         /*POSITION*/
         padding: var(--ui-padding);
+    }
+    /*--------------------------------*/
+    /* Case Study */
+    /*--------------------------------*/
+    section.--case-study__grid--center {
+        /*POSITION*/
+        padding: 0px;
+        /*DISPLAY*/
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+    }
+    article.--case-study__timeline {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 2;
+    }
+    article.--case-study__tech {grid-column: 1;}
+    /*--------------------------------*/
+    /* Case Study: Flow */
+    /*--------------------------------*/
+    article.--case-study__flow {
+        /*GRID*/
+        grid-column: 1;
+        /*DISPLAY*/
+        grid-auto-columns: 1fr !important;
+        grid-auto-rows: auto;
+        grid-auto-flow: column;
+        column-gap: 0px;
+    }
+    article.--case-study__flow h3, 
+    article.--case-study__flow p, 
+    article.--case-study__flow img {grid-column: 1 / span 2;}
+    section.--case-study__conclusion {
+        /*DISPLAY*/
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(4, auto);
+        column-gap: 0px;
+    }
+    /*--------------------------------*/
+    /* Case Study: Table */
+    /*--------------------------------*/
+    section.--case-study__table {padding: 0px;}
+    /*--------------------------------*/
+    /* Case Study: Conclusion */
+    /*--------------------------------*/
+    section.--case-study__conclusion h3:nth-child(1) {grid-column: 1; grid-row: 1;}
+    section.--case-study__conclusion h3:nth-child(2) {grid-column: 1; grid-row: 3;}
+    section.--case-study__conclusion article.__conclusion__phone {grid-column: 1; grid-row: 2;}
+    section.--case-study__conclusion article.__conclusion__list {
+        /*GRID*/
+        grid-column: 1; 
+        grid-row: 4;
+        /*BORDER*/
+        border: none;
     }
 }
 /*--------------------------------*/

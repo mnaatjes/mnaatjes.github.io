@@ -2,7 +2,7 @@
 /* Semantic - All: */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Section: */
+/* Header: */
 /*--------------------------------*/
 header {
     /*BACKGROUND*/
@@ -19,50 +19,18 @@ main section {
     margin-bottom: 60px;
 }
 /*--------------------------------*/
-/* article: col */
+/* Background Colors */
 /*--------------------------------*/
-article[class*="__col"] {
+[class*="--grey"] {background: var(--color-strokeMid);}
+[class*="--pink"] {background: var(--color-primaryContainer);}
+[class*="--bright"] {background: var(--color-secondaryContainer);}
+[class*="--sky"] {background: var(--color-tertiaryContainer);}
+/*--------------------------------*/
+/* Article: */
+/*--------------------------------*/
+main article {
     /*POSITION*/
-    margin: 12px 0px;
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
-}
-[class*="--between"] {justify-content: space-between;}
-[class*="start"] {justify-content: flex-start;}
-/*--------------------------------*/
-/* article: row */
-/*--------------------------------*/
-article[class*="__row"] {
-    /*POSITION*/
-    margin: 12px 0px;
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-article[class*="__row"] a {
-    /*POSITION*/
-    padding: 6px 12px;
-    /*DISPLAY*/
-    display: inline-block;
-    /*TEXT*/
-    text-decoration: underline;
-    color: var(--color-primary);
-}
-/*--------------------------------*/
-/* div: col */
-/*--------------------------------*/
-div[class*="__col"] {
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
-}
-/*--------------------------------*/
-/* div: row */
-/*--------------------------------*/
-div[class*="__row"] {
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: row;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 24px;
 }

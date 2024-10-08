@@ -5,7 +5,6 @@
 /* Nav:  */
 /*--------------------------------*/
 nav {
-    /*GRID*/
     /*POSITION*/
     position: relative;
     z-index: 10;
@@ -38,7 +37,7 @@ nav:hover {
 /*--------------------------------*/
 /* Nav - Section: Logo */
 /*--------------------------------*/
-nav .--nav__logo {
+nav .__nav__logo {
     /*RESETS*/
     user-select: none;
     /*FLEX*/
@@ -50,7 +49,7 @@ nav .--nav__logo {
 /*--------------------------------*/
 /* Nav - Section: Desktop */
 /*--------------------------------*/
-nav .--nav--desktop {
+nav .__nav--desktop {
     /*DISPLAY*/
     display: block;
     /*DEBUGGING*/
@@ -58,7 +57,7 @@ nav .--nav--desktop {
 /*--------------------------------*/
 /* Nav - Section: Mobile */
 /*--------------------------------*/
-nav .--nav--mobile {
+nav .__nav--mobile {
     /*FLEX*/
     align-self: center;
     /*POSITION*/

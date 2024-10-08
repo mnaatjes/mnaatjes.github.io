@@ -8,7 +8,18 @@
 @import url(semantic/semantic_nav.css);
 @import url(semantic/semantic_header.css);
 @import url(semantic/semantic_main.css);
+@import url(semantic/semantic_section.css);
 @import url(semantic/semantic_footer.css);
+/*--------------------------------*/
+/* Imports: Semantic - Case Study */
+/*--------------------------------*/
+@import url(semantic/case_study/case_study__conclusion.css);
+@import url(semantic/case_study/case_study__grid_center.css);
+@import url(semantic/case_study/case_study__heading.css);
+@import url(semantic/case_study/case_study__table.css);
+@import url(semantic/case_study/case_study__flow.css);
+@import url(semantic/case_study/case_study__persona__tech.css);
+@import url(semantic/case_study/case_study__timeline.css);
 /*--------------------------------*/
 /* Imports: Resets */
 /*--------------------------------*/
@@ -21,12 +32,15 @@
 /*--------------------------------*/
 /* Imports: Elements */
 /*--------------------------------*/
+@import url(elements/card_portfolio.css);
 @import url(elements/btn_arrow.css);
 @import url(elements/btn_hero.css);
 @import url(elements/btn_social.css);
 @import url(elements/link_nav.css);
 @import url(elements/link_footer_lower.css);
+@import url(elements/link_footer.css);
 @import url(elements/btn_submit_inline.css);
+@import url(elements/ele_phone.css);
 /*--------------------------------*/
 /* Media Queries */
 /*--------------------------------*/
@@ -49,11 +63,12 @@
     --ui-font-family: "Inter", sans-serif;
     --ui-border-width: 2px;
     --ui-border-style: solid;
-    --ui-border-color: var(var(--color-stroke));
+    --ui-border-color: var(--color-stroke);
     --ui-border: var(--ui-border-width) var(--ui-border-style) var(--ui-border-color);
     --ui-border-radius: 4px;
     --ui-grid-gap: 12px;
     --ui-padding: 0 48px;
+    --ui-margin: var(--ui-padding);
 
     /*SHADOW*/
     --ui-shadow-off: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
@@ -105,26 +120,22 @@ body {
     font-family: var(--ui-font-family);
 }
 /*body > * {border: 1px solid red;}*/
-/*---------------------------------------------------------------*/
-/* Main: Animation-Class */
-/*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Animation-Class: Prefix */
+/* Flex */
 /*--------------------------------*/
-[data-animation],
-div[class*="animation"],
-img[class*="animation"] {
-    /*vars-animations main*/
-    animation-name: var(--animation-name, none);
-    animation-duration: var(--animation-duration, 1.0s);
-    animation-timing-function: var(--animation-timing-function, cubic-bezier(0.175, 0.885, 0.32, 1.275));
-    animation-delay: var(--animation-delay, 0.0s);
-    animation-iteration-count: var(--animation-iteration-count, 1);
-    animation-fill-mode: var(--animation-fill-mode, forwards);
-    animation-play-state: var(--animation-play-state, paused);
+[class*="__row"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
 }
-.paused { --animation-play-state: paused;}
-.running { --animation-play-state: running;}
+[class*="__row--center"] {align-items: center;}
+[class*="__col"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+[class$="--between"] {justify-content: space-between;}
+[class$="--start"] {justify-content: flex-start;}
 /*---------------------------------------------------------------*/
 /* Template: */
 /*---------------------------------------------------------------*/
