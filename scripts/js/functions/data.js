@@ -36,10 +36,10 @@ let json_case_study = {
      * @property {String}   content     @example 'String description'
      */
     persona: [
-        {type: null, content: 'or sit amet consectetur'},
-        {type: null, content: 'or sit amet consectetur'},
-        {type: null, content: 'or sit amet consectetur'},
-        {type: null, content: 'or sit amet consectetur'}
+        {type: true, content: 'or sit amet consectetur'},
+        {type: false, content: 'or sit amet consectetur'},
+        {type: false, content: 'or sit amet consectetur'},
+        {type: true, content: 'or sit amet consectetur'}
     ],
     /**
      * @name timeline
@@ -61,16 +61,18 @@ let json_case_study = {
      * @type {Object}
      * @memberof case_study
      * @description
-     * @property {Number}   count   count of entries
      * @property {Array}    ids     array of strings
      * @property {Array}    titles  array of strings
      * @property {Array}    values  array of strings
      */
     table: {
-        count: null,
-        ids: [],
-        titles: [],
-        values: []
+        headings: ['titleA', 'titleB', 'titleC'],
+        rows: [
+            {id: 'companyA', values: [true, true, false]},
+            {id: 'companyB', values: [false, false, false]},
+            {id: 'companyC', values: [false, true, false]},
+            {id: 'companyD', values: [true, false, true]}
+        ]
     },
     /**
      * @name design
@@ -82,8 +84,8 @@ let json_case_study = {
      * 
      */
     design: [
-        {img_src: null, img_alt: ''},
-        {img_src: null, img_alt: ''}
+        {img_src: 'assets/main/case_study/test_model_01.jpg', img_alt: 'SpitfireOne'},
+        {img_src: 'assets/main/case_study/test_model_02.png', img_alt: 'SpitfireTwo'}
     ],
     /**
      * @name tech
