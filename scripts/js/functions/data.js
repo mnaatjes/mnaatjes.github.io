@@ -26,7 +26,7 @@ let json_case_study = {
      * @memberof case_study
      * @description
      */
-    problem: 'Lorem ipsum dolor sit amet consectetur, ',
+    problem: 'Here is a problem statement',
     /**
      * @name persona
      * @type {Array} array of objects
@@ -112,7 +112,7 @@ let json_case_study = {
      */
     user_flow: {
         content: '',
-        img_src: null,
+        img_src: 'assets/main/case_study/flow_art_museum_01.png',
         img_alt: ''
     },
     /**
@@ -121,20 +121,13 @@ let json_case_study = {
      * @memberof case_study
      * @description
      * @property {String} content
-     * @property {String} images
+     * @property {String} img_src
+     * @property {String} img_alt
      */
     uml: {
-        content: '',
-        /**
-         * @name images
-         * @type {Array}
-         * @property {String} img_src
-         * @property {String} img_alt
-         */
-        images: [
-            {img_src: null, img_alt: ''},
-            {img_src: null, img_alt: ''}
-        ]
+        content: 'Here is some uml content',
+        img_src: 'assets/main/case_study/UML_thermo_swimlane_diagram.png',
+        img_alt: ''
     },
     /**
      * @name lofi
@@ -146,8 +139,8 @@ let json_case_study = {
      * @property {String} img_alt
      */
     lofi: {
-        content: '',
-        img_src: null,
+        content: 'Here is some Lofi Wireframe content',
+        img_src: 'assets/main/case_study/lowfi_quiz.png',
         img_alt: ''
     },
     /**
@@ -174,8 +167,8 @@ let json_case_study = {
      * @property {Array} takeaways
      */
     conclusion: {
-        img_src: null,
-        img_alt: '',
+        img_src: 'assets/main/case_study/quiz__carousel--question.png',
+        img_alt: 'Alternate Title',
         /**
          * @name takeaways
          * @type {Array}
@@ -183,9 +176,9 @@ let json_case_study = {
          * @property {String} content 
          */
         takeaways: [
-            {icon: null, content: ''},
-            {icon: null, content: ''},
-            {icon: null, content: ''}
+            {icon: null, content: 'Content information is right here'},
+            {icon: null, content: 'One way i thought about this piece'},
+            {icon: null, content: 'You guys know about dead interet theory?'}
         ]
     }
 };

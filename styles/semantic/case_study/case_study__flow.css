@@ -25,9 +25,7 @@ article.--case-study__flow img {
     background: var(--color-background);
     border-radius: var(--ui-border-radius);
 }
-article.--case-study__flow:nth-child(1) img, 
-article.--case-study__flow:nth-child(3) img, 
-article.--case-study__flow:nth-child(4) img {grid-column: 1 / span 2;}
+article.--case-study__flow img {grid-column: 1 / span 2;}
 article.--case-study__flow:nth-child(2) h3,
 article.--case-study__flow:nth-child(4) h3 {text-align: right;}
 article.--case-study__flow:nth-child(2) p, 
