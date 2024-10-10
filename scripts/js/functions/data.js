@@ -96,9 +96,10 @@ let json_case_study = {
      * @property {String} content @example 'String description'
      */
     tech: [
-        {type: null, content: 'or sit amet consectetur'},
-        {type: null, content: 'or sit amet consectetur'},
-        {type: null, content: 'or sit amet consectetur'}
+        {type: false, content: 'or sit amet consectetur'},
+        {type: true, content: 'or sit amet consectetur'},
+        {type: true, content: 'or sit amet consectetur'},
+        {type: false, content: 'or sit amet consectetur'}
     ],
     /**
      * @name user_flow

@@ -251,16 +251,32 @@ class CaseStudy {
         let heading_dev = document.createElement('div');
         let heading_sys = document.createElement('div');
         let icon_main   = document.createElement('div');
-        let icon_dev    = document.createElement('i');
+
         let icon_sys    = document.createElement('i');
         // add class to elements
         article.setAttribute('class', '--case-study__tech');
         heading_dev.setAttribute('class', '__tech__heading');
         heading_sys.setAttribute('class', '__tech__heading');
         icon_main.setAttribute('class', '__tech__icon');
-        icon_dev.setAttribute('class', 'fa-solid fa-mobile');
-        icon_sys.setAttribute('class', 'fa-solid fa-gear');
-
+        // add content
+        heading.innerHTML       = 'Technical Requirements';
+        icon_main.innerHTML     = '<i class="fa-solid fa-computer"></i>';
+        heading_dev.innerHTML   = '<h5>Device</h5>';
+        heading_sys.innerHTML   = '<h5>System</h5>';
+        // loop data
+        this.data.tech.forEach(item => {
+            // create icon
+            let icon = document.createElement('i');
+            // select icon
+            if(item.type == false){
+                // set icon style
+                icon.setAttribute('class', 'fa-solid fa-mobile');
+            } else if(item.type == true){
+                // set icon style
+                icon.setAttribute('class', 'fa-solid fa-gear');
+            }
+            
+        });
     }
 }
 
