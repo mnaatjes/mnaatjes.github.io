@@ -1,0 +1,66 @@
+/*---------------------------------------------------------------*/
+/* Portfolio - Landing Page: Main */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Imports: */
+/*--------------------------------*/
+@import url(config/config__main.css);
+@import url(elements/elements__grid.css);
+/*--------------------------------*/
+/* Media Queries */
+/*--------------------------------*/
+/*
+@import url(media_queries/media_queries__main_lg.css) screen and (min-width:1200px);
+@import url(media_queries/media_queries__main_md.css) screen and (min-width:700px) and (max-width:1200px);
+@import url(media_queries/media_queries__main_sm.css) screen and (min-width:0px) and (max-width:700px);
+*/
+
+/*--------------------------------*/
+/* Overall */
+/*--------------------------------*/        
+* {
+    /*DISPLAY*/
+    box-sizing: border-box;
+}
+/*--------------------------------*/
+/* Body */
+/*--------------------------------*/
+body {
+    /*POSITION*/
+    margin: 0;
+    padding: 0;
+    /*BACKGROUND*/
+    background: var(--bkrnd-body);
+    /*TEXT*/
+    font-family: var(--ui-font-family);
+}
+/*--------------------------------*/
+/* Flex Container */
+/*--------------------------------*/
+.flex {
+    /*display*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /*DEBUGGING*/
+    /*border: var(--debug-border);*/
+}
+/*---------------------------------------------------------------*/
+/* Template: */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

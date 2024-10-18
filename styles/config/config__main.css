@@ -1,0 +1,26 @@
+/*--------------------------------*/
+/* Root */
+/*--------------------------------*/ 
+:root {
+    /*DEBUGGING*/
+    --debug-border: 1px solid red;
+    --debug-bkrnd: rgba(255, 0, 0, 0.4);
+    --debug-test-var: 100%;
+    /*UI*/
+    --ui-font-family: Arial, Helvetica, sans-serif;
+    --ui-padding: 10px;
+    --ui-border-radius: 10px;
+    --ui-grid-gap: 0px;
+
+    /*BACKGROUND*/
+    --bkrnd-body: #f5f5f5;
+
+    /*SHADOW*/
+    --ui-shadow-off: 2px 2px 12px 6px rgba(0, 0, 0, 0.0);
+    --ui-shadow-on: 2px 2px 12px 6px rgba(0, 0, 0, 0.4);
+
+    /*TRANSITIONS*/
+    --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    /*SEMANTIC*/
+}
