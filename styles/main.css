@@ -13,11 +13,9 @@
 /*--------------------------------*/
 /* Imports: Semantic */
 /*--------------------------------*/
-@import url(resets/semantic/semantic_all.css);
 @import url(resets/semantic/semantic_nav.css);
 @import url(resets/semantic/semantic_header.css);
 @import url(resets/semantic/semantic_main.css);
-@import url(resets/semantic/semantic_section.css);
 @import url(resets/semantic/semantic_footer.css);
 /*--------------------------------*/
 /* Imports: Semantic - Case Study */
@@ -95,6 +93,14 @@ body {
 }
 [class$="--between"] {justify-content: space-between;}
 [class$="--start"] {justify-content: flex-start;}
+/*--------------------------------*/
+/* Background Colors */
+/*--------------------------------*/
+[class*="--grey"] {background: var(--color-strokeMid);}
+[class*="--pink"] {background: var(--color-primaryContainer);}
+[class*="--bright"] {background: var(--color-secondaryContainer);}
+[class*="--sky"] {background: var(--color-tertiaryContainer);}
+
 /*---------------------------------------------------------------*/
 /* Template: */
 /*---------------------------------------------------------------*/

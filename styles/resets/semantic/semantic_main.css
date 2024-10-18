@@ -32,6 +32,23 @@ main[class$="--contact"] {
 /*--------------------------------*/
 main[class$="--case-study"] {}
 /*--------------------------------*/
+/* Section: */
+/*--------------------------------*/
+main section {
+    /*POSITION*/
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/*--------------------------------*/
+/* Article: */
+/*--------------------------------*/
+main article {
+    /*POSITION*/
+    margin-top: 48px;
+    margin-bottom: 48px;
+    padding: 24px;
+}
+/*--------------------------------*/
 /* Template */
 /*--------------------------------*/
     /*GRID*/

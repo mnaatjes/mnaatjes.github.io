@@ -9,6 +9,10 @@ header {
     padding: var(--ui-padding);
     padding-top: 48px;
     padding-bottom: 48px;
+    /*BACKGROUND*/
+    background: var(--color-tertiaryContainer);
+    /*TEXT*/
+    color: var(--color-tertiaryStroke);
 }
 /*---------------------------------------------------------------*/
 /* Header: --home */
