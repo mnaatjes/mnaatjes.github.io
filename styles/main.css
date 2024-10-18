@@ -2,24 +2,33 @@
 /* CIS 170: Main */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
+/* Imports: Config */
+/*--------------------------------*/
+@import url(config/config__colors.css);
+@import url(config/config__main.css);
+/*--------------------------------*/
+/* Imports: Debug */
+/*--------------------------------*/
+@import url(debug/debug__main.css);
+/*--------------------------------*/
 /* Imports: Semantic */
 /*--------------------------------*/
-@import url(semantic/semantic_all.css);
-@import url(semantic/semantic_nav.css);
-@import url(semantic/semantic_header.css);
-@import url(semantic/semantic_main.css);
-@import url(semantic/semantic_section.css);
-@import url(semantic/semantic_footer.css);
+@import url(resets/semantic/semantic_all.css);
+@import url(resets/semantic/semantic_nav.css);
+@import url(resets/semantic/semantic_header.css);
+@import url(resets/semantic/semantic_main.css);
+@import url(resets/semantic/semantic_section.css);
+@import url(resets/semantic/semantic_footer.css);
 /*--------------------------------*/
 /* Imports: Semantic - Case Study */
 /*--------------------------------*/
-@import url(semantic/case_study/case_study__conclusion.css);
-@import url(semantic/case_study/case_study__grid_center.css);
-@import url(semantic/case_study/case_study__heading.css);
-@import url(semantic/case_study/case_study__table.css);
-@import url(semantic/case_study/case_study__flow.css);
-@import url(semantic/case_study/case_study__persona__tech.css);
-@import url(semantic/case_study/case_study__timeline.css);
+@import url(resets/semantic/case_study/case_study__conclusion.css);
+@import url(resets/semantic/case_study/case_study__grid_center.css);
+@import url(resets/semantic/case_study/case_study__heading.css);
+@import url(resets/semantic/case_study/case_study__table.css);
+@import url(resets/semantic/case_study/case_study__flow.css);
+@import url(resets/semantic/case_study/case_study__persona__tech.css);
+@import url(resets/semantic/case_study/case_study__timeline.css);
 /*--------------------------------*/
 /* Imports: Resets */
 /*--------------------------------*/
@@ -49,56 +58,6 @@
 @import url(media_queries/media_queries__main_lg.css) screen and (min-width:1200px);
 @import url(media_queries/media_queries__main_md.css) screen and (min-width:700px) and (max-width:1200px);
 */
-/*--------------------------------*/
-/* Root */
-/*--------------------------------*/ 
-:root {
-    /*DEBUGGING*/
-    --debug-border: 1px solid red;
-    --debug-bkrnd: rgba(255, 0, 0, 0.4);
-    --debug-test-var: 100%;
-
-    /*UI*/
-    /*--ui-font-family: Arial, Helvetica, sans-serif;*/
-    --ui-font-family: "Inter", sans-serif;
-    --ui-border-width: 2px;
-    --ui-border-style: solid;
-    --ui-border-color: var(--color-stroke);
-    --ui-border: var(--ui-border-width) var(--ui-border-style) var(--ui-border-color);
-    --ui-border-radius: 4px;
-    --ui-grid-gap: 12px;
-    --ui-padding: 0 48px;
-    --ui-margin: var(--ui-padding);
-
-    /*SHADOW*/
-    --ui-shadow-off: 0px 0px 0px 0px rgba(0, 0, 0, 0.0);
-    --ui-shadow-on: 0px 4px 2px -0px rgba(0, 0, 0, 0.3);
-    --ui-shadow-inset: inset 0px 4px 2px -0px rgba(0, 0, 0, 0.3);
-
-    /*TRANSITIONS*/
-    --ui-transition: all 0.95s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-    /*COLORS*/
-    --color-stroke: #333333;
-    --color-background: #F6F6F6;
-    --color-strokeLite: #ebebeb;
-    --color-strokeMid: #d6d6d6;
-    --color-strokeDim: #B0B0B0;
-    --color-tertiary: #66ccff;
-    --color-primary: #FF3366;
-    --color-secondary: #ffcc00;
-    --color-tertiaryDim: #F0F9FF;
-    --color-secondaryStroke: #442304;
-    --color-secondaryDim: #FFFEC1;
-    --color-primaryStroke: #50011D;
-    --color-primaryContainer: #FF9FB3;
-    --color-primaryDim: #FFE2E7;
-    --color-secondaryContainer: #FFF886;
-    --color-tertiaryStroke: #062e4b;
-    --color-tertiaryContainer: #b8e5ff;
-    --color-tertiaryDim: #F0F9FF;
-    
-}
 /*--------------------------------*/
 /* Overall */
 /*--------------------------------*/        
