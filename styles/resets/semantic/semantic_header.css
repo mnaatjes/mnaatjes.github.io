@@ -126,7 +126,7 @@ section.--header--contact {
 section.--header--contact article.--contact__col,
 section.--header--contact form.--contact__col {
     /*POSITION*/
-    margin: 12px 0px;
+    margin: 12px auto;
     /*DISPLAY*/
     display: flex;
     flex-direction: column;

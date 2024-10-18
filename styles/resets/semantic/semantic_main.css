@@ -5,6 +5,9 @@
 /* Main:  */
 /*--------------------------------*/
 main {
+    /*POSITION*/
+    max-width: 1000px;
+    margin: 0 auto;
     /*BACKGROUND*/
     background: var(--color-background);
 }
