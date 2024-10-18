@@ -1,0 +1,71 @@
+/*---------------------------------------------------------------*/
+/* Reset: Label */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Label */
+/*--------------------------------*/
+label {
+    user-select: none;
+    /*POSITION*/
+    margin: 6px 0px 6px 6px;
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    font-weight: 600;
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*---------------------------------------------------------------*/
+/* Label: States */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Label(Enabled) */
+/*--------------------------------*/
+label[data-state="enabled"] {
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    background: var(--color-secondary);
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Label(Disabled) */
+/*--------------------------------*/
+label[data-state="disabled"] {
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

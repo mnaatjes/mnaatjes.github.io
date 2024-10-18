@@ -1,0 +1,32 @@
+/*--------------------------------*/
+/* Article: timeline */
+/*--------------------------------*/
+article.--case-study__timeline {
+    /*GRID*/
+    grid-column: 2;
+    grid-row: 1;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*BORDER*/
+    border-radius: var(--ui-border-radius);
+}
+/*---------------------------------------------------------------*/
+/* Timeline */
+/*---------------------------------------------------------------*/
+.--timeline__grid {
+    /*POSITION*/
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: 2fr 1fr 4fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-gap: 12px;
+    align-items: start;
+}
+.--timeline__grid h6 {margin: 0px; color: var(--color-stroke);}
+.--timeline__grid b { color: var(--color-stroke);}
+.--timeline__grid small {margin: 0px; color: var(--color-stroke);}
+.--timeline__grid i {font-size: 24px; color: var(--color-stroke);}

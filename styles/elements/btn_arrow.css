@@ -1,0 +1,98 @@
+/*---------------------------------------------------------------*/
+/* Button - Arrow */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Button - Arrow */
+/*--------------------------------*/
+a[class*="btn--arrow"] {
+    /*POSITION*/
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /*BORDER*/
+    border-width: var(--ui-border-width);
+    border-style: var(--ui-border-style);
+    border-radius: 100%;
+}
+/*--------------------------------*/
+/* Button - Arrow: i */
+/*--------------------------------*/
+a[class*="btn--arrow"] i {
+    /*POSITION*/
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    font-size: 48px;
+}
+/*---------------------------------------------------------------*/
+/* Button - Arrow: Hero */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Button - Arrow: Hero */
+/*--------------------------------*/
+.btn--arrow--hero {
+    /*BACKGROUND*/
+    background-color: var(--color-tertiaryContainer);
+    /*BORDER*/
+    border-color: var(--color-tertiaryContainer);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 30px rgba(184, 229, 255, 1.0);
+}
+/*--------------------------------*/
+/* Button - Arrow: Hero i */
+/*--------------------------------*/
+.btn--arrow--hero i {
+    /*TEXT*/
+    color: var(--color-tertiaryStroke);
+}
+/*--------------------------------*/
+/* Button - Arrow(Hover): Hero */
+/*--------------------------------*/
+.btn--arrow--hero:hover {
+    border-color: var(--color-primary);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(184, 229, 255, 1.0);
+}
+/*---------------------------------------------------------------*/
+/* Button - Arrow: Footer */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Button - Arrow: Footer */
+/*--------------------------------*/
+.btn--arrow-footer {
+    /*BORDER*/
+    border-color: var(--color-tertiary);
+    /*BACKGROUND*/
+    background-color: var(--color-tertiary);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 24px rgba(102, 204, 255, 1.0);
+}
+/*--------------------------------*/
+/* Button - Arrow(Hover): Footer */
+/*--------------------------------*/
+.btn--arrow-footer:hover {
+    /*BORDER*/
+    border-color: var(--color-tertiary);
+    /*BACKGROUND*/
+    background-color: var(--color-secondary) !important;
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(102, 204, 255, 1.0);
+}
+/*--------------------------------*/
+/* Button - Arrow: Footer i */
+/*--------------------------------*/
+.btn--arrow-footer i {
+    /*TEXT*/
+    color: var(--color-stroke);
+}
+.btn--arrow-footer:hover i {
+    /*TEXT*/
+    color: var(--color-stroke);
+}
