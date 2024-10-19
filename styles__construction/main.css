@@ -17,22 +17,11 @@
 /* IMPORT: RESETS */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Reset: Body */
-/*--------------------------------*/
-@import url(resets/__body.css);
-/*--------------------------------*/
 /* Reset: Semantic */
 /*--------------------------------*/
+@import url(resets/__body.css);
 @import url(resets/semantic/__header.css);
 @import url(resets/semantic/__nav.css);
-@import url(resets/semantic/__main.css);
-@import url(resets/semantic/__footer.css);
-/*--------------------------------*/
-/* Imports: Resets - Buttons */
-/*--------------------------------*/
-@import url(resets/__button.css);
-@import url(resets/__button__btn.css);
-@import url(resets/__button__submit.css);
 /*--------------------------------*/
 /* Imports: Resets - Anchors */
 /*--------------------------------*/
@@ -43,43 +32,23 @@
 /* Imports: Text */
 /*--------------------------------*/
 @import url(resets/__headings.css);
-/*--------------------------------*/
-/* Imports: List */
-/*--------------------------------*/
-@import url(resets/__list.css);
-/*--------------------------------*/
-/* Imports: Form Elements */
-/*--------------------------------*/
-@import url(resets/__input.css);
-@import url(resets/__label.css);
-@import url(resets/__textarea.css);
 /*---------------------------------------------------------------*/
 /* IMPORT: MEDIA QUERIES */
 /*---------------------------------------------------------------*/
-@import url(media_queries/__query__phone.css) screen and (min-width:0px) and (max-width:650px);
+@import url(media_queries/__query__sm.css) screen and (min-width:0px) and (max-width:750px);
+@import url(media_queries/__query__phone.css) screen and (min-width:0px) and (max-width:480px);
 /*---------------------------------------------------------------*/
 /* IMPORT: SEMANTIC */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
 /* Semantic: Header */
 /*--------------------------------*/
-@import url(elements/__header__home.css);
-@import url(elements/__header__contact.css);
 @import url(elements/__header__construction.css);
 /*--------------------------------*/
 /* Semantic: Nav */
 /*--------------------------------*/
 @import url(elements/__nav__default.css);
 @import url(elements/__nav__mobile.css);
-/*--------------------------------*/
-/* Semantic: Main */
-/*--------------------------------*/
-@import url(elements/__main__home.css);
-@import url(elements/__main__contact.css);
-/*--------------------------------*/
-/* Semantic: Footer */
-/*--------------------------------*/
-@import url(elements/__footer__default.css);
 /*---------------------------------------------------------------*/
 /* IMPORT: LAYOUT */
 /*---------------------------------------------------------------*/
@@ -90,28 +59,16 @@
 /* IMPORT: ELEMENTS */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Element: Phone */
-/*--------------------------------*/
-@import url(elements/__phone.css);
-/*--------------------------------*/
-/* Element: Portfolio */
-/*--------------------------------*/
-@import url(elements/__portfolio__cards.css);
-/*--------------------------------*/
 /* Element: Arrow */
 /*--------------------------------*/
 @import url(elements/__arrow.css);
 /*--------------------------------*/
 /* Element: Buttons */
 /*--------------------------------*/
-@import url(elements/buttons/__btn__arrow.css);
-@import url(elements/buttons/__btn__hero.css);
 @import url(elements/buttons/__btn__social.css);
-@import url(elements/buttons/__btn__submit.css);
 /*--------------------------------*/
 /* Element: Links */
 /*--------------------------------*/
-@import url(elements/links/__link__footer.css);
 @import url(elements/links/__link__nav.css);
 @import url(elements/links/__link__construction.css);
 /*--------------------------------*/
@@ -121,7 +78,6 @@
     /*DISPLAY*/
     box-sizing: border-box;
 }
-body {background: red;}
 /*---------------------------------------------------------------*/
 /* Template: */
 /*---------------------------------------------------------------*/

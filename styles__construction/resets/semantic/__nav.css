@@ -24,13 +24,3 @@ nav {
     transition: var(--ui-transition);
     /*DEBUGGING*/
 }
-/*--------------------------------*/
-/* Nav(hover) */
-/*--------------------------------*/
-nav:hover {
-    /*BACKGROUND*/
-    background: var(--color-background);
-    /*SHADOW*/
-    box-shadow: var(--ui-shadow-on);
-    /*DEBUGGING*/
-}
