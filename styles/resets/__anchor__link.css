@@ -1,0 +1,13 @@
+/*--------------------------------*/
+/* Link */
+/*--------------------------------*/
+a[class^="link"] {
+    /*DISPLAY*/
+    display: inline-block;
+}
+a[class^="link"][data-state="disabled"] {
+    /*DISPLAY*/
+    display: inline-block;
+    /*FONT*/
+    color: var(--color-secondaryDim);
+}

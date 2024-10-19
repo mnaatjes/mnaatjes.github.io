@@ -1,0 +1,7 @@
+/*--------------------------------*/
+/* Background Colors */
+/*--------------------------------*/
+[class*="--grey"] {background: var(--color-strokeMid);}
+[class*="--pink"] {background: var(--color-primaryContainer);}
+[class*="--bright"] {background: var(--color-secondaryContainer);}
+[class*="--sky"] {background: var(--color-tertiaryContainer);}

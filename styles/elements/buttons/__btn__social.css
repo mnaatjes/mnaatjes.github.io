@@ -1,0 +1,102 @@
+/*---------------------------------------------------------------*/
+/* Button - Social */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Button - Social:*/
+/*--------------------------------*/
+a[class^="btn--social"],
+button[class^="btn--social"] {
+    /*POSITION*/
+    position: relative;
+    width: 48px;
+    height: 48px;
+    /*BORDER*/
+    border-width: var(--ui-border-width);
+    border-style: var(--ui-border-style);
+    border-radius: 100%;
+}
+/*--------------------------------*/
+/* Button - Social: i */
+/*--------------------------------*/
+a[class^="btn--social"] i,
+button[class^="btn--social"] i {
+    /*POSITION*/
+    z-index: 1;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    font-size: 32px;
+}
+/*---------------------------------------------------------------*/
+/* Button - Social - hero */
+/*---------------------------------------------------------------*/
+.btn--social-hero {
+    /*POSITION*/
+    margin-right: 12px;
+    /*BORDER*/
+    border-color: var(--color-stroke);
+    /*BACKGROUND*/
+    background-color: var(--color-tertiaryStroke);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 24px rgba(6, 46, 75, 1.0);
+}
+.btn--social-hero:hover {
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(6, 46, 75, 1.0);
+}
+/*--------------------------------*/
+/* Button - Social: i */
+/*--------------------------------*/
+.btn--social-hero i {
+    /*TEXT*/
+    color: var(--color-tertiaryContainer);
+}
+.btn--social-hero:hover i {color: var(--color-background);}
+/*---------------------------------------------------------------*/
+/* Button - Social - footer */
+/*---------------------------------------------------------------*/
+.btn--social-footer {
+    /*BORDER*/
+    border-color: var(--color-tertiary);
+    /*BACKGROUND*/
+    background-color: var(--color-tertiary);
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 24px rgba(102, 204, 255, 1.0);
+}
+.btn--social-footer:hover {
+    /*BORDER*/
+    border-color: var(--color-tertiary);
+    /*BACKGROUND*/
+    background-color: var(--color-secondary) !important;
+    /*SHADOW*/
+    box-shadow: inset 0px 0px 0px 0px rgba(102, 204, 255, 1.0);
+}
+/*--------------------------------*/
+/* Button - Social: i */
+/*--------------------------------*/
+.btn--social-footer i {
+    /*TEXT*/
+    color: var(--color-stroke);
+}
+.btn--social-footer:hover i {color: var(--color-stroke);}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

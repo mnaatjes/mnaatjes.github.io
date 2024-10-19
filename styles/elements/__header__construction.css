@@ -1,0 +1,30 @@
+/*---------------------------------------------------------------*/
+/* Portfolio: 404 Under Construction: header -- construction */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Header: Construction */
+/*--------------------------------*/
+header.--construction {
+    /*POSITION*/
+    width: 100%;
+    height: calc(100vh - 49.5px);
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+    /*VARS*/
+    /*POSITION*/
+    /*DISPLAY*/
+    /*BACKGROUND*/
+    /*BORDER*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSITION*/
+    /*ANIMATION*/
+    /*TRANSFORM*/
+    /*DEBUGGING*/

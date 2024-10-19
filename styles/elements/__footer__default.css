@@ -1,0 +1,91 @@
+/*--------------------------------*/
+/* Section: Footer - upper */
+/*--------------------------------*/
+section#__footer--upper {
+    /*POSITION*/
+    margin: var(--ui-margin);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*BORDER*/
+    border-top: 1px solid var(--color-stroke);
+}
+section#__footer--upper small {max-width: 300px; text-align: center; padding-bottom: 12px;}
+/*--------------------------------*/
+/* Section: Footer - lower */
+/*--------------------------------*/
+section#__footer--lower {
+    /*POSITION*/
+    padding: var(--ui-padding);
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin-bottom: 0px;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-rows: auto auto;
+    /*BACKGROUND*/
+    background: var(--color-stroke);
+    /*TEXT*/
+    font-size: 12px;
+    color: var(--color-tertiary);
+}
+/*--------------------------------*/
+/* article */
+/*--------------------------------*/
+article.__footer--lower__social {
+    /*GRID*/
+    grid-column: 1;
+    grid-row: 1;
+    align-self: start;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: repeat(2, 48px);
+    grid-template-rows: repeat(2, 48px);
+    grid-gap: 24px;
+    align-items: start;
+}
+/*--------------------------------*/
+/* article */
+/*--------------------------------*/
+article.__footer--lower__nav {
+    /*GRID*/
+    grid-column: 2;
+    grid-row: 1;
+    /*POSITION*/
+    padding: 0px 12px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+}
+/*--------------------------------*/
+/* article */
+/*--------------------------------*/
+article.__footer--lower__arrow {
+    /*GRID*/
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: right;
+    align-self: start;
+}
+/*--------------------------------*/
+/* article */
+/*--------------------------------*/
+article.__footer--lower__legal {
+    /*GRID*/
+    grid-column: 1 / span 3;
+    grid-row: 2;
+    /*POSITION*/
+    margin-top: 48px;
+    padding-top: 48px;
+    /*BORDER*/
+    border-top: 1px solid var(--color-tertiary);
+    /*TEXT*/
+    text-align: center;
+}
