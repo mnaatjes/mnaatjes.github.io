@@ -1,5 +1,5 @@
 /*---------------------------------------------------------------*/
-/* Portfolio: Main */
+/* Construction: Main */
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /* IMPORT: CONFIG */
@@ -76,7 +76,6 @@
 /*--------------------------------*/
 @import url(elements/__main__home.css);
 @import url(elements/__main__contact.css);
-@import url(elements/__main__case_study.css);
 /*--------------------------------*/
 /* Semantic: Footer */
 /*--------------------------------*/
@@ -114,17 +113,7 @@
 /*--------------------------------*/
 @import url(elements/links/__link__footer.css);
 @import url(elements/links/__link__nav.css);
-/*--------------------------------*/
-/* Element: Main - Case Study */
-/*--------------------------------*/
-@import url(elements/__main__case_study.css);
-@import url(elements/__main__case_study/case_study__conclusion.css);
-@import url(elements/__main__case_study/case_study__flow.css);
-@import url(elements/__main__case_study/case_study__grid_center.css);
-@import url(elements/__main__case_study/case_study__heading.css);
-@import url(elements/__main__case_study/case_study__persona__tech.css);
-@import url(elements/__main__case_study/case_study__table.css);
-@import url(elements/__main__case_study/case_study__timeline.css);
+@import url(elements/links/__link__construction.css);
 /*--------------------------------*/
 /* Overall */
 /*--------------------------------*/

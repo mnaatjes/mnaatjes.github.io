@@ -1,0 +1,9 @@
+/*--------------------------------*/
+/* Link - Construction */
+/*--------------------------------*/
+a.link--construction {
+    /*TEXT*/
+    text-decoration: underline;
+    font-weight: 600;
+}
+a.link--construction:hover {color: var(--color-primary);}
