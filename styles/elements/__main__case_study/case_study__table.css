@@ -1,0 +1,95 @@
+/*---------------------------------------------------------------*/
+/* Section - Case-study: Table */
+/*---------------------------------------------------------------*/
+section.--case-study__table {
+    /*POSITION*/
+    padding: var(--ui-padding);
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------*/
+/* Table: title */
+/*--------------------------------*/
+section.--case-study__table .__grid--title {
+    /*POSITION*/
+    padding-left: 24px;
+    /*BORDER*/
+    border-top-left-radius: var(--ui-border-radius);
+    border-top-right-radius: var(--ui-border-radius);
+    /*BACKGROUND*/
+    background: var(--color-tertiary);
+}
+/*--------------------------------*/
+/* Table: Head | Row */
+/*--------------------------------*/
+section.--case-study__table .__grid--head,
+section.--case-study__table .__grid--row {
+    /*DISPLAY*/
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-auto-flow: column;
+}
+/*--------------------------------*/
+/* Table: Head */
+/*--------------------------------*/
+section.--case-study__table .__grid--head {
+    /*BACKGROUND*/
+    background: var(--color-tertiaryContainer);
+    /*BORDER*/
+    border-bottom: 1px solid var(--color-tertiary);
+    /*TEXT*/
+    color: var(--color-stroke);
+}
+/*--------------------------------*/
+/* Table: Row */
+/*--------------------------------*/
+section.--case-study__table .__grid--row {
+    /*BACKGROUND*/
+    background: var(--color-background);
+    /*BORDER*/
+    border-bottom: 1px solid var(--color-tertiary);
+    /*TEXT*/
+    color: var(--color-primary);
+}
+/*--------------------------------*/
+/* Table: Head | Row :: first */
+/*--------------------------------*/
+section.--case-study__table .__grid--head > :first-child,
+section.--case-study__table .__grid--row > :first-child {
+    /*BORDER*/
+    border-left: 1px solid var(--color-tertiary);
+}
+/*--------------------------------*/
+/* Table: Head | Row :: last */
+/*--------------------------------*/
+section.--case-study__table .__grid--head:last-child,
+section.--case-study__table .__grid--row:last-child {
+    /*BORDER*/
+    border-bottom-left-radius: var(--ui-border-radius);
+    border-bottom-right-radius: var(--ui-border-radius);
+}
+/*--------------------------------*/
+/* Table: Head | Row :: children */
+/*--------------------------------*/
+section.--case-study__table .__grid--head > *,
+section.--case-study__table .__grid--row > * {
+    /*POSITION*/
+    padding-left: 24px;
+    /*DISPLAY*/
+    display: flex;
+    align-items: center;
+    /*BORDER*/
+    border-right: 1px solid var(--color-tertiary);
+}
+/*--------------------------------*/
+/* Table: Head | Row :: Not first */
+/*--------------------------------*/
+section.--case-study__table .__grid--head > :not(:first-child),
+section.--case-study__table .__grid--row > :not(:first-child) {
+    /*POSITION*/
+    padding: 12px;
+    /*DISPLAY*/
+    justify-content: center;
+}
