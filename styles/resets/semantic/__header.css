@@ -10,7 +10,7 @@ header {
     padding-top: 48px;
     padding-bottom: 48px;
     /*BACKGROUND*/
-    background: var(--color-tertiaryContainer);
+    background: var(--color-tertiary);
     /*TEXT*/
     color: var(--color-tertiaryStroke);
 }

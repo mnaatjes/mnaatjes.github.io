@@ -1,0 +1,30 @@
+/*--------------------------------*/
+/* Element - Arrow */
+/*--------------------------------*/
+div.arrow {
+    /*POSITION*/
+    position: relative;
+    width: 60px;
+    height: 60px;
+    /*BORDER*/
+    border-width: var(--ui-border-width);
+    border-style: var(--ui-border-style);
+    border-radius: 100%;
+    /*BACKGROUND*/
+    background: var(--color-primary);
+}
+
+div.arrow i {
+    /*POSITION*/
+    position: absolute;
+    top: calc(50% - 24px);
+    left: calc(50% - 24px);
+    width: 48px;
+    height: 48px;
+    /*DISPLAY*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*TEXT*/
+    font-size: 48px;
+}

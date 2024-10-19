@@ -99,7 +99,11 @@
 /*--------------------------------*/
 @import url(elements/__portfolio__cards.css);
 /*--------------------------------*/
-/* Element: Phone */
+/* Element: Arrow */
+/*--------------------------------*/
+@import url(elements/__arrow.css);
+/*--------------------------------*/
+/* Element: Buttons */
 /*--------------------------------*/
 @import url(elements/buttons/__btn__arrow.css);
 @import url(elements/buttons/__btn__hero.css);

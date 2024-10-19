@@ -15,7 +15,7 @@ nav {
     justify-content: space-between;
     align-items: flex-end;
     /*BACKGROUND*/
-    background: var(--color-tertiaryContainer);
+    background: var(--color-tertiary);
     /*BORDER*/
     border-bottom: 1px solid var(--color-stroke);
     /*SHADOW*/

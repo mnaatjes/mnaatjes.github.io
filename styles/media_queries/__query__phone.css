@@ -12,8 +12,8 @@
     /*--------------------------------*/
     /* Nav - Section: Desktop | Mobile */
     /*--------------------------------*/
-    nav .__nav--desktop {display: none;}
-    nav .__nav--mobile {display: block;}
+    nav .__nav--desktop {display: none !important;}
+    nav .__nav--mobile {display: block !important;}
     /*--------------------------------*/
     /* Header --home */
     /*--------------------------------*/
