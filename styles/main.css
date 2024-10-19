@@ -1,61 +1,90 @@
 /*---------------------------------------------------------------*/
-/* CIS 170: Main */
+/* Portfolio: Main */
+/*---------------------------------------------------------------*/
+/*---------------------------------------------------------------*/
+/* IMPORT: CONFIG */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
 /* Imports: Config */
 /*--------------------------------*/
-@import url(config/config__colors.css);
-@import url(config/config__main.css);
+@import url(config/__colors.css);
+@import url(config/__main.css);
 /*--------------------------------*/
 /* Imports: Debug */
 /*--------------------------------*/
-@import url(debug/debug__main.css);
+@import url(debug/__debug__main.css);
+/*---------------------------------------------------------------*/
+/* IMPORT: RESETS */
+/*---------------------------------------------------------------*/
 /*--------------------------------*/
-/* Imports: Semantic */
+/* Reset: Body */
 /*--------------------------------*/
-@import url(resets/semantic/semantic_nav.css);
-@import url(resets/semantic/semantic_header.css);
-@import url(resets/semantic/semantic_main.css);
-@import url(resets/semantic/semantic_footer.css);
+@import url(resets/__body.css);
 /*--------------------------------*/
-/* Imports: Semantic - Case Study */
+/* Reset: Semantic */
 /*--------------------------------*/
-@import url(resets/semantic/case_study/case_study__conclusion.css);
-@import url(resets/semantic/case_study/case_study__grid_center.css);
-@import url(resets/semantic/case_study/case_study__heading.css);
-@import url(resets/semantic/case_study/case_study__table.css);
-@import url(resets/semantic/case_study/case_study__flow.css);
-@import url(resets/semantic/case_study/case_study__persona__tech.css);
-@import url(resets/semantic/case_study/case_study__timeline.css);
+@import url(resets/semantic/__header.css);
+@import url(resets/semantic/__nav.css);
+@import url(resets/semantic/__main.css);
+@import url(resets/semantic/__footer.css);
 /*--------------------------------*/
-/* Imports: Resets */
+/* Imports: Resets - Buttons */
 /*--------------------------------*/
-@import url(resets/reset_headings.css);
-@import url(resets/resets_ul_li.css);
-@import url(resets/reset_buttons.css);
-@import url(resets/reset_input.css);
-@import url(resets/reset_label.css);
-@import url(resets/reset_textarea.css);
+@import url(resets/__button.css);
+@import url(resets/__button__btn.css);
+@import url(resets/__button__submit.css);
 /*--------------------------------*/
-/* Imports: Elements */
+/* Imports: Resets - Anchors */
 /*--------------------------------*/
-@import url(elements/card_portfolio.css);
-@import url(elements/btn_arrow.css);
-@import url(elements/btn_hero.css);
-@import url(elements/btn_social.css);
-@import url(elements/link_nav.css);
-@import url(elements/link_footer_lower.css);
-@import url(elements/link_footer.css);
-@import url(elements/btn_submit_inline.css);
-@import url(elements/ele_phone.css);
+@import url(resets/__anchor.css);
+@import url(resets/__anchor__btn.css);
+@import url(resets/__anchor__link.css);
 /*--------------------------------*/
-/* Media Queries */
+/* Imports: Text */
 /*--------------------------------*/
-@import url(media_queries/media_queries_phone.css) screen and (min-width:0px) and (max-width:650px);
-/*
-@import url(media_queries/media_queries__main_lg.css) screen and (min-width:1200px);
-@import url(media_queries/media_queries__main_md.css) screen and (min-width:700px) and (max-width:1200px);
-*/
+@import url(resets/__headings.css);
+/*--------------------------------*/
+/* Imports: List */
+/*--------------------------------*/
+@import url(resets/__list.css);
+/*--------------------------------*/
+/* Imports: Form Elements */
+/*--------------------------------*/
+@import url(resets/__input.css);
+@import url(resets/__label.css);
+@import url(resets/__textarea.css);
+/*---------------------------------------------------------------*/
+/* IMPORT: MEDIA QUERIES */
+/*---------------------------------------------------------------*/
+@import url(media_queries/__query__phone.css) screen and (min-width:0px) and (max-width:650px);
+/*---------------------------------------------------------------*/
+/* IMPORT: SEMANTIC */
+/*---------------------------------------------------------------*/
+/*--------------------------------*/
+/* Semantic: Header */
+/*--------------------------------*/
+@import url(elements/__header__home.css);
+@import url(elements/__header__contact.css);
+@import url(elements/__header__construction.css);
+/*--------------------------------*/
+/* Semantic: Nav */
+/*--------------------------------*/
+@import url(elements/__nav__default.css);
+@import url(elements/__nav__mobile.css);
+/*--------------------------------*/
+/* Semantic: Main */
+/*--------------------------------*/
+@import url(elements/__main__home.css);
+@import url(elements/__main__contact.css);
+@import url(elements/__main__case_study.css);
+/*--------------------------------*/
+/* Semantic: Footer */
+/*--------------------------------*/
+@import url(elements/__footer__default.css);
+/*---------------------------------------------------------------*/
+/* IMPORT: LAYOUT */
+/*---------------------------------------------------------------*/
+
 /*--------------------------------*/
 /* Overall */
 /*--------------------------------*/        
@@ -63,44 +92,6 @@
     /*DISPLAY*/
     box-sizing: border-box;
 }
-/*--------------------------------*/
-/* Body */
-/*--------------------------------*/
-body {
-    /*POSITION*/
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    /*BACKGROUND*/
-    background: var(--color-background);
-    /*TEXT*/
-    font-family: var(--ui-font-family);
-}
-/*body > * {border: 1px solid red;}*/
-/*--------------------------------*/
-/* Flex */
-/*--------------------------------*/
-[class*="__row"] {
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: row;
-}
-[class*="__row--center"] {align-items: center;}
-[class*="__col"] {
-    /*DISPLAY*/
-    display: flex;
-    flex-direction: column;
-}
-[class$="--between"] {justify-content: space-between;}
-[class$="--start"] {justify-content: flex-start;}
-/*--------------------------------*/
-/* Background Colors */
-/*--------------------------------*/
-[class*="--grey"] {background: var(--color-strokeMid);}
-[class*="--pink"] {background: var(--color-primaryContainer);}
-[class*="--bright"] {background: var(--color-secondaryContainer);}
-[class*="--sky"] {background: var(--color-tertiaryContainer);}
-
 /*---------------------------------------------------------------*/
 /* Template: */
 /*---------------------------------------------------------------*/

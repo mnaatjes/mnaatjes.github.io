@@ -1,18 +1,16 @@
 /*---------------------------------------------------------------*/
-/* Template: Media Queries: sm  */
+/* Template: Semantic | Header: */
 /*---------------------------------------------------------------*/
-@media screen and (min-width: 0px) and (max-width: 600px) {}
 /*--------------------------------*/
-/* Template */
+/* Header */
 /*--------------------------------*/
-    /*VARS*/
+header {
     /*POSITION*/
-    /*DISPLAY*/
+    padding: var(--ui-padding);
+    padding-top: 48px;
+    padding-bottom: 48px;
     /*BACKGROUND*/
-    /*BORDER*/
+    background: var(--color-tertiaryContainer);
     /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
+    color: var(--color-tertiaryStroke);
+}

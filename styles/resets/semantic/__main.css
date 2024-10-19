@@ -12,26 +12,6 @@ main {
     background: var(--color-background);
 }
 /*--------------------------------*/
-/* Main: Home */
-/*--------------------------------*/
-main[class$="--home"] {
-    /*POSITION*/
-    padding: var(--ui-padding);
-    /*DEBUGGING*/
-    /*border: 1px solid red;*/
-}
-/*--------------------------------*/
-/* Main: contact */
-/*--------------------------------*/
-main[class$="--contact"] {
-    /*POSITION*/
-    margin-top: 60px;
-}
-/*--------------------------------*/
-/* Main: Case-study */
-/*--------------------------------*/
-main[class$="--case-study"] {}
-/*--------------------------------*/
 /* Section: */
 /*--------------------------------*/
 main section {

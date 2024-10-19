@@ -1,10 +1,19 @@
 /*---------------------------------------------------------------*/
-/* Template: Media Queries: sm  */
+/* Template: Semantic | Footer: */
 /*---------------------------------------------------------------*/
-@media screen and (min-width: 0px) and (max-width: 600px) {}
+/*--------------------------------*/
+/* Footer:  */
+/*--------------------------------*/
+footer {
+    /*BACKGROUND*/
+    background: var(--color-background);
+}
+
 /*--------------------------------*/
 /* Template */
 /*--------------------------------*/
+    /*GRID*/
+    /*FLEX*/
     /*VARS*/
     /*POSITION*/
     /*DISPLAY*/

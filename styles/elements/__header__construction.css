@@ -1,7 +1,19 @@
 /*---------------------------------------------------------------*/
-/* Template: Media Queries: sm  */
+/* Portfolio: 404 Under Construction: header -- construction */
 /*---------------------------------------------------------------*/
-@media screen and (min-width: 0px) and (max-width: 600px) {}
+/*--------------------------------*/
+/* Header: Construction */
+/*--------------------------------*/
+header.--construction {
+    /*POSITION*/
+    width: 100%;
+    height: calc(100vh - 49.5px);
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
 /*--------------------------------*/
 /* Template */
 /*--------------------------------*/

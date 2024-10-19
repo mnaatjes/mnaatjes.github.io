@@ -1,13 +1,3 @@
-/*---------------------------------------------------------------*/
-/* Template: Semantic | Footer: */
-/*---------------------------------------------------------------*/
-/*--------------------------------*/
-/* Footer:  */
-/*--------------------------------*/
-footer {
-    /*BACKGROUND*/
-    background: var(--color-background);
-}
 /*--------------------------------*/
 /* Section: Footer - upper */
 /*--------------------------------*/
@@ -99,19 +89,3 @@ article.__footer--lower__legal {
     /*TEXT*/
     text-align: center;
 }
-/*--------------------------------*/
-/* Template */
-/*--------------------------------*/
-    /*GRID*/
-    /*FLEX*/
-    /*VARS*/
-    /*POSITION*/
-    /*DISPLAY*/
-    /*BACKGROUND*/
-    /*BORDER*/
-    /*TEXT*/
-    /*SHADOW*/
-    /*TRANSITION*/
-    /*ANIMATION*/
-    /*TRANSFORM*/
-    /*DEBUGGING*/
