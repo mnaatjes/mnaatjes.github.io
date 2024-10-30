@@ -30,6 +30,7 @@ section.--construction__grid {
     grid-gap: 24px;
     align-content: center;
 }
+section.--construction__grid > * {border: 1px solid red;}
 /*--------------------------------*/
 /* Image */
 /*--------------------------------*/
@@ -128,6 +129,8 @@ article.--construction__screen {
     margin: 6px;
     height: 100%;
     /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
     /*BORDER*/
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
