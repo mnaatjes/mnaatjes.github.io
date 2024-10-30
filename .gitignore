@@ -1,0 +1,6 @@
+#   IGNORE FILES IN node_modules dir
+node_modules/
+#   IGNORE FILE package
+package-lock.json
+#   IGNORE FILE workspace
+portfolio.code-workspace

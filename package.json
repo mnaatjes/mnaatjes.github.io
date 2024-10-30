@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "jsdocs": "^1.0.0",
+    "sass": "^1.80.4"
+  },
+  "name": "github_pages",
+  "version": "1.0.0",
+  "description": "portfolio page project",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mnaatjes",
+  "license": "ISC"
+}
