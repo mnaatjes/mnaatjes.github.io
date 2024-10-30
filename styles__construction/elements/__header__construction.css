@@ -30,7 +30,6 @@ section.--construction__grid {
     grid-gap: 24px;
     align-content: center;
 }
-section.--construction__grid > * {border: 1px solid red;}
 /*--------------------------------*/
 /* Image */
 /*--------------------------------*/
