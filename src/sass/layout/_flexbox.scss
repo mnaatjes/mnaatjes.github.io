@@ -1,0 +1,33 @@
+//-------------------------------------------------------------------
+//  PORTFOLIO
+//
+//  LAYOUT/FLEXBOX
+//
+//-------------------------------------------------------------------
+/**
+* ROW
+*/
+[class^="__row"] {
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /**
+    * COLUMN
+    */
+    [class^="__col"] {
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: column;
+    }
+    [class$="--center"] {
+        justify-content: center;
+        align-items: center;
+    }
+}
+/**
+* BETWEEN
+*/
+[class$="--between"] {justify-content: space-between;}
+[class$="--end"] {justify-content: flex-end;}
+[class$="--stretch"] {justify-content: stretch;}

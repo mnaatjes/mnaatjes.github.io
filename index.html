@@ -5,80 +5,181 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <!--Font Awesome Update-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <!--Google Inter Font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <!--Main CSS Document-->
-    <link rel="stylesheet" href="styles__construction/main.css">
+    <link rel="stylesheet" href="src/css/main.css">
     <head>
-        <title>Portfolio: Construction</title>
+        <title>MNaatjes Portfolio</title>
     </head>
     <body>
         <nav>
-            <div class="__nav__logo">
-                Michael Naatjes
-            </div>
-            <div class="__nav--desktop">
-                <a class="link--nav" data-state="disabled">Coming Soon</a>
-            </div>
-            <div class="__nav--mobile">
-                <button type="button">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+            <img src="./assets/mnaatjes__logo.png" alt="" class="nav__logo">
+            <div class="nav__menu">
+                <a href="#" class="nav__menu__link">Home</a>
+                <a href="#" class="nav__menu__link">Portfolio</a>
+                <a href="#" class="nav__menu__link">About</a>
             </div>
         </nav>
-        <header class="--construction">
-            <section class="--construction__grid">
-                <img class="--construction" src="assets/20240707_122744.jpg" alt="headshot">
-                <h1 class="--construction">Under Construction</h1>
-                <article class="--construction__arrow">
-                    <div class="arrow ani--slide">
-                        <i class="fa-solid fa-arrow-right"></i>
+        <header class="header__home">
+            <section class="header__home__bio">
+                <img src="./assets/wedding_michael_standing_portfolio_thumbnail_sm.png" alt="">
+                <div class="header__home__bio--title">
+                    <h1>Michael Naatjes</h1>
+                    <h4>Front End Developer</h4>
+                </div>
+                <div class="header__home__bio--desc">
+                    <b>About Me:</b>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio minus iure pariatur.</p>
+                </div>
+            </section>
+            <section class="header__home__buttons">
+                <a href="#" class="header__home__btn">Portfolio</a>
+                <a href="#" class="header__home__btn">Case Studies</a>
+                <a href="#" class="header__home__btn">Resume</a>
+                <a href="#" class="header__home__btn">About Me</a>
+            </section>
+            <section class="header__home__resume">
+                <article class="header__home--card">
+                    <div class="card__icon">
+                        <i class="fa-solid fa-database"></i>
                     </div>
+                    <div class="card__title">
+                        Full Stack
+                        <br/>
+                        Developer
+                    </div>
+                    <ul class="card__list">
+                        <li>PHP</li>
+                        <li>Node.js</li>
+                        <li>SQL</li>
+                        <li>Python</li>
+                        <li>Express.js</li>
+                    </ul>
                 </article>
-                <article class="--construction__screen">
-                    <div class="screen__heading">
-                        <div class="screen__heading__dots-container">
-                            <div class="screen__heading__dot"></div>
-                            <div class="screen__heading__dot"></div>
-                            <div class="screen__heading__dot"></div>
-                        </div>
-                        <div class="screen__heading__bar"></div>
+                <article class="header__home--card">
+                    <div class="card__icon">
+                        <i class="fa-solid fa-code"></i>
                     </div>
-                    <div class="screen__heading__display">
-                        <p>Hello,</p>
-                        <p>
-                            I&apos;m <strong>Michael Naatjes</strong>. The website isn&apos;t finished yet. 
-                            Please take a look at the links to my social media and LinkedIn. 
-                        </p>
-                        <div class="__row--left">
-                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdVBrJ0Sm-9PGmIOQoYLLqoihwmkGkvvwnS16AzYhG1EcrwJQ/viewform?usp=sf_link" target="_blank" class="btn--header">Contact Me&excl;</a>
-                            <a href="assets/resume_mnaatjes_10302024.pdf" target="_blank" class="btn--header">Resume&excl;</a>
-                        </div>
+                    <div class="card__title">
+                        Front End
+                        <br/>
+                        Developer
                     </div>
-                    <div class="screen__footer">
-                        <div class="screen__footer__button"></div>
-                    </div>
+                    <ul class="card__list">
+                        <li>JavaScript</li>
+                        <li>HTML 5</li>
+                        <li>CSS / SASS</li>
+                        <li>React</li>
+                        <li>TypeScript</li>
+                    </ul>
                 </article>
-                <article class="--construction__links">
-                    <a href="http://www.linkedin.com/in/michael-naatjes-045900329" target="_blank" class="btn--social-hero">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <a href="https://www.behance.net/michaelnaatjes" target="_blank" class="btn--social-hero">
-                        <i class="fa-brands fa-behance"></i>
-                    </a>
-                    <a href="https://github.com/mnaatjes" target="_blank" class="btn--social-hero">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.figma.com/@michaelnaatjes" target="_blank" class="btn--social-hero">
-                        <i class="fa-brands fa-figma"></i>
-                    </a>
-                    <div class="arrow ani--bounce">
-                        <i class="fa-solid fa-arrow-up"></i>
+                <article class="header__home--card">
+                    <div class="card__icon">
+                        <i class="fa-solid fa-pen-ruler"></i>
                     </div>
+                    <div class="card__title">
+                        UX / UI 
+                        <br/>
+                        Designer
+                    </div>
+                    <ul class="card__list">
+                        <li>Figma</li>
+                        <li>Illustrator</li>
+                        <li>Miro</li>
+                        <li>UML</li>
+                        <li>Drupal</li>
+                    </ul>
                 </article>
             </section>
+            <section class="header__home__contact">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Phone Number">
+                <input type="text" placeholder="Email">
+                <button class="header__home__btn">Get In Touch</button>
+            </section>
         </header>
+        <main class="main--home">
+            <a href="#" class="main--home__card--portfolio">
+                <div class="card--portfolio__img">
+                    <img src="assets/localhost_portfolio_projects_lcars_.png" alt="">
+                    <div class="card--portfolio__content">
+                        <h2>Title of Project</h2>
+                        <div class="content--skills">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-sass"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus fugit voluptate at quas perferendis tempora neque mollitia quam, adipisci odio! Dignissimos, eaque harum?</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="main--home__card--portfolio">
+                <div class="card--portfolio__img">
+                    <img src="assets/localhost_portfolio_projects_lcars_.png" alt="">
+                    <div class="card--portfolio__content">
+                        <h2>Title of Project</h2>
+                        <div class="content--skills">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-sass"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus fugit voluptate at quas perferendis tempora neque mollitia quam, adipisci odio! Dignissimos, eaque harum?</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="main--home__card--portfolio">
+                <div class="card--portfolio__img">
+                    <img src="assets/localhost_portfolio_projects_lcars_.png" alt="">
+                    <div class="card--portfolio__content">
+                        <h2>Title of Project</h2>
+                        <div class="content--skills">
+                            <i class="fa-brands fa-bootstrap"></i>
+                            <i class="fa-brands fa-figma"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-sass"></i>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus fugit voluptate at quas perferendis tempora neque mollitia quam, adipisci odio! Dignissimos, eaque harum?</p>
+                    </div>
+                </div>
+            </a>
+        </main>
+        <footer>
+            <section class="footer__lower">
+                <div class="footer__lower__social">
+                    <a href="" class="lower__social__link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="" class="lower__social__link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" class="lower__social__link">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                    <a href="" class="lower__social__link">
+                        <i class="fa-brands fa-figma"></i>
+                    </a>
+                </div>
+                <div class="footer__lower__menu">
+                    <div class="lower__menu__col">
+                        <a href="#" class="lower__menu__link--main">Home</a>
+                    </div>
+                    <div class="lower__menu__col">
+                        <a href="#" class="lower__menu__link--main">Portfolio</a>
+                        <a href="#" class="lower__menu__link">Case Studies</a>
+                        <a href="#" class="lower__menu__link">Examples</a>
+                        <a href="#" class="lower__menu__link">Sites</a>
+                    </div>
+                    <div class="lower__menu__col">
+                        <a href="#" class="lower__menu__link--main">About</a>
+                        <a href="#" class="lower__menu__link">Resume</a>
+                    </div>
+                </div>
+                <div class="footer__lower__logo">
+                    <img src="./assets/mnaatjes__logo__main.png" alt="main logo">
+                </div>
+                <div class="footer__lower__copy">&copy;2024 Michael Naatjes</div>
+            </section>
+        </footer>
     </body>
 </html>

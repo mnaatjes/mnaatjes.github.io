@@ -1,0 +1,132 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  COMPONENTS/MAIN__HOME__CARD
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   HOME: CARD--PORTFOLIO
+*------------------------------------------------------------------*/
+a.main--home__card--portfolio {
+    text-decoration: none;
+    /*POSTITION*/
+    margin: 24px 0;
+    /*BORDER*/
+    border-radius: $ui-border-radius;
+    /*ANIMATION*/
+    transition: $ui-transition;
+    /**--------------------------------------------
+    * PORTFOLIO: IMAGE
+    *--------------------------------------------*/
+        .card--portfolio__img {
+        /*POSTITION*/
+        padding: 24px;
+        /*BORDER*/
+        border-radius: $ui-border-radius;
+        /*BACKGROUND*/
+        background: $tertiary-container;
+        /**
+        *   IMG
+        */
+        img {
+            /*POSTITION*/
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 300px;
+            /*BORDER*/
+            border-radius: $ui-border-radius;
+        }
+    }
+    /**--------------------------------------------
+    * PORTFOLIO: CONTENT
+    *--------------------------------------------*/
+    .card--portfolio__content {
+        /*POSTITION*/
+        padding: 12px;
+        /*DISPLAY*/
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto 1fr;
+        /*BORDER*/
+        /*BACKGROUND*/
+        background: $default-bg;
+        /**--------------------------------------------
+        * H2: TITLE
+        *--------------------------------------------*/
+        h2 {
+            /*GRID*/
+            grid-column: 1;
+            grid-row: 1 / span 2;
+            /*POSTITION*/
+            margin: 12px 12px 0 0;
+            padding-right: 12px;
+            /*BORDER*/
+            border-right: 1px solid $tertiary;
+            /*TEXT*/
+            color: $tertiary-stroke;
+        }
+        /**--------------------------------------------
+        * PORTFOLIO: SKILLS
+        *--------------------------------------------*/
+        .content--skills {
+            list-style-type: none;
+            margin: 12px 0 0 0;
+            padding: 0;
+            /*GRID*/
+            grid-column: 2;
+            grid-row: 1;
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            /**
+            *   ICON
+            */
+            i {
+                /*POSTITION*/
+                margin-right: 12px;
+                /*TEXT*/
+                color: $primary;
+                font-size: 32px;
+            }
+        }
+        /**--------------------------------------------
+        * PORTFOLIO: PARAGRAPH
+        *--------------------------------------------*/
+        p {
+            /*GRID*/
+            grid-column: 2;
+            grid-row: 2;
+            /*POSTITION*/
+            padding-top: 12px;
+            /*BORDER*/
+            border-top: 1px solid $tertiary;
+            /*TEXT*/
+            color: $tertiary-stroke;
+        }
+    }
+    /**--------------------------------------------
+    * PORTFOLIO: HOVER
+    *--------------------------------------------*/
+    &:hover {box-shadow: $ui-shadow;}
+}
+/**--------------------------------------------
+* TEMPLATE
+*--------------------------------------------*/
+    /*FLEX*/
+    /*GRID*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/

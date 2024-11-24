@@ -1,0 +1,12 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  CONFIG
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@forward '_colors.scss';
+@forward '_mixins.scss';
+@forward '_variables.scss';

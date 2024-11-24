@@ -1,0 +1,31 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO: COLORS
+//
+//-------------------------------------------------------------------
+// IMPORT
+@use 'sass:color';
+// DEFAULT
+$default-stroke: #333;
+$default-stroke-lite: #d6d6d6;
+$default-stroke-mid: #d6d6d6;
+$default-stroke-dim: #b0b0b0;
+$default-bg: #f6f6f6;
+$default-bg-lite: #fcfcfc;
+$default-bg-mid: #dddddd;
+$default-bg-dim: $default-stroke-dim;
+$default-border: color.scale($default-stroke, $lightness: 40%);
+// PRIMARY
+$primary: #FF3366;
+$primary-container: color.scale($primary, $lightness: 75%);
+$primary-stroke: color.scale($primary, $lightness: -75%);
+$primary-dim: color.scale($primary, $lightness: -25%);
+// SECONDARY
+$secondary: #ffcc00;
+$secondary-container: color.scale($secondary, $lightness: 75%);
+$secondary-stroke: color.scale($secondary, $lightness: -75%);
+$secondary-dim: color.scale($secondary, $lightness: -25%);
+// TERTIARY
+$tertiary: #66ccff;
+$tertiary-container: color.scale($tertiary, $lightness: 75%);
+$tertiary-stroke: color.scale($tertiary, $lightness: -75%);
+$tertiary-dim: color.scale($tertiary, $lightness: -25%);

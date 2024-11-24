@@ -1,0 +1,26 @@
+/*---------------------------------------------------------------*/
+/* Template: Media Queries: sm  */
+/*---------------------------------------------------------------*/
+@media screen and (min-width: 0px) and (max-width: 480px) {
+    /*--------------------------------*/
+    /* Section: construction - grid */
+    /*--------------------------------*/
+    section.--construction__grid {
+        /*DISPLAY*/
+        grid-template-rows: 100px 400px !important;
+    }
+    /*--------------------------------*/
+    /* arrow */
+    /*--------------------------------*/
+    article.--construction__arrow {
+        /*DISPLAY*/
+        display: none;
+    }
+    /*--------------------------------*/
+    /* Screen */
+    /*--------------------------------*/
+    article.--construction__screen {
+        /*GRID*/
+        grid-column: 1 / span 2 !important;
+    }
+}

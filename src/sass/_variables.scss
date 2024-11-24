@@ -1,0 +1,22 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  VARIABLES
+//
+//-------------------------------------------------------------------
+// IMPORTS
+@use 'sass:color';
+@use '_colors.scss' as *;
+
+//
+//  VARS: UI
+//
+$ui-border: 1px solid $default-border;
+$ui-border-radius: 4px;
+$ui-padding: 48px 24px;
+$ui-margin: 12px 12px;
+$ui-width: 340px;
+$ui-shadow: 0 4px 2px 2px rgba($color: #000000, $alpha: 0.2);
+$ui-shadow-inset: inset 3px -6px 4px 1px rgba($color: #000000, $alpha: 0.2);
+$ui-shadow-drop: 0px 6px 2px 0px rgba($color: #000000, $alpha: 0.4);
+$ui-transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);

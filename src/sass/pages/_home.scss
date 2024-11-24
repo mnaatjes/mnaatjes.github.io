@@ -1,0 +1,248 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  PAGES/HOME
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   HEADER: HOME
+*------------------------------------------------------------------*/
+header.header__home {
+    /*POSTITION*/
+    height: calc(100vh);
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-template-rows: 300px 1fr 2fr;
+    grid-gap: 48px;
+    /*BACKGROUND*/
+    background: $default-bg;
+    > * {border-radius: $ui-border-radius;}
+    /**--------------------------------------------
+    * HEADER: BIO
+    *--------------------------------------------*/
+    section.header__home__bio {
+        /*GRID*/
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        /*POSTITION*/
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        /*BACKGROUND*/
+        background: $tertiary-container;
+        /*SHADOW*/
+        box-shadow: $ui-shadow;
+        /**--------------------------------------------
+        * BIO: IMG
+        *--------------------------------------------*/
+        img {
+            /*POSTITION*/
+            width: 300px;
+            height: 100%;
+            /*DISPLAY*/
+            object-fit: cover;
+            /*BORDER*/
+            border-top-right-radius: 100%;
+            border-bottom-right-radius: 100%;
+            border-bottom-left-radius: 100%;
+            border-top-left-radius: $ui-border-radius;
+        }
+        /**--------------------------------------------
+        * BIO: TITLE
+        *--------------------------------------------*/
+        .header__home__bio--title {
+            /*FLEX*/
+            flex: 1;
+            /*POSTITION*/
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /*BORDER*/
+            /*TEXT*/
+            text-align: center;
+            color: $tertiary-stroke;
+            /**
+            *   H1
+            */
+            h1 {
+                /*POSTITION*/
+                margin-bottom: 0;
+                /*TEXT*/
+                font-size: 60px;
+                font-weight: 600;
+            }
+            /**
+            *   H4
+            */  
+            h4 {
+                /*POSITION*/
+                margin-top: 0;
+                /*TEXT*/
+
+            }
+        }
+        /**--------------------------------------------
+        * BIO: DESC
+        *--------------------------------------------*/
+        .header__home__bio--desc {
+            /*FLEX*/
+            /*POSTITION*/
+            padding: 12px 24px;
+            width: 300px;
+            height: 100%;
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /*BORDER*/
+            border-top-right-radius: $ui-border-radius;
+            border-bottom-right-radius: $ui-border-radius;
+            /*BACKGROUND*/
+            background: $tertiary-stroke;
+            /*TEXT*/
+            color: $tertiary-container;
+            font-size: 14px;
+            /*TRANSFORM*/
+            /*ANIMATION*/
+        }
+    }
+    /**--------------------------------------------
+    * HEADER: BUTTONS
+    *--------------------------------------------*/
+    section.header__home__buttons {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 2;
+        /*POSTITION*/
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        /*BORDER*/
+        /*BACKGROUND*/
+        /*TEXT*/
+        /*SHADOW*/
+        /*TRANSFORM*/
+        /*ANIMATION*/
+    }
+    /**--------------------------------------------
+    * HEADER: RESUME
+    *--------------------------------------------*/
+    section.header__home__resume {
+        /*GRID*/
+        grid-column: 1;
+        grid-row: 3;
+        /*POSTITION*/
+        //padding: 24px;
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /*BORDER*/
+        /*BACKGROUND*/
+        /*TEXT*/
+        /*SHADOW*/
+        //box-shadow: $ui-shadow;
+        /*TRANSFORM*/
+        /*ANIMATION*/
+    }
+    /**--------------------------------------------
+    * HEADER: CONTACT
+    *--------------------------------------------*/
+    section.header__home__contact {
+        /*GRID*/
+        grid-column: 2;
+        grid-row: 2 / span 2;
+        /*POSTITION*/
+        padding: 24px;
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /*BORDER*/
+        border-radius: $ui-border-radius;
+        /*BACKGROUND*/
+        background: $primary-container;
+        /*TEXT*/
+        /*SHADOW*/
+        box-shadow: $ui-shadow;
+        /*TRANSFORM*/
+        /*ANIMATION*/
+        /**--------------------------------------------
+        * CONTACT: INPUT
+        *--------------------------------------------*/
+        input {
+            outline: none;
+            /*POSTITION*/
+            padding: 18px 24px;
+            /*DISPLAY*/
+            width: 100%;
+            /*BORDER*/
+            border-radius: $ui-border-radius;
+            border: 1px solid transparent;
+            /*BACKGROUND*/
+            background: $default-bg;
+            /*TEXT*/
+            text-align: left;
+            /*ANIMATION*/
+            transition: $ui-transition;
+            /**
+            * PLACEHOLDER
+            */
+            &::placeholder {
+                /*TEXT*/
+                color: $primary-dim;
+            }
+            /**
+            *   HOVER, FOCUS, ACTIVE
+            */
+            &:hover,
+            &:focus,
+            &:active {
+                /*BORDER*/
+                border: 1px solid $primary-dim;
+                /*TEXT*/
+                color: $primary-dim;
+                /*SHADOW*/
+                box-shadow: inset $ui-shadow;
+            }
+        }
+    }
+}
+/*-------------------------------------------------------------------
+*   MAIN
+*------------------------------------------------------------------*/
+main.main--home {
+    /*POSTITION*/
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+}
+/**--------------------------------------------
+* TEMPLATE
+*--------------------------------------------*/
+    /*FLEX*/
+    /*GRID*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/

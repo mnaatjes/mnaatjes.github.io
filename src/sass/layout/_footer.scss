@@ -1,0 +1,199 @@
+//-------------------------------------------------------------------
+//  PORTFOLIO
+//
+//  LAYOUT/FOOTER
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   FOOTER
+*------------------------------------------------------------------*/
+footer {
+    /*FLEX*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    /**--------------------------------------------
+    * FOOTER: UPPER
+    *--------------------------------------------*/
+    section.footer__upper {
+        /*POSTITION*/
+        /*DISPLAY*/
+        /*BORDER*/
+        /*BACKGROUND*/
+        /*TEXT*/
+        /*SHADOW*/
+        /*TRANSFORM*/
+        /*ANIMATION*/
+    }
+    /**--------------------------------------------
+    * FOOTER: LOWER
+    *--------------------------------------------*/
+    section.footer__lower {
+        /*POSTITION*/
+        padding: 48px 48px;
+        /*DISPLAY*/
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+        grid-template-rows: 148px 1fr;
+        row-gap: 24px;
+        /*BORDER*/
+        /*BACKGROUND*/
+        background: $default-stroke;
+        /*TEXT*/
+        /*SHADOW*/
+        /*TRANSFORM*/
+        /*ANIMATION*/
+        /**--------------------------------------------
+        * LOWER: SOCIAL
+        *--------------------------------------------*/
+        .footer__lower__social {
+            /*GRID*/
+            grid-column: 1;
+            grid-row: 1;
+            /*POSTITION*/
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            /*BORDER*/
+            /*BACKGROUND*/
+            /*TEXT*/
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /*ANIMATION*/
+            /**--------------------------------------------
+            * LINK
+            *--------------------------------------------*/
+            a.lower__social__link {
+                text-decoration: none;
+                /*POSTITION*/
+                width: 52px;
+                height: 52px;
+                /*DISPLAY*/
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                /*BORDER*/
+                border-radius: 100%;
+                /*BACKGROUND*/
+                background: $primary;
+                /*TEXT*/
+                color: $default-stroke;
+                font-size: 32px;
+                /*SHADOW*/
+                /*ANIMATION*/
+                transition: $ui-transition;
+                /**
+                *   HOVER
+                */
+                &:hover {background: $secondary; color: $primary;}
+            }
+        }
+        /**--------------------------------------------
+        * LOWER: MENU
+        *--------------------------------------------*/
+        .footer__lower__menu {
+            /*GRID*/
+            grid-column: 2;
+            grid-row: 1;
+            /*POSTITION*/
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            //align-items: flex-start;
+            /*BORDER*/
+            /*BACKGROUND*/
+            /*TEXT*/
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /*ANIMATION*/
+            /**--------------------------------------------
+            * LOWER MENU COL
+            *--------------------------------------------*/
+            .lower__menu__col {
+                /*POSTITION*/
+                /*DISPLAY*/
+                display: flex;
+                flex-direction: column;
+                /**--------------------------------------------
+                * LINK
+                *--------------------------------------------*/
+                a.lower__menu__link,
+                a.lower__menu__link--main {
+                    text-decoration: none;
+                    /*POSTITION*/
+                    /*TEXT*/
+                    font-size: 12px;
+                    color: $tertiary;
+                    /*ANIMATION*/
+                    transition: $ui-transition;
+                    /**
+                    *   HOVER
+                    */
+                    &:hover {text-decoration: underline;}
+                }
+                a.lower__menu__link--main {font-weight: 600;}
+            }
+        }
+        /**--------------------------------------------
+        * LOWER: LOGO
+        *--------------------------------------------*/
+        .footer__lower__logo {
+            /*GRID*/
+            grid-column: 3;
+            grid-row: 1;
+            /*POSTITION*/
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            /*BORDER*/
+            /*BACKGROUND*/
+            /*TEXT*/
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /*ANIMATION*/
+            /**
+            *   IMG
+            */
+            img {
+                /*POSITION*/
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+        /**--------------------------------------------
+        * LOWER: COPYRIGHT
+        *--------------------------------------------*/
+        .footer__lower__copy {
+            /*GRID*/
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            /*POSTITION*/
+            padding: 24px 0px;
+            /*DISPLAY*/
+            /*BORDER*/
+            border-top: 1px solid $tertiary;
+            /*BACKGROUND*/
+            /*TEXT*/
+            text-align: center;
+            font-size: 12px;
+            color: $tertiary;
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /*ANIMATION*/
+        }
+    }
+}

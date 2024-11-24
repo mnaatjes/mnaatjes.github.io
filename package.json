@@ -1,16 +1,15 @@
 {
   "dependencies": {
-    "jsdocs": "^1.0.0",
-    "sass": "^1.80.4"
+    "sass": "^1.81.0"
   },
-  "name": "github_pages",
+  "name": "aamt__portfolio",
   "version": "1.0.0",
-  "description": "portfolio page project",
-  "main": "index.html",
+  "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:portfolio": "sass src/sass/main.scss src/css/main.css -w"
   },
-  "author": "mnaatjes",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

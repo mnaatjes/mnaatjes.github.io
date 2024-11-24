@@ -1,0 +1,23 @@
+/*---------------------------------------------------------------*/
+/* Portfolio: Config - Colors */
+/*---------------------------------------------------------------*/
+:root {
+    --color-stroke: #333333;
+    --color-background: #F6F6F6;
+    --color-strokeLite: #ebebeb;
+    --color-strokeMid: #d6d6d6;
+    --color-strokeDim: #B0B0B0;
+    --color-tertiary: #66ccff;
+    --color-primary: #FF3366;
+    --color-secondary: #ffcc00;
+    --color-tertiaryDim: #F0F9FF;
+    --color-secondaryStroke: #442304;
+    --color-secondaryDim: #FFFEC1;
+    --color-primaryStroke: #50011D;
+    --color-primaryContainer: #FF9FB3;
+    --color-primaryDim: #FFE2E7;
+    --color-secondaryContainer: #FFF886;
+    --color-tertiaryStroke: #062e4b;
+    --color-tertiaryContainer: #b8e5ff;
+    --color-tertiaryDim: #F0F9FF;
+}

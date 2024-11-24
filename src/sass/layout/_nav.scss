@@ -1,0 +1,90 @@
+//-------------------------------------------------------------------
+//  PORTFOLIO
+//
+//  LAYOUT/NAV
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   NAV
+*------------------------------------------------------------------*/
+nav {
+    /*POSTITION*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 6px 48px 0 48px;
+    width: 100%;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    //align-items: center;
+    /*BORDER*/
+    border-bottom: 1px solid $tertiary-stroke;
+    /*BACKGROUND*/
+    background: $tertiary;
+    /*TEXT*/
+    color: $tertiary-stroke;
+    /*SHADOW*/
+    /*ANIMATION*/
+    transition: $ui-transition;
+    /**
+    *   HOVER
+    */
+    &:hover {background: $tertiary-container; box-shadow: $ui-shadow;}
+    /**--------------------------------------------
+    * LOGO
+    *--------------------------------------------*/
+    .nav__logo {
+        /*POSTITION*/
+        padding: 6px 0;
+        height: 48px;
+        /*DISPLAY*/
+        object-fit: contain;
+        /*BORDER*/
+        /*BACKGROUND*/
+        /*TEXT*/
+        /*SHADOW*/
+        /*TRANSFORM*/
+        /*ANIMATION*/
+    }
+    /**--------------------------------------------
+    * LOGO
+    *--------------------------------------------*/
+    .nav__menu {
+        /*POSTITION*/
+        margin: 0;
+        padding: 0;
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        /**--------------------------------------------
+        * LINKS
+        *--------------------------------------------*/
+        a.nav__menu__link {
+            text-decoration: none;
+            /*POSTITION*/
+            padding: 12px 24px 6px 24px;
+            /*DISPLAY*/
+            display: block;
+            /*BORDER*/
+            border-bottom: 2px solid transparent;
+            /*TEXT*/
+            font-size: 14px;
+            font-weight: 500;
+            color: $tertiary-stroke;
+            /*ANIMATION*/
+            transition: $ui-transition;
+            /**--------------------------------------------
+            * STATE = HOVER
+            *--------------------------------------------*/
+            &:hover {border-bottom: 2px solid $tertiary-stroke;}
+        }
+    }
+}

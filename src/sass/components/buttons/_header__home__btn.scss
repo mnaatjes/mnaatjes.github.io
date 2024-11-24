@@ -1,0 +1,49 @@
+//-------------------------------------------------------------------
+//  PORTFOLIO
+//
+//  COMPONENTS/BUTTONS/HEADER__HOME__BTN
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   HEADER: HOME BUTTON
+*------------------------------------------------------------------*/
+a.header__home__btn,
+button.header__home__btn {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    /*POSTITION*/
+    padding: 12px 24px;
+    /*DISPLAY*/
+    /*BORDER*/
+    border: 1px solid $primary-stroke;
+    border-radius: $ui-border-radius;
+    /*BACKGROUND*/
+    background: $primary;
+    /*TEXT*/
+    color: $primary-stroke;
+    font-weight: 600;
+    font-size: 18px;
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    transition: $ui-transition;
+    /**--------------------------------------------
+    * BTN: HOVER
+    *--------------------------------------------*/
+    &:hover {
+        /*SHADOW*/
+        box-shadow: $ui-shadow;
+    }
+    /**--------------------------------------------
+    * BTN: ACTIVE
+    *--------------------------------------------*/
+    &:active {
+        /*SHADOW*/
+        box-shadow: inset $ui-shadow;
+    }
+}

@@ -1,0 +1,48 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  COMPONENTS/SECTION__HEADINGS
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   SECTION: HEADING
+*------------------------------------------------------------------*/
+section.heading {
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    color: $tertiary;
+    font-size: 36px;
+    font-weight: 600;
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    &::before {
+        content: '\005B';
+        color: $primary;
+    }
+    &::after {
+        content: '\005D';
+        color: $primary;
+    }
+}
+/**--------------------------------------------
+* TEMPLATE
+*--------------------------------------------*/
+    /*FLEX*/
+    /*GRID*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/

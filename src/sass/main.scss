@@ -1,0 +1,93 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  IMPORTS
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '_config.scss' as *;
+// PAGES
+@use './pages/_home.scss';
+@use './pages/_about.scss';
+// COMPONENTS
+@use './components/buttons/header__home__btn';
+@use './components/header__home__card';
+@use './components/main__home__card';
+@use './components/section__heading';
+// LAYOUT
+@use './layout/flexbox';
+@use './layout/nav';
+@use './layout/footer';
+/*-------------------------------------------------------------------
+*   *, BODY
+*------------------------------------------------------------------*/
+ * {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+ }
+/**
+* BODY
+*/
+body {
+    /*POSTITION*/
+    position: relative;
+    width: 100%;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*BACKGROUND*/
+    background: $default-bg;
+    /*TEXT*/
+    color: $default-stroke;
+}
+
+/*-------------------------------------------------------------------
+*   HEADER
+*------------------------------------------------------------------*/
+header {
+    /*POSTITION*/
+    padding: calc(56px + 48px) 48px 48px 48px; // 56px top compensates for nav bar position
+    width: 100%;
+    max-width: 1200px;
+}
+/*-------------------------------------------------------------------
+*   MAIN
+*------------------------------------------------------------------*/
+main {
+    /*POSTITION*/
+    position: relative;
+    margin: 48px;
+    padding: 24px;
+    max-width: 1200px;
+    /*DISPLAY*/
+    /*BORDER*/
+    border-radius: $ui-border-radius;
+    /*BACKGROUND*/
+    //background: $default-bg-mid;
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+}
+footer {
+    max-width: 1200px;
+}
+/*-------------------------------------------------------------------
+*   TEMPLATE
+*------------------------------------------------------------------*/
+/**--------------------------------------------
+* TEMPLATE
+*--------------------------------------------*/
+    /*FLEX*/
+    /*GRID*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/

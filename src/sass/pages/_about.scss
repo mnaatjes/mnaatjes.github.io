@@ -1,0 +1,306 @@
+//-------------------------------------------------------------------
+//  AAMT PORTFOLIO
+//
+//  PAGES/ABOUT
+//
+//-------------------------------------------------------------------
+// SASS FUNCTIONS
+@use 'sass:color';
+// MAIN CONFIGURATION FILES
+@use '../_config.scss' as *;
+
+/*-------------------------------------------------------------------
+*   HEADER: ABOUT
+*------------------------------------------------------------------*/
+header.header--about {
+    /*POSTITION*/
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    /**--------------------------------------------
+    * HEADER--ABOUT: CONTAINER
+    *--------------------------------------------*/
+    section.header--about__container {
+        /*POSTITION*/
+        width: 100%;
+        /*DISPLAY*/
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        /*BORDER*/
+        border-radius: $ui-border-radius;
+        /*BACKGROUND*/
+        background: $tertiary-container;
+        /*TEXT*/
+        /*SHADOW*/
+        box-shadow: $ui-shadow;
+        /*TRANSFORM*/
+        /*ANIMATION*/
+        /**--------------------------------------------
+        * CONTAINER: IMG
+        *--------------------------------------------*/
+        img {
+            /*POSTITION*/
+            object-fit: cover;
+            object-position: center;
+            width: calc(100% - 400px);
+            height: 400px;
+            /*DISPLAY*/
+            /*BORDER*/
+            border-radius: $ui-border-radius;
+        }
+        /**--------------------------------------------
+        * CONTAINER: CONTENT
+        *--------------------------------------------*/
+        .container--content {
+            /*POSTITION*/
+            margin: 24px 0 24px 24px;
+            padding: 0 24px;
+            width: 400px;
+            /*DISPLAY*/
+            /*BORDER*/
+            border-top-right-radius: $ui-border-radius;
+            border-bottom-right-radius: $ui-border-radius;
+            border-left: 1px solid $tertiary;
+            /*TEXT*/
+            color: $tertiary-stroke;
+        }
+    }
+}
+/*-------------------------------------------------------------------
+*   MAIN
+*------------------------------------------------------------------*/
+main.main--about {
+    /*POSTITION*/
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+}
+/*-------------------------------------------------------------------
+*   SECTION: RESUME
+*------------------------------------------------------------------*/
+section.about--resume {
+    /*POSTITION*/
+    margin: 24px 0;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: column;
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    /**--------------------------------------------
+    * RESUME: ITEM
+    *--------------------------------------------*/
+    article.resume__item {
+        /*POSTITION*/
+        padding: 0 12px;
+        /*DISPLAY*/
+        display: grid;
+        grid-template-columns: 300px 48px 1fr;
+        grid-auto-rows: 1fr;
+        /*BORDER*/
+        border-radius: $ui-border-radius;
+        border: 1px solid transparent;
+        /*BACKGROUND*/
+        /*ANIMATION*/
+        transition: $ui-transition;
+        //> * {border: 1px solid red;}
+        /**
+        *   ITEM: HOVER, ACTIVE, FOCUS
+        */
+        &:hover,
+        &:active,
+        &:focus {
+            /*BACKGROUND*/
+            background: $default-bg-lite;
+            /*BORDER*/
+            border-color: $tertiary;
+            /*SHADOW*/
+            box-shadow: $ui-shadow;
+            /**
+            *   
+            */
+            .resume__item--dot::after {
+                /*BACKGROUND*/
+                background: $tertiary;
+                /*BORDER*/
+                border-color: $tertiary-stroke;
+                /*SHADOW*/
+                box-shadow: $ui-shadow;
+            }
+        }
+        /**--------------------------------------------
+        * RESUME__ITEM: TITLE
+        *--------------------------------------------*/
+        .resume__item--title {
+            /*GRID*/
+            grid-column: 1;
+            grid-row: 1;
+            /*POSTITION*/
+            padding: 48px 0;
+            /*DISPLAY*/
+            /*BORDER*/
+            /*BACKGROUND*/
+            /*TEXT*/
+            font-weight: 600;
+            font-size: 24px;
+            color: $primary;
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /*ANIMATION*/
+        }
+        /**--------------------------------------------
+        * RESUME__ITEM: DOT
+        *--------------------------------------------*/
+        .resume__item--dot {
+            /*GRID*/
+            grid-column: 2;
+            grid-row: 1;
+            /*POSTITION*/
+            position: relative;
+            margin-right: 24px;
+            /*DISPLAY*/
+            /*BORDER*/
+            border-right: 1px solid $tertiary;
+            /*BACKGROUND*/
+            /*TEXT*/
+            /*SHADOW*/
+            /*TRANSFORM*/
+            /**
+            *   DOT
+            */
+            &::after {
+                content: '';
+                /*POSTITION*/
+                position: absolute;
+                top: 48px;
+                left: calc(50%);
+                width: 24px;
+                height: 24px;
+                /*DISPLAY*/
+                /*BORDER*/
+                border-radius: 100%;
+                border: 1px solid $tertiary;
+                /*BACKGROUND*/
+                background: $default-bg;
+                /*TEXT*/
+                /*TRANSFORM*/
+                /*ANIMATION*/
+            }
+        }
+        /**--------------------------------------------
+        * RESUME__ITEM: DESC
+        *--------------------------------------------*/
+        .resume__item--desc {
+            /*GRID*/
+            grid-column: 3;
+            grid-row: 1;
+            /*POSTITION*/
+            padding: 48px 12px 24px 12px;
+            /*DISPLAY*/
+            display: flex;
+            flex-direction: column;
+            /*TEXT*/
+            color: $tertiary-stroke;
+            /**
+            *   H4: DATES
+            */
+            h4 {
+                /*POSITION*/
+                margin: 0;
+                /*TEXT*/
+                color: $secondary;
+                font-weight: 550;
+            }
+            /**
+            *   LIST
+            */
+            ul {}
+        }
+    }
+}
+/*-------------------------------------------------------------------
+*   SECTION: SKILLS
+*------------------------------------------------------------------*/
+section.main--skills {
+    /*POSTITION*/
+    margin: 24px 0;
+    padding: 24px 12px;
+    /*DISPLAY*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*BORDER*/
+    border-radius: $ui-border-radius;
+    /*BACKGROUND*/
+    background: $tertiary-container;
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
+    /**--------------------------------------------
+    * SKILLS: IMG
+    *--------------------------------------------*/
+    img {
+        /*POSITION*/
+        object-fit: cover;
+        width: 300px;
+        height: 300px;
+        /*BORDER*/
+        border-radius: 100%;
+        /*SHADOW*/
+        box-shadow: $ui-shadow;
+    }
+    /**--------------------------------------------
+    * SKILLS__ITEM
+    *--------------------------------------------*/
+    article.skills__item {
+        flex: 1;
+        /*POSTITION*/
+        /*DISPLAY*/
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-auto-flow: row;
+        row-gap: 24px;
+        justify-items: center;
+        align-items: center;
+        /**
+        *   ICON
+        */
+        i {
+            /*TEXT*/
+            font-size: 60px; 
+            color: $primary;
+        }
+    }
+}
+/**--------------------------------------------
+* TEMPLATE
+*--------------------------------------------*/
+    /*FLEX*/
+    /*GRID*/
+    /*POSTITION*/
+    /*DISPLAY*/
+    /*BORDER*/
+    /*BACKGROUND*/
+    /*TEXT*/
+    /*SHADOW*/
+    /*TRANSFORM*/
+    /*ANIMATION*/
