@@ -29,6 +29,16 @@ a.link--footer-lower {
     color: var(--color-tertiary);
 }
 /*--------------------------------*/
+/* Footer-Lower */
+/*--------------------------------*/
+a.link--footer--disabled {
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    text-decoration: none;
+    color: var(--color-disabled);
+}
+/*--------------------------------*/
 /* Footer-Lower(Hover) */
 /*--------------------------------*/
 a.link--footer-lower:hover {

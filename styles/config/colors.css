@@ -20,4 +20,6 @@
     --color-tertiaryStroke: #062e4b;
     --color-tertiaryContainer: #b8e5ff;
     --color-tertiaryDim: #F0F9FF;
+    --color-disabled: var(--color-strokeDim);
+    --color-active: var(--color-primary);
 }

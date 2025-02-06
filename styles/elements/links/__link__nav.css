@@ -25,7 +25,25 @@
     margin: 12px 0px 0px 0px;
     padding: 6px 12px;
     /*BORDER*/
-    border-bottom: 2px solid var(--color-stroke);
+    border-bottom: 2px solid var(--color-active);
+    /*TEXT*/
+    color: var(--color-active);
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Nav - Link */
+/*--------------------------------*/
+.link--nav--disabled {
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    /*POSITION*/
+    margin: 12px 0px 0px 0px;
+    padding: 6px 12px;
+    /*BORDER*/
+    border-bottom: 2px solid var(--color-disabled);
+    /*TEXT*/
+    color: var(--color-disabled);
     /*DEBUGGING*/
 }
 /*--------------------------------*/

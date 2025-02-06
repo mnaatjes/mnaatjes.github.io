@@ -82,3 +82,20 @@ div.--contact__checkbox-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
 }
+/*--------------------------------*/
+/* Template */
+/*--------------------------------*/
+div.--contact__checkbox-grid--disabled {
+    cursor: none;
+    user-select: none;
+    pointer-events: none;
+    /*POSITION*/
+    width: 100%;
+    margin: 12px 0px;
+    /*DISPLAY*/
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 1fr;
+    /*TEXT*/
+    color: var(--color-disabled);
+}
