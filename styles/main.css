@@ -88,11 +88,42 @@
 @import url(layout/__flex.css);
 @import url(layout/__grid.css);
 /*---------------------------------------------------------------*/
-/* IMPORT: LAYOUT */
+/* IMPORT: ELEMENTS */
 /*---------------------------------------------------------------*/
 /*--------------------------------*/
+/* Element: Phone */
+/*--------------------------------*/
+@import url(elements/__phone.css);
+/*--------------------------------*/
+/* Element: Portfolio */
+/*--------------------------------*/
+@import url(elements/__portfolio__cards.css);
+/*--------------------------------*/
+/* Element: Phone */
+/*--------------------------------*/
+@import url(elements/buttons/__btn__arrow.css);
+@import url(elements/buttons/__btn__hero.css);
+@import url(elements/buttons/__btn__social.css);
+@import url(elements/buttons/__btn__submit.css);
+/*--------------------------------*/
+/* Element: Links */
+/*--------------------------------*/
+@import url(elements/links/__link__footer.css);
+@import url(elements/links/__link__nav.css);
+/*--------------------------------*/
+/* Element: Main - Case Study */
+/*--------------------------------*/
+@import url(elements/__main__case_study.css);
+@import url(elements/__main__case_study/case_study__conclusion.css);
+@import url(elements/__main__case_study/case_study__flow.css);
+@import url(elements/__main__case_study/case_study__grid_center.css);
+@import url(elements/__main__case_study/case_study__heading.css);
+@import url(elements/__main__case_study/case_study__persona__tech.css);
+@import url(elements/__main__case_study/case_study__table.css);
+@import url(elements/__main__case_study/case_study__timeline.css);
+/*--------------------------------*/
 /* Overall */
-/*--------------------------------*/        
+/*--------------------------------*/
 * {
     /*DISPLAY*/
     box-sizing: border-box;
