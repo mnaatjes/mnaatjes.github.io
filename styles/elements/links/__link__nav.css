@@ -25,7 +25,7 @@
     margin: 12px 0px 0px 0px;
     padding: 6px 12px;
     /*BORDER*/
-    border-bottom-color: var(--color-stroke);
+    border-bottom: 2px solid var(--color-stroke);
     /*DEBUGGING*/
 }
 /*--------------------------------*/
