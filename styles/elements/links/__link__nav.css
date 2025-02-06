@@ -5,11 +5,27 @@
 /* Nav - Link */
 /*--------------------------------*/
 .link--nav {
+    user-select: all;
+    pointer-events: all;
     /*POSITION*/
     margin: 12px 0px 0px 0px;
     padding: 6px 12px;
     /*BORDER*/
     border-bottom: 2px solid transparent;
+    /*DEBUGGING*/
+}
+/*--------------------------------*/
+/* Nav - Link */
+/*--------------------------------*/
+.link--nav--active {
+    cursor: default;
+    user-select: none;
+    pointer-events: none;
+    /*POSITION*/
+    margin: 12px 0px 0px 0px;
+    padding: 6px 12px;
+    /*BORDER*/
+    border-bottom-color: var(--color-stroke);
     /*DEBUGGING*/
 }
 /*--------------------------------*/
