@@ -7,8 +7,8 @@
 /*--------------------------------*/
 /* Imports: Config */
 /*--------------------------------*/
-@import url(config/__colors.css);
-@import url(config/__main.css);
+@import url(config/colors.css);
+@import url(config/main.css);
 /*--------------------------------*/
 /* Imports: Debug */
 /*--------------------------------*/
