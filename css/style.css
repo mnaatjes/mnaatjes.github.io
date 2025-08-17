@@ -1,5 +1,25 @@
-/* sass/style.scss */
-/* This is your Sass file. Write your styles here. */
+ul.main-nav {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.main-nav li {
+  margin: 0 15px;
+}
+ul.main-nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+}
+ul.main-nav a:hover {
+  color: #3498db;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   background-color: #f0f2f5;
@@ -24,6 +44,19 @@ h1 {
 p {
   max-width: 600px;
   line-height: 1.6;
+}
+
+.button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.button:hover {
+  background-color: rgb(95.3179916318, 173.9790794979, 226.6820083682);
 }
 
 /*# sourceMappingURL=style.css.map */
