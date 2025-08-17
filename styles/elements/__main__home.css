@@ -1,9 +1,0 @@
-/*--------------------------------*/
-/* Main: Home */
-/*--------------------------------*/
-main[class$="--home"] {
-    /*POSITION*/
-    padding: var(--ui-padding);
-    /*DEBUGGING*/
-    /*border: 1px solid red;*/
-}
