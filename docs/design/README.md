@@ -5,6 +5,7 @@ This project aims to refactor the personal `github.io` presence into a high-impa
 ## Project Scope & Documentation
 
 *   **[Installation Guide](../setup/installation.md):** Detailed npm commands and dependency setup.
+*   **[Dependency Management](../setup/dependency_management.md):** Deep dive into the npm lifecycle and manifest sync.
 *   **[Development Workflow](../setup/workflow.md):** Lifecycle, TypeScript, and Tailwind management.
 *   **[VitePress Engine](../setup/engine.md):** Detailed overview of the `.vitepress` directory structure.
 *   **[Project Architecture](./architecture.md):** Detailed breakdown of the project-root structure.
