@@ -45,19 +45,40 @@ The professional, engineering-focused icon set.
 npm install -D lucide-vue-next
 ```
 
-## 3. Recommended `package.json` Scripts
+## 3. Your `package.json` Manifest
 
-Add these to your `package.json` to simplify your workflow:
+The `package.json` is the "Source of Truth" for your project. It records every tool you've installed so that the site can be built consistently on any machine.
+
+After running the installation commands above, your `package.json` should look like this:
 
 ```json
-"scripts": {
-  "dev": "vitepress dev src",
-  "build": "vitepress build src",
-  "preview": "vitepress preview src",
-  "typecheck": "vue-tsc --noEmit"
+{
+  "name": "github-io-portfolio",
+  "version": "1.0.0",
+  "description": "Professional Technical Portfolio & Documentation Hub",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0",
+    "typescript": "^5.3.0",
+    "@types/node": "^20.0.0",
+    "vue-tsc": "^2.0.0",
+    "tailwindcss": "^3.4.0",
+    "postcss": "^8.4.0",
+    "autoprefixer": "^10.4.0",
+    "lucide-vue-next": "^0.300.0"
+  }
 }
 ```
-*   **`npm run dev`:** Starts a local development server with instant live reloading.
-*   **`npm run build`:** Generates the production-ready static site in `src/.vitepress/dist`.
-*   **`npm run preview`:** Locally hosts the built site to verify it before pushing to GitHub.
-*   **`npm run typecheck`:** Manually runs TypeScript checks across your entire project.
+
+### Key Properties Explained:
+*   **`"type": "module"`**: This tells Node.js to use modern JavaScript (ES Modules), which is required by Vite and VitePress.
+*   **`scripts`**: These are your short-cut commands (e.g., `npm run dev`).
+*   **`devDependencies`**: This is your "toolbox." It lists all the software needed to *build* the site. When you run `npm install` on a new computer, npm reads this list and downloads everything automatically.
+
