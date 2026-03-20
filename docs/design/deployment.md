@@ -4,9 +4,30 @@ To maintain a professional, automated, and secure deployment of the `github.io` 
 
 ## 1. Overview: The Build & Deploy Workflow
 
-GitHub Actions allows the site to be built and deployed automatically whenever changes are pushed to specific branches (`main` or `ref`). This ensures that the published site is always in sync with the source code, while keeping the web-root clean of source files.
+To understand how a modern static site is delivered, it is helpful to distinguish between the **Builder** and the **Host**.
 
-## 2. The `deploy.yml` Configuration
+### The "Smart" Builder (GitHub Actions)
+GitHub Actions is a powerful, temporary virtual machine that GitHub spins up to run scripts. It can install software (like Node.js and npm), run complex build commands, and transform your Markdown into optimized HTML. This is where the "heavy lifting" happens.
+
+### The "Dumb" Host (GitHub Pages)
+GitHub Pages is a high-performance, static file server. It is "dumb" in that it cannot run scripts, execute databases, or process code. It only knows how to serve finished files to a user's browser. This makes it incredibly fast and secure.
+
+### The "Hand-off" Process
+The `.github/workflows/deploy.yml` file acts as the bridge between these two environments:
+1.  **The Kitchen (Actions):** GitHub Actions "cooks" your source code (Markdown, Vue, Tailwind) into a finished "meal" (Static HTML/CSS/JS).
+2.  **The Serving Window (Pages):** Once ready, Actions "hands off" only the finished `dist/` folder to the GitHub Pages hosting environment.
+
+## 2. One Repository, Multiple Roles
+
+Your `github.io` repository acts as a single container for three distinct functions:
+
+*   **The Source:** Your raw Markdown, Vue components, and internal docs (`/docs` and `/src`).
+*   **The Brain:** The automation logic stored in `.github/workflows/`. Simply having this directory "unlocks" GitHub Actions for the repository.
+*   **The Result:** The hidden environment that hosts the final, public-facing website.
+
+This architecture ensures that your source code stays private (or at least separate), while the world only ever sees a high-performance, static version of your portfolio.
+
+## 3. The `deploy.yml` Configuration
 
 The workflow is defined in `.github/workflows/deploy.yml`. It consists of two main jobs: **build** and **deploy**.
 
