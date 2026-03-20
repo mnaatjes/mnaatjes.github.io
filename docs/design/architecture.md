@@ -21,6 +21,48 @@ The project-root is organized to separate the source code for the website from t
     *   **`npm run preview`:** Locally previews the production build before deployment.
 *   **`.gitignore`:** Ensures that unnecessary files like `node_modules` and the `dist` folder are not tracked in the Git repository.
 
-## 2. The Relationship with VitePress
+## 2. Website Source Structure (`/src`)
 
-By configuring VitePress to use the `/src` directory as its source, the root of the project remains clean of content files. The build process reads from `/src`, uses the configuration in `.vitepress/config.mts`, and outputs the results to `src/.vitepress/dist`. This architecture allows for a robust, professional developer workflow while delivering a high-performance static site.
+By configuring VitePress to use the `/src` directory as its source, we create a clear separation between internal design notes and public-facing content.
+
+### The Directory Map
+
+```text
+src/
+├── .vitepress/          # The "Engine Room" (Config, Theme, Components)
+├── public/              # Static Assets (Images, PDFs, Favicons)
+├── index.md             # Tier 1: Personal Brand Landing Page
+├── projects/            # Tier 2: Project Case Studies (Product Pages)
+│   ├── index.md         # Portfolio Overview / Project Grid
+│   └── [project-name].md# Individual Deep Dives
+└── docs/                # Tier 3: Library Documentation Hub
+    ├── guide/           # Long-form tutorials and concepts
+    └── api/             # Technical API References
+```
+
+### The "Where Does It Go?" Rubric
+
+Use this decision matrix to determine where to place a new file:
+
+| Content Type | Location | Rule |
+| :--- | :--- | :--- |
+| **Direct URL Page** | `src/[name].md` | If it's a primary top-level page (e.g., `resume.md`). |
+| **Project Deep Dive** | `src/projects/[name].md` | If it explains *how* you built something. |
+| **Library Docs** | `src/docs/[lib]/[name].md` | If it's a "How-to" for a tool you've published. |
+| **Images/PDFs** | `src/public/` | If it's a raw asset that needs a direct link (e.g., `/resume.pdf`). |
+| **Reusable UI** | `src/.vitepress/theme/components/` | If it's a visual element used in multiple pages (e.g., a "Status Badge"). |
+
+### 3. Conventions & Architecture
+
+This structure follows the **File-Based Routing** convention used by modern frameworks like VitePress, Nuxt, and Next.js. 
+
+*   **URL Mapping:** The path to the `.md` file in `src/` perfectly matches the URL path on the website.
+*   **Case Sensitivity:** Always use **kebab-case** (e.g., `my-project-name.md`) for filenames to ensure maximum compatibility with web servers.
+*   **Index Files:** Every directory should ideally have an `index.md`. This allows users to visit `/projects/` and see an overview rather than a 404 error.
+
+### 4. The "Three-Tier" Content Pattern
+
+This project specifically organizes content by **User Intent**:
+1.  **Tier 1 (Brand):** Intent is to "Introduce." Minimalist, high-impact, focused on identity.
+2.  **Tier 2 (Evidence):** Intent is to "Prove." Detailed technical narratives showing architecture and DevOps skills.
+3.  **Tier 3 (Utility):** Intent is to "Instruct." Standardized documentation for actual use by other developers.
