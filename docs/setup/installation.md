@@ -77,8 +77,10 @@ After running the installation commands above, your `package.json` should look l
 }
 ```
 
-### Key Properties Explained:
-*   **`"type": "module"`**: This tells Node.js to use modern JavaScript (ES Modules), which is required by Vite and VitePress.
-*   **`scripts`**: These are your short-cut commands (e.g., `npm run dev`).
-*   **`devDependencies`**: This is your "toolbox." It lists all the software needed to *build* the site. When you run `npm install` on a new computer, npm reads this list and downloads everything automatically.
+### ⚠️ Safety Note: Avoid `npx vitepress init`
+While many VitePress tutorials suggest using `npx vitepress init`, **do not run this command**. 
+*   This "wizard" automatically tries to create a `docs/` folder. 
+*   Since we are using `src/` for our website content and `docs/` for internal design documentation, running this command will cause conflicts. 
+
+Always follow the **Manual Setup** instructions in this guide to keep your project structure clean and organized.
 
