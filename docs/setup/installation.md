@@ -77,10 +77,53 @@ After running the installation commands above, your `package.json` should look l
 }
 ```
 
-### ⚠️ Safety Note: Avoid `npx vitepress init`
-While many VitePress tutorials suggest using `npx vitepress init`, **do not run this command**. 
-*   This "wizard" automatically tries to create a `docs/` folder. 
-*   Since we are using `src/` for our website content and `docs/` for internal design documentation, running this command will cause conflicts. 
+## 4. Step-by-Step Implementation Checklist
 
-Always follow the **Manual Setup** instructions in this guide to keep your project structure clean and organized.
+Follow this order to ensure a clean setup without directory conflicts:
+
+### Phase 1: Root Initialization
+1.  **Initialize:** Run `npm init -y` in the project root.
+2.  **Install:** Run `npm install -D vitepress vue typescript @types/node vue-tsc tailwindcss postcss autoprefixer lucide-vue-next`.
+3.  **Configure `package.json`:** 
+    *   Add `"type": "module"`.
+    *   Add the `scripts` section (refer to the template above).
+
+### Phase 2: Manual Directory Structure
+Create the following folders and files manually to establish the core architecture:
+1.  **`src/`**: The root for all website content.
+2.  **`src/index.md`**: Your initial homepage.
+3.  **`src/.vitepress/`**: The configuration hidden folder.
+4.  **`src/.vitepress/config.mts`**: The site's main configuration file.
+5.  **`src/.vitepress/theme/`**: Where custom styling and components live.
+
+### Phase 3: Tailwind Setup
+1.  **Initialize Tailwind:** Run `npx tailwindcss init -p` in the root.
+2.  **Configure `tailwind.config.js`:** Point it to scan `src/**/*.{js,ts,vue,md}`.
+3.  **Create Styles:** Add a `style.css` in `src/.vitepress/theme/` with `@tailwind` directives.
+
+## 5. Final Directory Map (Manual Setup)
+
+Once Phase 1-3 are complete, your project root should look like this:
+
+```text
+/github.io
+├── docs/                # Internal Project Design (Exists)
+├── package.json         # Project Manifest
+├── package-lock.json    # Version Lockfile
+├── tailwind.config.js   # Tailwind Config
+├── postcss.config.js    # CSS Post-Processor Config
+├── node_modules/        # (Hidden) Installed Dependencies
+└── src/                 # Website Source Root
+    ├── index.md         # Website Homepage
+    └── .vitepress/      # VitePress Configuration
+        ├── config.mts   # Site-wide Settings
+        └── theme/       # Custom Styling & Components
+            ├── index.ts # Theme Entry Point
+            └── style.css# Tailwind Directives
+```
+
+### ⚠️ Note on Automatic Folders
+The following folders will be created **automatically** when you run `npm run dev` or `npm run build`. Do not create them manually:
+*   `src/.vitepress/dist/`
+*   `src/.vitepress/cache/`
 
