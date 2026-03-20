@@ -53,18 +53,18 @@ This command creates the `tailwind.config.js` and `postcss.config.js` files, all
 npx tailwindcss init -p
 ```
 
-## 3. Recommended Scripts
+## 3. Targeting the Source: Why `src`?
 
-In your `package.json`, you should add the following scripts to simplify your development workflow:
+In our `package.json` scripts, every command ends with the word `src`:
 
 ```json
-"scripts": {
-  "dev": "vitepress dev src",
-  "build": "vitepress build src",
-  "preview": "vitepress preview src"
-}
+"dev": "vitepress dev src"
 ```
 
-*   **`npm run dev`:** Starts a local development server with instant live reloading.
-*   **`npm run build`:** Generates the production-ready static site in `src/.vitepress/dist`.
-*   **`npm run preview`:** Locally hosts the built site to verify it before pushing to GitHub.
+### The Conflict Resolution
+By default, VitePress looks for a folder named `docs/`. However, in this project, we use the root `/docs` directory for **internal project management and design documentation**. 
+
+By explicitly passing `src` as an argument, we redirect the VitePress engine to use the `/src` directory for all website-related content. This ensures:
+1.  **Isolation:** Internal design notes stay in `/docs` and are never deployed to the public site.
+2.  **Organization:** All "Source Code" for the portfolio (Markdown, Vue components, assets) lives in one dedicated place.
+3.  **Cleanliness:** Your root directory doesn't become cluttered with dozens of website content files.
