@@ -2,6 +2,15 @@
 
 This project aims to refactor the personal `github.io` presence into a high-impact, professional technical product site that serves as both a portfolio and a centralized documentation hub for specialized engineering projects.
 
+## Project Scope & Documentation
+
+*   **[Project Architecture](./architecture.md):** Detailed breakdown of the project-root structure and its relationship with VitePress.
+*   **[Deployment Strategy](./deployment.md):** Overview of the GitHub Actions CI/CD pipeline and the `deploy.yml` configuration.
+*   **[Frameworks](./frameworks.md):** Deep dive into Vue.js and VitePress.
+*   **[Styling](./styling.md):** Overview of Tailwind CSS and utility-first design.
+*   **[Content Management](./cms.md):** Details on Markdown and MDX for content management.
+*   **[Icons & Typography](./icon_typography.md):** Strategic choices for icons and typography.
+
 ## 1. General Purpose of GitHub.io for Serious Developers
 
 For senior and specialized developers, a GitHub Pages site transcends a simple list of projects. It serves three primary functions:
