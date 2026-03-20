@@ -21,10 +21,14 @@ Typography is the most important element for establishing a professional, high-e
 *   **Professional Aesthetic:** These typefaces have a clean, neutral, and "SaaS-like" look that conveys professionalism and technical excellence.
 *   **Versatility:** They offer a wide range of weights and styles, providing flexibility for headings, body text, and UI elements.
 
-## 3. Implementation Strategy
+## 4. Implementation: Icons + Tailwind
 
-To achieve a professional, modern look, the following approach will be taken:
-*   **Standardized Icon Set:** Using Lucide icons for navigation, call-to-action buttons, and technical diagrams.
-*   **Consistent Typography:** Implementing a unified typographic scale using Inter or Geist for all text elements.
-*   **Responsive Design:** Ensuring that icons and typography scale gracefully across different screen sizes.
-*   **Dark Mode Support:** Designing the typography and icons to look great in both light and dark modes.
+By using `lucide-vue-next`, we can treat icons exactly like text or layout elements. This allows for a highly consistent and professional UI.
+
+### Examples of Usage:
+*   **Size & Color:** `<SearchIcon class="w-5 h-5 text-slate-500" />`
+*   **Hover States:** `<GithubIcon class="hover:text-blue-500 transition-colors" />`
+*   **Responsiveness:** `<MenuIcon class="block md:hidden" />` (Only shows the menu icon on mobile).
+
+### Why this matters:
+This approach removes the need for custom CSS for icons. Every aspect of an icon's appearance—its size, color, spacing, and animation—is handled by the same Tailwind utility classes used for the rest of the site.
