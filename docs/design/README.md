@@ -4,6 +4,7 @@ This project aims to refactor the personal `github.io` presence into a high-impa
 
 ## Project Scope & Documentation
 
+*   **[VitePress Engine](./vitepress_engine.md):** Detailed overview of the `.vitepress` directory and its contents, as well as the step-by-step instructions for installing the necessary dependencies.
 *   **[Project Architecture](./architecture.md):** Detailed breakdown of the project-root structure and its relationship with VitePress.
 *   **[Deployment Strategy](./deployment.md):** Overview of the GitHub Actions CI/CD pipeline and the `deploy.yml` configuration.
 *   **[Frameworks](./frameworks.md):** Deep dive into Vue.js and VitePress.
