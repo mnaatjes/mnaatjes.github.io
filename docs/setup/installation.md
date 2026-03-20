@@ -98,8 +98,14 @@ Create the following folders and files manually to establish the core architectu
 
 ### Phase 3: Tailwind Setup
 1.  **Initialize Tailwind:** Run `npx tailwindcss init -p` in the root.
+    *   **The `-p` flag:** This creates both `tailwind.config.js` and `postcss.config.js`. The latter is the "bridge" that allows VitePress to see and use Tailwind.
 2.  **Configure `tailwind.config.js`:** Point it to scan `src/**/*.{js,ts,vue,md}`.
 3.  **Create Styles:** Add a `style.css` in `src/.vitepress/theme/` with `@tailwind` directives.
+
+### Why Config Files Stay in the Root
+Even though our website content is in `src/`, we keep the configuration files (`tailwind.config.js`, `postcss.config.js`, `package.json`) in the **project root**. 
+*   **Discovery:** When you run `npm run dev`, Vite starts in the root and "discovers" these files immediately.
+*   **Orchestration:** It then uses these "recipes" to process the Markdown and CSS files it finds inside the `src/` pantry.
 
 ## 5. Final Directory Map (Manual Setup)
 
