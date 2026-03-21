@@ -125,7 +125,55 @@ Each project represents a specific technical challenge solved.
 <ProjectGrid />
 ```
 
-## 6. Summary of the Workflow
+## 6. The "Dynamic Data" Recipe
+
+Use this standard template whenever you want to turn a folder of Markdown files into a dynamic list.
+
+```typescript
+import { createContentLoader } from 'vitepress'
+
+// 1. THE BLUEPRINT (Interface)
+// Define exactly what data your Vue component needs.
+export interface [Name] {
+  title: string
+  url: string
+  [key]: [type] // e.g., tags: string[]
+}
+
+// 2. THE GHOST EXPORT (Declaration)
+// Tell TypeScript that "data" will be injected here during the build.
+declare const data: [Name][]
+export { data }
+
+// 3. THE ENGINE (Loader)
+export default createContentLoader('[folder]/*.md', {
+  transform(raw): [Name][] {
+    return raw
+      .filter(({ url }) => url !== '/[folder]/') // 4. FILTER: Ignore the index page
+      .map(({ url, frontmatter }) => ({         // 5. MAP: Clean the data
+        title: frontmatter.title,
+        url,
+        description: frontmatter.description,
+        ...frontmatter                           // 6. SPREAD: Include other metadata
+      }))
+      .sort((a, b) => ...)                       // 7. SORT: Order the results
+  }
+})
+```
+
+## 7. The "Rules of the Kitchen" (Rubric)
+
+| Step | Technical Action | Why we do it |
+| :--- | :--- | :--- |
+| **1. Blueprint** | `export interface` | Ensures your Vue component gets perfect data and autocomplete. |
+| **2. Ghost** | `declare const data` | Allows your UI to "import" data that doesn't exist until the build happens. |
+| **3. Engine** | `createContentLoader` | Tells VitePress which folder to scan for `.md` files. |
+| **4. Filter** | `.filter()` | Prevents the main "List" page from appearing inside its own list. |
+| **5. Map** | `.map()` | Converts messy Markdown internal data into your clean `Interface` format. |
+| **6. Spread** | `...frontmatter` | (Optional) Quickly maps all YAML fields to your object at once. |
+| **7. Sort** | `.sort()` | Ensures the user sees the newest or most relevant items first. |
+
+## 8. Summary of the Workflow
 
 1.  **Write:** Create a new `.md` file in `src/projects/` whenever you finish a project.
 2.  **Tag:** Add the `title`, `tech_stack`, etc., to the Frontmatter.
