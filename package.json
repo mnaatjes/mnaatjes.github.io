@@ -24,6 +24,7 @@
   "devDependencies": {
     "@types/node": "^25.5.0",
     "autoprefixer": "^10.4.27",
+    "lucide-vue-next": "^0.577.0",
     "postcss": "^8.5.8",
     "tailwindcss": "^4.2.2",
     "typescript": "^5.9.3",

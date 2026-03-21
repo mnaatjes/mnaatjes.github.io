@@ -97,13 +97,64 @@ Create the following folders and files manually to establish the core architectu
 
 ### Phase 3: Tailwind Setup (v4 Way)
 1.  **Create Styles Entry:** Create `src/.vitepress/theme/style.css`.
-2.  **Import Tailwind:** Add `@import "tailwindcss";` to the top of that file. This tells the engine to process Tailwind utilities.
-3.  **Connect Theme:** Create `src/.vitepress/theme/index.ts` to tell VitePress to use your custom CSS (extending the default theme):
+2.  **Import Tailwind:** Add `@import "tailwindcss";` to the top of that file.
+3.  **Connect Theme:** Create `src/.vitepress/theme/index.ts` to tell VitePress to use your custom CSS:
     ```typescript
     import DefaultTheme from 'vitepress/theme'
     import './style.css'
     export default DefaultTheme
     ```
+
+### Phase 4: Configure the Engine (config.mts)
+Open `src/.vitepress/config.mts` and add the foundational settings for your site:
+
+```typescript
+import { defineConfig } from 'vitepress'
+
+export default defineConfig({
+  title: "Michael Naatjes",
+  description: "Portfolio & Documentation Hub",
+  themeConfig: {
+    nav: [
+      { text: 'Home', link: '/' },
+      { text: 'Projects', link: '/projects/' }
+    ],
+    socialLinks: [
+      { icon: 'github', link: 'https://github.com/mnaatjes' }
+    ]
+  }
+})
+```
+
+### Phase 5: Create "Hello World" Content
+Open `src/index.md` and add your first page content:
+
+```markdown
+---
+layout: home
+hero:
+  name: "Michael Naatjes"
+  text: "Senior Backend & DevOps Engineer"
+  tagline: "Building resilient architectures and documentation hubs."
+  actions:
+    - theme: brand
+      text: View Projects
+      link: /projects/
+---
+
+## Welcome
+This is a test of the **VitePress** engine with **Tailwind v4** styles.
+```
+
+### Phase 6: Testing the Site
+Run the development server to see your site in action:
+
+1.  **Start Dev Server:**
+    ```bash
+    npm run dev
+    ```
+2.  **Visit the Site:** Open the URL provided in the terminal (usually `http://localhost:5173`).
+3.  **Hot Reloading:** Try changing the text in `index.md` and saving; the browser will update instantly without a refresh.
 
 ## 5. Final Directory Map (Manual Setup)
 
