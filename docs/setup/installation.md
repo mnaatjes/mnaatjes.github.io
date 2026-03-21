@@ -30,12 +30,11 @@ npm install -D typescript @types/node vue-tsc
 *   **`@types/node`:** Helps TypeScript understand the environment (Node.js) VitePress runs in.
 *   **`vue-tsc`:** Checks your Vue components for TypeScript errors.
 
-### Styling: Tailwind CSS
-Unlike Bootstrap (which uses a `<link>` tag to download a massive, "one-size-fits-all" CSS file), Tailwind is installed via `npm`. During the build, it scans your code and creates a custom CSS file containing **only** the styles you used.
+### Styling: Tailwind CSS (v4)
+Unlike Bootstrap (which uses a `<link>` tag to download a massive, "one-size-fits-all" CSS file), Tailwind is installed via `npm`. Tailwind v4 is "CSS-first" and zero-config by default, meaning it integrates directly into the Vite engine used by VitePress without needing separate configuration files.
 
 ```bash
 npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
 ```
 
 ### Icons: Lucide
@@ -49,7 +48,7 @@ npm install -D lucide-vue-next
 
 The `package.json` is the "Source of Truth" for your project. It records every tool you've installed so that the site can be built consistently on any machine.
 
-After running the installation commands above, your `package.json` should look like this:
+After running the installation commands above, your `package.json` should look like this (versions may vary):
 
 ```json
 {
@@ -69,7 +68,7 @@ After running the installation commands above, your `package.json` should look l
     "typescript": "^5.3.0",
     "@types/node": "^20.0.0",
     "vue-tsc": "^2.0.0",
-    "tailwindcss": "^3.4.0",
+    "tailwindcss": "^4.0.0",
     "postcss": "^8.4.0",
     "autoprefixer": "^10.4.0",
     "lucide-vue-next": "^0.300.0"
@@ -96,16 +95,15 @@ Create the following folders and files manually to establish the core architectu
 4.  **`src/.vitepress/config.mts`**: The site's main configuration file.
 5.  **`src/.vitepress/theme/`**: Where custom styling and components live.
 
-### Phase 3: Tailwind Setup
-1.  **Initialize Tailwind:** Run `npx tailwindcss init -p` in the root.
-    *   **The `-p` flag:** This creates both `tailwind.config.js` and `postcss.config.js`. The latter is the "bridge" that allows VitePress to see and use Tailwind.
-2.  **Configure `tailwind.config.js`:** Point it to scan `src/**/*.{js,ts,vue,md}`.
-3.  **Create Styles:** Add a `style.css` in `src/.vitepress/theme/` with `@tailwind` directives.
-
-### Why Config Files Stay in the Root
-Even though our website content is in `src/`, we keep the configuration files (`tailwind.config.js`, `postcss.config.js`, `package.json`) in the **project root**. 
-*   **Discovery:** When you run `npm run dev`, Vite starts in the root and "discovers" these files immediately.
-*   **Orchestration:** It then uses these "recipes" to process the Markdown and CSS files it finds inside the `src/` pantry.
+### Phase 3: Tailwind Setup (v4 Way)
+1.  **Create Styles Entry:** Create `src/.vitepress/theme/style.css`.
+2.  **Import Tailwind:** Add `@import "tailwindcss";` to the top of that file. This tells the engine to process Tailwind utilities.
+3.  **Connect Theme:** Create `src/.vitepress/theme/index.ts` to tell VitePress to use your custom CSS (extending the default theme):
+    ```typescript
+    import DefaultTheme from 'vitepress/theme'
+    import './style.css'
+    export default DefaultTheme
+    ```
 
 ## 5. Final Directory Map (Manual Setup)
 
@@ -116,8 +114,6 @@ Once Phase 1-3 are complete, your project root should look like this:
 ├── docs/                # Internal Project Design (Exists)
 ├── package.json         # Project Manifest
 ├── package-lock.json    # Version Lockfile
-├── tailwind.config.js   # Tailwind Config
-├── postcss.config.js    # CSS Post-Processor Config
 ├── node_modules/        # (Hidden) Installed Dependencies
 └── src/                 # Website Source Root
     ├── index.md         # Website Homepage
@@ -125,7 +121,7 @@ Once Phase 1-3 are complete, your project root should look like this:
         ├── config.mts   # Site-wide Settings
         └── theme/       # Custom Styling & Components
             ├── index.ts # Theme Entry Point
-            └── style.css# Tailwind Directives
+            └── style.css# Tailwind v4 Entry Point (@import)
 ```
 
 ### ⚠️ Note on Automatic Folders

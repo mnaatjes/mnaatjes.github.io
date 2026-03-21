@@ -1,0 +1,34 @@
+{
+  "name": "github.io",
+  "version": "0.1.0",
+  "description": "Professional development portfolio and documentation hub.",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnaatjes/mnaatjes.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "documentation",
+    "vitepress",
+    "vue"
+  ],
+  "author": "Michael Naatjes",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.9.3",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.30",
+    "vue-tsc": "^3.2.6"
+  }
+}

@@ -37,7 +37,7 @@ Install **VitePress** and **Vue** as development dependencies. We use `-D` becau
 npm install -D vitepress vue
 ```
 
-### Step 3: Install Styling Dependencies (Tailwind CSS)
+### Step 3: Install Styling Dependencies (Tailwind CSS v4)
 
 To use Tailwind CSS for your professional, utility-first design, you will need to install the following packages:
 
@@ -45,13 +45,13 @@ To use Tailwind CSS for your professional, utility-first design, you will need t
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-### Step 4: Initialize Tailwind
+### Step 4: Integrate Tailwind (CSS-First)
 
-This command creates the `tailwind.config.js` and `postcss.config.js` files, allowing you to configure your custom design system:
+Unlike previous versions, Tailwind v4 does not require `tailwind.config.js` or `postcss.config.js`. Instead, you integrate it directly into your CSS:
 
-```bash
-npx tailwindcss init -p
-```
+1.  **Create a CSS Entry:** Create `src/.vitepress/theme/style.css`.
+2.  **Import Tailwind:** Add `@import "tailwindcss";` to the top of the file.
+3.  **Register with VitePress:** Import this CSS file in your `src/.vitepress/theme/index.ts`.
 
 ## 3. Targeting the Source: Why `src`?
 

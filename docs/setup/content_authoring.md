@@ -41,17 +41,19 @@ defineProps(['status'])
 </template>
 ```
 
-### Step 2: Create your Tailwind Styles
-Ensure `src/.vitepress/theme/style.css` contains the Tailwind directives:
+### Step 2: Create your Tailwind Styles (v4)
+Ensure `src/.vitepress/theme/style.css` contains the Tailwind import:
 
 ```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-/* Custom CSS Class Example */
+/* Custom CSS Class Example using Tailwind's @theme (v4) or standard CSS */
+@theme {
+  --color-hero-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
 .hero-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: var(--color-hero-gradient);
 }
 ```
 
