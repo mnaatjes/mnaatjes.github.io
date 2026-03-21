@@ -91,4 +91,19 @@ Icons in the top-right corner.
 
 1.  **Frontmatter First:** The `---` block **must** be the very first line of the file. No blank lines above it.
 2.  **Kebab-Case Files:** Always name your files in lowercase with dashes (e.g., `my-project-name.md`).
-3.  **Relative Links:** Use absolute-style links starting from the `src/` root (e.g., `/projects/my-app` refers to `src/projects/my-app.md`).
+---
+
+## 6. External Resources & Inspiration
+
+Use these links to see live examples and advanced layout possibilities:
+
+### Official Documentation
+*   **[VitePress Showcase](https://vitepress.dev/reference/site-config#showcase):** A curated list of real-world sites. Great for seeing how senior developers structure their professional portfolios and complex documentation hubs.
+*   **[Homepage Layout Guide](https://vitepress.dev/reference/default-theme-home-page):** Detailed reference for the `hero` and `features` grid. It explains how to add badges, links, and custom icons to your landing page.
+*   **[Team Page Layout](https://vitepress.dev/reference/default-theme-team-page):** While designed for teams, this "Member Grid" is excellent for displaying "Project Collaborators" or "Tech Stack" logos in a clean, circular grid.
+*   **[Layout Slots](https://vitepress.dev/guide/extending-default-theme#layout-slots):** Technical guide on how to inject your own custom Vue/Tailwind components into the standard layout (e.g., adding a "Newsletter" grid above the footer).
+
+### Community & Aesthetics
+*   **[VitePress Blog Pure](https://github.com/chanshiyucx/vitepress-blog-pure):** A beautiful example of how to use a grid layout for a technical blog or a "Project Gallery."
+*   **[Tailwind UI Components](https://tailwindui.com/components):** While many are paid, you can view the "Preview" sections to see professional grid patterns (Cards, Feature sections, Stats) that you can easily replicate in your `index.md` or custom Vue components using Tailwind v4.
+
