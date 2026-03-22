@@ -1,6 +1,6 @@
 {
   "name": "github.io",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Professional development portfolio and documentation hub.",
   "scripts": {
     "dev": "vitepress dev src",
