@@ -16,7 +16,7 @@ const md = markdownit({
 /**
  * REPOS: Add any GitHub repo name here (must be public)
  */
-const REPOS = ['etl-pipeline', 'enigma'];
+const REPOS = ['etl-pipeline', 'enigma', 'php-abac-auth'];
 const OWNER = 'mnaatjes';
 
 /**
