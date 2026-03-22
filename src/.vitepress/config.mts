@@ -5,6 +5,7 @@
 
 import { defineConfig } from 'vitepress'
 import tailwind from '@tailwindcss/vite'
+import pkg from '../../package.json'
 
 export default defineConfig({
     title: "Michael Naatjes", // Site's display name
@@ -23,8 +24,8 @@ export default defineConfig({
         ],
         search: {provider:"local"},
         footer: {
-            copyright: `Copyright &copy; 2024-${new Date().getFullYear()} | Michael Naatjes`,
-            message:"Build with VitePress"
+            copyright: `Copyright &copy; 2024-${new Date().getFullYear()} | Michael Naatjes (v${pkg.version})`,
+            message: "Built with VitePress & Tailwind CSS v4"
         }
     }
 })
