@@ -4,10 +4,14 @@
  */
 
 import { defineConfig } from 'vitepress'
+import tailwind from '@tailwindcss/vite'
 
 export default defineConfig({
     title: "Michael Naatjes", // Site's display name
     description: "Portfolio and Documentation Hub",
+    vite: {
+        plugins: [tailwind()]
+    },
     themeConfig: {
         nav: [
             {text:"Home", link:"/"},
@@ -24,4 +28,3 @@ export default defineConfig({
         }
     }
 })
-

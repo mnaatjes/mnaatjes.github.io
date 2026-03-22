@@ -1,43 +1,49 @@
 {
-  "hash": "806d5b78",
-  "configHash": "5e0495c5",
-  "lockfileHash": "8a17270e",
-  "browserHash": "f9754828",
+  "hash": "b2106d64",
+  "configHash": "d35149eb",
+  "lockfileHash": "61503884",
+  "browserHash": "b96e1552",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "0fe58c27",
+      "fileHash": "498017cd",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "9dcd10f5",
+      "fileHash": "2006d045",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "028f31ba",
+      "fileHash": "5ec1bf69",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "bb61a907",
+      "fileHash": "86b17bf3",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "de707f6d",
+      "fileHash": "e3e941a4",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "8ee9fd43",
+      "fileHash": "2fb304c4",
+      "needsInterop": false
+    },
+    "lucide-vue-next": {
+      "src": "../../../../node_modules/lucide-vue-next/dist/esm/lucide-vue-next.js",
+      "file": "lucide-vue-next.js",
+      "fileHash": "94811646",
       "needsInterop": false
     }
   },
@@ -47,6 +53,9 @@
     },
     "chunk-NPGVKGNX": {
       "file": "chunk-NPGVKGNX.js"
+    },
+    "chunk-PZ5AY32C": {
+      "file": "chunk-PZ5AY32C.js"
     }
   }
 }

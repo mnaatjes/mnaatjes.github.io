@@ -7,6 +7,7 @@ import DefaultTheme from 'vitepress/theme'
 import './style.css'
 import Quote from './components/Quote.vue'
 import ProjectGrid from './components/ProjectGrid.vue'
+import ProjectDetail from './components/ProjectDetail.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,5 +15,6 @@ export default {
     // Register Components
     app.component("Quote", Quote)
     app.component("ProjectGrid", ProjectGrid)
+    app.component("ProjectDetail", ProjectDetail)
   }
 } satisfies Theme

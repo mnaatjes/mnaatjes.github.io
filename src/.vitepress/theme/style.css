@@ -1,2 +1,5 @@
 /*--- Include TailwindCSS ---*/
 @import "tailwindcss";
+
+/*--- Tailwind Plugins ---*/
+@plugin "@tailwindcss/typography";
