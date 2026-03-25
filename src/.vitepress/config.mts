@@ -16,16 +16,14 @@ export default defineConfig({
     themeConfig: {
         nav: [
             {text:"Home", link:"/"},
-            {text:"Projects", link:"/projects/"}
+            {text:"Projects", link:"/projects/"},
+            {text:"Solutions", link:"/solutions/"},
+            {text:"Case Studies", link:"/case_studies/"},
+            {text:"About", link:"/about/"}
         ],
         socialLinks: [
             {icon:"github", link:"https://github.com/mnaatjes"},
             {icon:"linkedin", link:"https://linkedin.com"}
-        ],
-        search: {provider:"local"},
-        footer: {
-            copyright: `Copyright &copy; 2024-${new Date().getFullYear()} | Michael Naatjes (v${pkg.version})`,
-            message: "Built with VitePress & Tailwind CSS v4"
-        }
+        ]
     }
 })

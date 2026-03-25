@@ -3,3 +3,60 @@
 
 /*--- Tailwind Plugins ---*/
 @plugin "@tailwindcss/typography";
+
+/*--- Global Layout Consistency ---*/
+:root {
+  /* Match the ProjectGrid padding across the entire layout */
+  --vp-layout-max-width: 1440px;
+  --vp-content-max-width: 1280px;
+}
+
+/* 
+ * Apply px-6 sm:px-12 equivalent to the main content areas 
+ * standardizing the horizontal gutter across all pages while
+ * preserving full-width layout for Hero sections.
+ */
+.VPDoc > .container, 
+.VPPage,
+.VPHomeContent, 
+.VPHomeFeatures {
+  padding: 0 1.5rem !important; /* px-6 */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  max-width: var(--vp-layout-max-width) !important;
+}
+
+@media (min-width: 640px) {
+  .VPDoc > .container, 
+  .VPPage,
+  .VPHomeContent, 
+  .VPHomeFeatures {
+    padding: 0 3rem !important; /* px-12 */
+  }
+}
+/* Refine Prose for better readability across all projects */
+.prose {
+  max-width: 80ch;
+  margin: 0 auto;
+  
+  /* Light mode high-contrast overrides (#333 equivalent is slate-800/900) */
+  --tw-prose-body: var(--color-slate-800);
+  --tw-prose-headings: var(--color-slate-900);
+  --tw-prose-bold: var(--color-slate-950);
+  --tw-prose-links: var(--color-blue-700);
+  --tw-prose-bullets: var(--color-slate-400);
+  --tw-prose-quotes: var(--color-slate-900);
+  --tw-prose-code: var(--color-slate-900);
+  --tw-prose-pre-bg: var(--color-slate-900);
+  --tw-prose-pre-code: var(--color-slate-100);
+}
+
+/* Ensure the dark:prose-invert still works correctly */
+.dark .prose {
+  --tw-prose-body: var(--color-slate-300);
+  --tw-prose-headings: var(--color-white);
+  --tw-prose-bold: var(--color-white);
+  --tw-prose-links: var(--color-blue-400);
+  --tw-prose-bullets: var(--color-slate-600);
+  --tw-prose-code: var(--color-pink-400);
+}

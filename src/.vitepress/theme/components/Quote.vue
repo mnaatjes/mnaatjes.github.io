@@ -7,7 +7,7 @@ defineProps({
 <template>
     <div>
         <blockquote>
-            <slot />
+            &quot;<slot />&quot;
         </blockquote>
         <cite v-if="author">- {{ author }}</cite>
     </div>

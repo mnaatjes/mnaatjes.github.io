@@ -1,56 +1,41 @@
 {
-  "hash": "72fb84ab",
-  "configHash": "d35149eb",
-  "lockfileHash": "f466c7ec",
-  "browserHash": "9253f0d3",
+  "hash": "b53b2154",
+  "configHash": "6b810a55",
+  "lockfileHash": "61939ccb",
+  "browserHash": "5463ed6d",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "1c125399",
+      "fileHash": "ed64d787",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "3532a09e",
+      "fileHash": "f7b4b5ba",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "f1ac1201",
-      "needsInterop": false
-    },
-    "vitepress > @vueuse/integrations/useFocusTrap": {
-      "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
-      "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "22ef52f1",
-      "needsInterop": false
-    },
-    "vitepress > mark.js/src/vanilla.js": {
-      "src": "../../../../node_modules/mark.js/src/vanilla.js",
-      "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "b5a7a8f8",
-      "needsInterop": false
-    },
-    "vitepress > minisearch": {
-      "src": "../../../../node_modules/minisearch/dist/es/index.js",
-      "file": "vitepress___minisearch.js",
-      "fileHash": "e8b8f408",
+      "fileHash": "1cfec9bb",
       "needsInterop": false
     },
     "lucide-vue-next": {
       "src": "../../../../node_modules/lucide-vue-next/dist/esm/lucide-vue-next.js",
       "file": "lucide-vue-next.js",
-      "fileHash": "b831936b",
+      "fileHash": "160fbceb",
+      "needsInterop": false
+    },
+    "markdown-it": {
+      "src": "../../../../node_modules/markdown-it/index.mjs",
+      "file": "markdown-it.js",
+      "fileHash": "f6d41372",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-2CGNBZMC": {
-      "file": "chunk-2CGNBZMC.js"
-    },
     "chunk-NPGVKGNX": {
       "file": "chunk-NPGVKGNX.js"
     },

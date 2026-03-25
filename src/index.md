@@ -15,11 +15,17 @@ hero:
           target: _blank
 ---
 
-## Welcome
-This is a test of the **VitePress** engine with **TailwindCSS v4** styles.
+<SectionHeader 
+  eyebrow="Portfolio"
+  title="Featured Projects"
+  description="A selection of my best engineering work, ETL pipelines, and developer tools."
+  showLine
+/>
 
-<ProjectGrid :limit="3" />
+<ProjectGrid :limit="8" />
 
-<Quote author="Albert Einstein">
-    Creativity is the mother of all failures to launch off the dome
+<Quote author="David Lynch">
+  Absurdity is what I like most in life, and there's humor in struggling in ignorance. 
+  If you saw a man repeatedly running into a wall until he was a bloody pulp, 
+  after a while it would make you laugh because it becomes absurd
 </Quote>
