@@ -16,6 +16,7 @@ This project aims to refactor the personal `github.io` presence into a high-impa
 *   **[Styling](./styling.md):** Overview of Tailwind CSS and utility-first design.
 *   **[Content Management](./cms.md):** Details on Markdown and MDX for content management.
 *   **[Icons & Typography](./icon_typography.md):** Strategic choices for icons and typography.
+*   **[Page Logic & Schemas](./page_logic_and_schemas.md):** Content strategy and component specifications.
 
 ## 1. General Purpose of GitHub.io for Serious Developers
 
